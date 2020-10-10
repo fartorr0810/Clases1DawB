@@ -1,0 +1,154 @@
+						# HERRAMIENTAS DE DESARROLLO
+
+
+**1.¿Para que sirve un compilador? ¿Qué tipo de archivo obtenemos tras compilar?**
+Un compilador es un software que traduce en un lenguaje entedible (maquina) por el hardware para que lo entienda y pueda ejecutarlo, un ejemplo de lenguaje compilado son C,C++,Cobolt etc.
+Esto te lo da un en archivo ".o" el cual es totalmente muy poco familiar para los humanos.
+**2.¿Para que sirve un enlazador? ¿Qué tipo de archivo obtenemos tras enlazar?**
+Un enlazador es un software que usa los objetos creados por el compilador para combinarlos y generar un ejecutable binario
+
+**3.¿Para que sirve un interprete? ¿Obtenemos algún archivo tras interpretar?**
+Un interprete es un software que ejecuta directamente las instrucciones descritas en un lenguaje de programacion interpretado (python,java,c#)
+Este analiza el codigo fuente,luego lo traduce en una interpretacion intermedia y lo ejecuta almacenandolo en un compilador
+Al interpretar esta bytecode
+
+**4.Explica cada uno de los siguientes conceptos e indica la relación entre ellos.**
+* código fuente: El codigo fuente es un conjunto de instrucciones escritas en un lenguaje de programacion y sus pasos para que pueda ser ejecutado
+* código objeto:El codigo objeto es el resultado de la compilacion de un codigo fuente
+* código binario:El codigo binario es lo que entiende la maquina (0 y 1), con ello esta puede realizar todo tipo de operaciones
+
+**5.¿Qué tipo de código es el bytecode generado por el compilador de Java?**
+
+El bytecode de java es el resultado de compilar y se encuentra dentro del archivo .class, este da un resultado muy parecido al codigo maquina pero esto no esta orientado a ningun procesador, esta orientada a la maquina virtual de java en el que este si lo entendera y ejecutara.
+Herramientas de desarrollo
+
+    
+  Ejecuta el programa "Hola mundo" en los siguientes lenguajes:
+        bash
+        python
+        php
+        javascript (nodejs)
+        c
+        c++
+        java
+        ruby
+        go
+        rust
+        lisp
+        ensamblador (nasm)
+
+   Los paquetes a instalar en Ubuntu son: python, php, nodejs, gcc, g++, default-jdk, default-jre, ruby, golang, rustc , clisp y nasm. Para instalar dichos paquetes puedes utilizar sudo apt-get install <nombre del paquete>. Si habéis instalado Java en el módulo de Programación, no instaléis los paquetes default-jdk y default-jre.
+
+   El código fuente para distintos lenguajes de programación está disponible en:https://es.wikipedia.org/wiki/Anexo:Ejemplos_de_implementaci%C3%B3n_del_%C2%ABHola_mundo%C2%BB
+
+   Instrucciones en https://github.com/jamj2000/DAW1-ED-HolaMundo.
+   
+	1.Bash
+		>Abrimos el interprete (en este caso la consola de comandos)
+    	>Escribimos **echo "Hola mundo"**
+    	>La consola muestra el mensaje
+	1.1.Script ejecutable
+		>Abrimos nuestro editor de texto plano favorito y escribimos lo
+		siguiente:
+		> #!usr/bin/env bash
+			echo "Hola mundo"
+    	>Ahora nos iremos a la terminal y le daremos permisos de ejecucion
+    	>chmod +x holamundo.sh
+  		>Escribimos en la terminal ./holamundo.sh y se ejecutara el script con nuestro mensaje "Hola mundo"
+	2.1.Python
+		>Escribimos en la consola "python" y se nos abrira el interprete
+		>Escribimos print ("Hola mundo") y pulsaremos enter, esto lo interpretara y te mostrara el mensaje "Hola mundo"
+	2.2 Python Script ejecutable
+		>Creamos un archivo de texto .py y en el escribiremos lo siguiente
+		>#!/usr/bin/env python
+			print "Hola mundo"
+		>Tras ello le daremos el permiso de ejecucion al igual que el ejecutable anterior y lo ejecutando, y mostrandonos el resultado de "Hola mundo"
+	3.1 PHP
+		>Primero ejecutamos el interpete de php en la consola escribiendo php
+		>Escribimos en la terminal php, a posteriori escribimos
+		><?php
+		echo "Hola mundo";
+        >Al pulsar control+D se cerrara y te respondera "Hola mundo"
+	3.2 ScriptPHP
+		>Hacemos los mismos pasos que en python solo que el codigo seria
+		><?php 
+ 		 echo "Hola mundo\n" 
+		 ?>
+        >Le damos los permisos y ejecutamos con ./Holamundo.php
+	4.1 JavaScript
+		>Escribimos en la terminal node y se nos abrira el interprete
+		>Luego debemos escribir console.log("Hola mundo") y pulsamos enter y nos mostrara el mensaje
+	4.2 JavaScript script ejecutable
+		>Creamos un archivo de texto .js y dentro escribimos lo siquiente
+		>#!/usr/bin/env node
+			console.log("Hola mundo");
+        >Le damos el permiso de ejecucion y lo ejecutamos con ./holamundo.js
+	5.1 C
+		>En un archivo de texto .c escribiremos las instrucciones necesarios
+		>#include <stdio.h>
+		 int main()
+		 {
+    	 printf("¡Hola, mundo!");
+    	 return 0;
+		 }
+        >Una vez guardamos es hora de compilarlo y enlazarlo, para ello usamos el comando gcc -o holamundo holamundo.c
+        >Por ultimo ejecutamos con .hola
+	6.C++
+		>En un archivo de texto .c escribiremos las instrucciones necesarios
+		>#include <iostream>
+			using namespace std;
+			int main()
+			{
+   			cout << "¡Hola, mundo!" << endl;
+   			return 0;
+			}
+		>Tras ello lo compilamos y enlazamos con g++ -o holamundo holamundo.cpp
+		>Y por ultimo lo ejecutamos
+	7.1 Java
+		>Creamos un archivo .java y ponemos lo necesario
+		>Lo compilamos con javac holamundo.java
+		>Escribimos java holamundo
+	7.2 Java Ejecutable
+		>Para hacer el ejecutable primero debemos empaquetar la aplicacion con el siguiente comando :ar  cvfe  hola.jar  Hola  Hola.class
+		>Dariamos el permiso de ejecucion con el chmod +x hola.jar
+		>Y ejecutamos con java -jar hola.jar
+	8.1 nasm (ensamblador)
+		>Creamos un archivo hola.asm e introducimos el codigo
+		>Tras ello lo ensamblaremos para nuestro sistema operativo con nasm -f elf64 hola.asm y luego ld hola.o -o hola
+		>Y por ultimo ejecutariamos en la consola y nos mostraria el mensaje de Hola mundo
+	9.1 Ruby
+		>Ejecutamos el interprete con ruby, introducimos la orden, en este caso puts "Hola Mundo" y nos mostrara el mensaje nada mas pulsemos Control+D
+	9.2 Ruby Script
+		>Creamos un archivo .rb
+		>Introducimos las intrucciones para el mundo, tras ello debemos darle permiso de ejecucion y tras ello ejecutaremos con ./holamundo.rb
+		>#!/usr/bin/env ruby
+		puts "Hola Mundo"
+   	10.1 Go
+   		>Creamos el archivo .go y pegamos la instrucciones
+   		>package main
+			import "fmt"
+			func main() {
+        	fmt.Println("Hola mundo desde Go")
+			}
+		>Tras ello compilamos con go  build  hola.go
+		>y por ultimo ./hola
+	10.2
+		>Tambien podemos interpretar el codigo con go run hola.go
+   11.1 Rust
+   		>Creamos un archivo .rs y escribimos las instrucciones
+   		>fn main() {
+    println!("¡Hola, mundo! Desde RUST ");
+}
+		>Tras ello compilamos y enlazamos con 
+		>rustc hola.rs
+		>Ejecutamos con ./hola
+	12.1 Lisp
+		>Ejecutamos el interprete con clisp
+		>Despues escribimos (format t "Hola mundo") y al pulsar el enter nos mostrara el mensaje
+		>Salimos con control+D 
+	12.2 Lisp Script Ejecutable
+		>Creamos un archivo llamado hola.lisp
+		>Pegamos las intrucciones
+		>#!/usr/bin/env clisp
+		(format t "¡Hola, mundo!")
+		>Damos permisos y ejecutamos mostrandonos el mensaje
