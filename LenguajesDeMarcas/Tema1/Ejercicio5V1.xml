@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<futbol>
+	<partidos>
+		<jornada1>
+			<partidos>
+				<partido>
+					<equipolocal>Real Madrid</equipolocal>
+					<equipovisitante>Barcelona</equipovisitante>
+					<goleslocal>3</goleslocal>
+					<golesvisitantes>0</golesvisitantes>
+				</partido>
+				<partido>
+					<equipolocal>Sevilla</equipolocal>
+					<equipovisitante>Betis</equipovisitante>
+					<goleslocal>2</goleslocal>
+					<golesvisitantes>1</golesvisitantes>
+				</partido>
+				<partido>
+					<equipolocal>Granada</equipolocal>
+					<equipovisitante>Real Sociedad</equipovisitante>
+					<goleslocal>0</goleslocal>
+					<golesvisitantes>2</golesvisitantes>
+				</partido>
+			</partidos>
+		</jornada1>
+	</partidos>
+</futbol>
+

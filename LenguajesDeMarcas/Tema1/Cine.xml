@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Cine [
+   <!ELEMENT cine (link?,portadagrafica?,tituloriginal?)>
+   <!ELEMENT tituloriginal ANY>
+   <!ELEMENT portadagrafica ANY>
+   <!ELEMENT link ANY>
+]>
+<!--No me da tiempo poner todas las etiquetas :(-->
+<cine>
+	<peliculas>
+			<pelicula>
+				<tituloriginal>Old school</tituloriginal>
+				<titulo>Aquellas juergas universitarias</titulo>
+				<duracion>93</duracion>
+				<ano>2003</ano>
+				<director>Tood Phillips</director>
+				<interpretes>
+					<iterprete>Will Ferrell</iterprete>
+					<iterprete>Luke Wilson</iterprete>
+					<iterprete>Vince Vaughn</iterprete>
+					<iterprete>Jeremy Piven</iterprete>
+					<iterprete>uliette Lewis</iterprete>
+					<iterprete>Sean William</iterprete>
+					<iterprete>Scott</iterprete>
+				</interpretes>
+				<descripcion>Mitch, Frank y Beanie son tres amigos treintañeros cuyas vidas no son exactamente lo que esperaban. Mitch tiene una novia ninfómana que se mete en la cama con el primero que agarra. Frank se ha casado y su matrimonio nada tiene que ver con las juergas salvajes que organizaban años atrás. Y Beanie es un padre de familia que se muere por recuperar su alocada juventud. Pero las cosas cambian cuando Beanie sugiere que creen su propia fraternidad, en la nueva casa que Mitch tiene junto al campus de la universidad. Una ocasión para revivir tiempos gloriosos, hacer nuevos amigos y de volver a sus viejas, salvajes y desmadradas juergas de estudiantes.</descripcion>
+				<link>http://www.oldschool-themovie.com/</link>
+				<categoria revision="8">Comedia</categoria>
+				<portadagrafica></portadagrafica>
+			</pelicula>
+			<pelicula>
+				<tituloriginal></tituloriginal>
+				<titulo>Don Quijote De La Mancha</titulo>
+				<duracion>53</duracion>
+				<ano>1993</ano>
+				<director>Velazques</director>
+				<interpretes>
+					<iterprete>Rosa Melamano</iterprete>
+					<iterprete>El rapido</iterprete>
+					<iterprete>Pablo Chile</iterprete>
+					<iterprete>Luis Carol</iterprete>
+				</interpretes>
+				<descripcion>Una historia clasica para recordar.</descripcion>
+				<link></link>
+				<categoria revision="Todos los publicos">Comedia</categoria>
+				<portadagrafica>http://Milibro.com</portadagrafica>
+			</pelicula>
+			<pelicula>
+				<tituloriginal>Star Wars</tituloriginal>
+				<titulo>La Guerra de las galaxias</titulo>
+				<duracion>53</duracion>
+				<ano>1976</ano>
+				<director>Georges Lucas</director>
+				<interpretes>
+					<iterprete>Porta</iterprete>
+					<iterprete>C.R.O</iterprete>
+					<iterprete>Benito Antonio</iterprete>
+					<iterprete>Ozuna</iterprete>
+				</interpretes>
+				<descripcion>Una historia intergalactica</descripcion>
+				<link></link>
+				<categoria revision="16">Ciencia Ficcion</categoria>
+				<portadagrafica></portadagrafica>
+			</pelicula>
+			<pelicula>
+				<tituloriginal>Spec ops</tituloriginal>
+				<titulo>Operacion Especial</titulo>
+				<duracion>103</duracion>
+				<ano>2020</ano>
+				<director>Isabelle</director>
+				<interpretes>
+					<iterprete>Tim</iterprete>
+					<iterprete>Elsa</iterprete>
+					<iterprete>Tuti</iterprete>
+					<iterprete>Chami</iterprete>
+				</interpretes>
+				<descripcion>Operaciones y esas cosas</descripcion>
+				<link>http://pelilarga.com</link>
+				<categoria revision="18">Accion</categoria>
+				<portadagrafica>http://elcamelloduro.com</portadagrafica>
+			</pelicula>
+			<pelicula>
+				<tituloriginal>Sonic:The film</tituloriginal>
+				<titulo>El prisas</titulo>
+				<duracion>113</duracion>
+				<ano>2010</ano>
+				<director>Leonardo Da Cupro</director>
+				<interpretes>
+					<iterprete>Dudu tierra</iterprete>
+					<iterprete>Masca Lomos</iterprete>
+					<iterprete>Tumba Tumbao</iterprete>
+					<iterprete>Elsa Pato</iterprete>
+				</interpretes>
+				<descripcion>Operaciones y esas cosas</descripcion>
+				<link>http://pelilarga.com</link>
+				<categoria revision="18">Accion</categoria>
+				<portadagrafica>http://elcamelloduro.com</portadagrafica>
+			</pelicula>
+	</peliculas>
+</cine>

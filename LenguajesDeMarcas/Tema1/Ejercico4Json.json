@@ -1,0 +1,46 @@
+{
+  "libros": {
+    "libro": [
+      {
+        "titulo": {
+          "-categoria": "COOKING",
+          "-idioma": "en",
+          "-anio": "2005",
+          "#text": "Everyday Italian"
+        },
+        "autor": "Giada De Laurentiis",
+        "price": "30.00"
+      },
+      {
+        "titulo": {
+          "-categoria": "CHILDREN",
+          "-idioma": "en",
+          "-anio": "2005",
+          "#text": "Harry Potter"
+        },
+        "autor": "J.K Rolling",
+        "price": "39.99"
+      },
+      {
+        "titulo": {
+          "-categoria": "WEB",
+          "-idioma": "en",
+          "-anio": "2003",
+          "#text": "XQuery Kick Start"
+        },
+        "autor": "James McGovern-Per Bothner-Kurt Cagle-James Linn-Vaidyanathan Nagarajan",
+        "price": "49.99"
+      },
+      {
+        "titulo": {
+          "-categoria": "WEB",
+          "-idioma": "en",
+          "-anio": "2003",
+          "#text": "Learning XML"
+        },
+        "autor": "Erik T.Ray",
+        "price": "39.95"
+      }
+    ]
+  }
+}

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Francisco Arroyo De La Torre 1DAWB-->
+<facturas>
+	<factura>
+		<datosempresa>
+			<nombre>Equipos digitles S.L</nombre>
+			<calle>Av.Valladolid</calle>
+			<ciudad>Madrid</ciudad>
+			<codpostal>28015</codpostal>
+			<cif>Q-9876543</cif>
+			<telf>9117776688</telf>
+			<fax>917776699</fax>
+		</datosempresa>
+		<datoscliente>
+			<numcliente>879</numcliente>
+			<nombre>Dario Bueno Gutierrez</nombre>
+			<direccionenvio>Av. Oporto n7 4d</direccionenvio>
+			<poblacion>Madrid</poblacion>
+			<codpostal>28043</codpostal>
+			<provincia>Madrid</provincia>
+		</datoscliente>
+		<datosfactura>
+			<info>
+				<fechafactura>12-01-2005</fechafactura>
+				<pedido>731</pedido>
+				<formapago>EFECTIVO</formapago>
+			</info>
+			<productos>
+				<producto>
+					<ref>MII93000F/8</ref>
+					<descrip>MICRO PENTIUM IV 3000MHZ FB800</descrip>
+					<cantidad>1</cantidad>
+					<preciosiniva>230</preciosiniva>
+					<iva>16</iva>
+					<importe>266,80</importe>
+				</producto>
+				<producto>
+					<ref>MB8QDIP4</ref>
+					<descrip>PLACA BASE QDI P4</descrip>
+					<cantidad>1</cantidad>
+					<preciosiniva>180</preciosiniva>
+					<iva>16</iva>
+					<importe>208,80</importe>
+				</producto>
+				<producto>
+					<ref>MEDD512M32</ref>
+					<descrip>DIMM DDR 512MB 3200</descrip>
+					<cantidad>2</cantidad>
+					<preciosiniva>40</preciosiniva>
+					<iva>16</iva>
+					<importe>92,80</importe>
+				</producto>
+				<producto>
+					<ref>HD250GSA7</ref>
+					<descrip>DISCO DURO 250GB S-ATA 7200</descrip>
+					<cantidad>4</cantidad>
+					<preciosiniva>120</preciosiniva>
+					<iva>16</iva>
+					<importe>556,80</importe>
+				</producto>
+			</productos>
+			<total>
+				<preciosiniva>970</preciosiniva>
+				<incrementoporiva>155,20</incrementoporiva>
+				<preciototal>1125,20</preciototal>
+			</total>
+		</datosfactura>
+	</factura>
+</facturas>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

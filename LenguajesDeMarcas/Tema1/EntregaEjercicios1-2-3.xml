@@ -1,0 +1,34 @@
+<!--En el primer ejercicio hay error en las lineas 1,2,4,7-->
+<?xml version="1.0" encoding="utf-8"?>
+<libros>
+	<libro>
+		<nombre>"El diario de una princesa muerta"</nombre>
+	</libro>
+	<libro>
+		<nombre>"Lo que nunca te conte"</nombre>
+	</libro>
+</libros>
+
+<!--En el ejercicio 2 he decidido crear una etiqueta nueva para organizarlo mejor y separar los numeros de las letras
+-->
+<?xml version="1.0" encoding="UTF-8"?>
+<caracteres>
+	<letras>
+		<letra>"u"</letra>
+		<letra>"n"</letra>
+		<letra>"o"</letra>
+		<letra>"d"</letra>
+		<letra>"o"</letra>
+		<letra>"s"</letra>
+		<letra>"e"</letra>
+		<letra>"i"</letra>
+	</letras>
+	<numeros>
+		<numero>1</numero>
+		<numero>22</numero>
+		<numero>666666</numero>
+	</numeros>
+</caracteres>
+
+
+<!--En el tercer ejercicio el xml validator los pasa los dos sin problemas-->
