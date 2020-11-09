@@ -1,0 +1,9 @@
+<!DOCTYPE lista_personas [
+<!ELEMENT lista_personas (persona)>
+<!ELEMENT lista_personas EMPTY>
+<!ELEMENT persona (nombre,fechanacimiento,sexo)>
+<!ELEMENT persona EMPTY>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT fechanacimiento (#PCDATA)>
+<!ELEMENT sexo (#PCDATA)>
+]>

@@ -1,0 +1,15 @@
+<!DOCTYPE aviso [
+<!ELEMENT aviso (titulo?, (parrafo+, grafico)*)>
+<!ELEMENT aviso (#PCDATA)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT parrafo (#PCDATA)>
+<!ELEMENT grafico (#PCDATA)>
+]>
+
+<aviso>
+	<titulo>...</titulo>
+	<parrafo>...</parrafo>
+	<grafico>...</grafico>
+	<parrafo>...</parrafo>
+	<grafico>...</grafico>
+</aviso>

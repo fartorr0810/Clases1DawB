@@ -1,0 +1,17 @@
+<!DOCTYPE matricula [
+<!ELEMENT matricula (personal,pago)>
+<!ELEMENT matricula (#PCDATA)>
+<!ELEMENT personal (dni,nombre,titulacion,curso_academico,domicilios+)>
+<!ELEMENT personal EMPTY>
+<!ELEMENT dni (#PCDATA)>
+<!ELEMENT titulacion (#PCDATA)>
+<!ELEMENT curso_academico (#PCDATA)>
+<!ELEMENT domicilios (nombre)>
+<!ELEMENT domicilios (#PCDATA)>
+<!ATTLIST domicilio tipo familiar|habitual #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT dni (#PCDATA)>
+<!ELEMENT pago (tipo_matricula)>
+<!ELEMENT pago EMPTY>
+<!ELEMENT tipo_matricula (#PCDATA)>
+]>

@@ -1,0 +1,15 @@
+<!DOCTYPE informe [
+<!ELEMENT informe (region+)>
+<!ELEMENT informe EMPTY>
+<!ATTLIST informe fecha CDATA #REQUIRED>
+<!ATTLIST informe descrip CDATA #IMPLIED>
+<!ELEMENT region (trimestres+)>
+<!ELEMENT region EMPTY>
+<!ATTLIST region zona Norte|Centro|Sur| #REQUIRED>
+<!ELEMENT trimestres (trimestre+)>
+<!ELEMENT trimestres EMPTY>
+<!ELEMENT trimestre (librosvendidos?)>
+<!ELEMENT trimestre (#PCDATA)>
+<!ATTLIST trimestre numero 1|2|3|4 #REQUIRED>
+<!ELEMENT librosvendidos (#PCDATA)>
+]>

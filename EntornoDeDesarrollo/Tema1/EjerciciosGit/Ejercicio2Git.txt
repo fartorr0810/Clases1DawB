@@ -1,0 +1,95 @@
+git log --oneline
+git annotate
+
+Como antes he experimentado con el repositorio anterior, e hice algunos commit, los head son un poco distintos pero
+hace lo que pide el ejercicio solo que cambiando el numero del head
+
+Ejercicio 1
+
+    Mostrar el historial de cambios del repositorio.
+    
+    git log
+
+    Crear la carpeta capitulos y crear dentro de ella el fichero capitulo1.txt con el siguiente texto.
+
+    	mkdir capitulos
+
+        Git es un sistema de control de versiones ideado por Linus Torvalds.
+
+        nano capitulo1.txt
+
+    Añadir los cambios a la zona de intercambio temporal.
+
+    git add .
+
+    Hacer un commit de los cambios con el mensaje “Añadido capítulo 1.”
+
+    git commit -m "Añadiendo capitulo 1"
+
+    Volver a mostrar el historial de cambios del repositorio.
+
+    git log -p
+
+Ejercicio 2
+
+    Crear el fichero capitulo2.txt en la carpeta capitulos con el siguiente texto.
+
+    	nano capitulo2.txt
+
+        El flujo de trabajo básico con Git consiste en: 1- Hacer cambios en el repositorio. 2- Añadir los cambios a la zona de intercambio temporal. 3- Hacer un commit de los cambios.
+
+    Añadir los cambios a la zona de intercambio temporal.
+
+    git add *
+
+    Hacer un commit de los cambios con el mensaje “Añadido capítulo 2.”
+    git commit -m "Añadiendo capitulo 2"
+
+    Mostrar las diferencias entre la última versión y dos versiones anteriores.
+
+
+	git log -p -2 (o git diff HEAD~2)
+
+
+Ejercicio 3
+
+    Crear el fichero capitulo3.txt en la carpeta capitulos con el siguiente texto.
+
+    nano capitulo3.txt
+
+        Git permite la creación de ramas lo que permite tener distintas versiones del mismo proyecto y trabajar de manera simultanea en ellas.
+
+
+    Añadir los cambios a la zona de intercambio temporal.
+
+    git add *
+
+    Hacer un commit de los cambios con el mensaje “Añadido capítulo 3.”
+
+    git commit -m "Añadiendo el capitulo 3"
+
+    Mostrar las diferencias entre la primera y la última versión del repositorio.
+
+    git diff HEAD HEAD~6
+
+
+
+Ejercicio 4
+
+    Añadir al final del fichero indice.txt la siguiente línea:
+
+        Capítulo 5: Conceptos avanzados
+
+    nano indice.txt
+
+    Añadir los cambios a la zona de intercambio temporal.
+
+    git add *
+
+    Hacer un commit de los cambios con el mensaje “Añadido capítulo 5 al índice.”.
+
+    git commit -m "Añadido capitulo 5 al indice"
+
+    Mostrar quién ha hecho cambios sobre el fichero indice.txt.
+
+    git annotate indice.txt

@@ -1,0 +1,135 @@
+Ejercicio 1
+
+    Eliminar la última línea del fichero indice.txt y guardarlo.
+    
+    nano indice.txt (eliminamos la ultima linea y guardamos)
+
+    Comprobar el estado del repositorio.
+
+    git status (nos indica que el archivo indice.txt ha sido modificado)
+
+    Deshacer los cambios realizados en el fichero indice.txt para volver a la versión anterior del fichero.
+
+    git checkout indice.txt (esto restauramos el archivo (pero solo para los que no se añadieron al area de preparacion))
+
+    Volver a comprobar el estado del repositorio.
+
+    git status (como vemos, claramente dira que no hemos modificado absolutamente nada)
+
+
+
+Ejercicio 2
+
+    Eliminar la última línea del fichero indice.txt y guardarlo.
+
+    nano indice.txt (volvemos a eliminar la ultima linea)
+
+    Añadir los cambios a la zona de intercambio temporal.
+
+    git add indice.txt
+
+    Comprobar de nuevo el estado del repositorio.
+
+    git status
+
+    Quitar los cambios de la zona de intercambio temporal, pero mantenerlos en el directorio de trabajo.
+
+    git reset indice.txt (eliminamos los cambios de)
+
+    Comprobar de nuevo el estado del repositorio.
+
+    git status
+
+    Deshacer los cambios realizados en el fichero indice.txt para volver a la versión anterior del fichero.
+
+    git checkout indice.txt
+
+    Volver a comprobar el estado del repositorio.
+
+    git status
+
+Ejercicio 3
+
+    Eliminar la última línea del fichero indice.txt y guardarlo.
+
+    nano indice.txt
+    git add .
+
+
+    Eliminar el fichero capitulos/capitulo3.txt.
+
+    rm capitulo3.txt
+
+    Añadir un fichero nuevo captitulos/capitulo4.txt vacío.
+
+    nano capitulo4.txt
+
+
+    Añadir los cambios a la zona de intercambio temporal.
+
+    git add .
+
+    Comprobar de nuevo el estado del repositorio.
+
+    git status
+
+    Quitar los cambios de la zona de intercambio temporal, pero mantenerlos en el directorio de trabajo.
+
+    git reset f65bbd7 (reseteamos pero lo mantenemos en el directorio de trabajo)
+
+    Comprobar de nuevo el estado del repositorio.
+
+    git status
+
+    Deshacer los cambios realizados para volver a la versión del repositorio.
+
+    git reset --hard f65bbd7 (Ahora hacemos el hard para volver a la version anterior, elimimando todos los cambios y volviendo al ultimo commit y perdiendo todas las modificaciones del working directory)
+
+    Volver a comprobar el estado del repositorio.
+
+    git status (Todo lo modificado se pierde excepto el archivo capitulo4.txt)
+
+Ejercicio 4
+
+    Eliminar la última línea del fichero indice.txt y guardarlo.
+
+    nano indice.txt
+
+
+    Eliminar el fichero capitulos/capitulo3.txt.
+
+    rm capitulos/capitulo3.txt
+
+
+    Añadir los cambios a la zona de intercambio temporal y hacer un commit con el mensaje “Borrado accidental.”
+
+    git add *
+    git commit -m "Borrado accidental"
+
+    
+    Comprobar el historial del repositorio.
+
+    git log
+
+
+    Deshacer el último commit pero mantener los cambios anteriores en el directorio de trabajo y la zona de intercambio temporal.
+
+    git reset f65bbd7
+    git add .
+
+    Comprobar el historial y el estado del repositorio.
+
+    git status
+
+    Volver a hacer el commit con el mismo mensaje de antes.
+
+    git commit -m "Borrado accidental"
+
+    Deshacer el último commit y los cambios anteriores del directorio de trabajo volviendo a la versión anterior del repositorio.
+
+    git reset --hard f65bbd7
+
+    Comprobar de nuevo el historial y el estado del repositorio.
+
+    git log --oneline
+    git status

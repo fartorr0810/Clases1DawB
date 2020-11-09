@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE informe [
+<!ELEMENT informe (region+)>
+<!ELEMENT informe EMPTY>
+<!ATTLIST informe fecha CDATA #REQUIRED>
+<!ATTLIST informe descrip CDATA #IMPLIED>
+<!ELEMENT region (trimestres+)>
+<!ELEMENT region EMPTY>
+<!ATTLIST region zona Norte|Centro|Sur| #REQUIRED>
+<!ELEMENT trimestres (trimestre+)>
+<!ELEMENT trimestres EMPTY>
+<!ELEMENT trimestre (librosvendidos?)>
+<!ELEMENT trimestre (#PCDATA)>
+<!ATTLIST trimestre numero 1|2|3|4 #REQUIRED>
+<!ELEMENT librosvendidos (#PCDATA)>
+]>
+<informe fecha="30/12/2009" descrip="informe de ventas para las regiones Norte, Centro y Sur">
+	<region zona="Norte">
+		<trimestres>
+		<trimestre numero="1">
+			<librosvendidos>24000</librosvendidos>
+		</trimestre>
+		<trimestre numero="2">
+			<librosvendidos>38600</librosvendidos>
+		</trimestre>
+		<trimestre numero="3">
+			<librosvendidos>NO_INFO</librosvendidos>
+		</trimestre>
+		<trimestre numero="4">
+			<librosvendidos>NO_INFO</librosvendidos>
+		</trimestre>
+		</trimestres>
+	</region>
+	<region zona="Centro">
+		<trimestres>
+		<trimestre numero="1">
+			<librosvendidos>NO_INFO</librosvendidos>
+		</trimestre>
+		<trimestre numero="2">
+			<librosvendidos>16080</librosvendidos>
+		</trimestre>
+		<trimestre numero="3">
+			<librosvendidos>25000</librosvendidos>
+		</trimestre>
+		<trimestre numero="4">
+			<librosvendidos>NO_INFO</librosvendidos>
+		</trimestre>
+		</trimestres>
+	</region>
+	<region zona="Sur">
+		<trimestres>
+		<trimestre numero="1">
+			<librosvendidos>27000</librosvendidos>
+		</trimestre>
+		<trimestre numero="2">
+			<librosvendidos>31400</librosvendidos>
+		</trimestre>
+		<trimestre numero="3">
+			<librosvendidos>40100</librosvendidos>
+		</trimestre>
+		<trimestre numero="4">
+			<librosvendidos>30000</librosvendidos>
+		</trimestre>
+		</trimestres>
+	</region>
+</informe>
