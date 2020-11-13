@@ -1,0 +1,182 @@
+Ejercicio 1
+
+Crear una nueva rama bibliografia y mostrar las ramas del repositorio.
+
+git branch bibliografia
+
+Ejercicio 2
+
+git branch (con un asterisco marca en que ramas estamos, en este caso estamos en master)
+
+    Crear el fichero capitulos/capitulo4.txt y añadir el texto siguiente
+
+        En este capítulo veremos cómo usar GitHub para alojar repositorios en remoto.
+
+    nano capitulos/capitulo4.txt
+
+    Añadir los cambios a la zona de intercambio temporal.
+
+    git add capitulos/capitulo4.txt
+
+    Hacer un commit con el mensaje “Añadido capítulo 4.”
+
+    git commit -m "Anadiendo capitulo 4"
+
+    Mostrar la historia del repositorio incluyendo todas las ramas.
+
+        git log --oneline --graph
+    * 46d1440 (HEAD -> master) Anadiendo capitulo 4
+    * ee896f4 (bibliografia) Esto porque translade el repositorio a casa
+    * f65bbd7 Añadiendo capitulo 5 al indice
+    * 6c25c95 Añadiendo el capitulo 3
+    * 9abf595 Añadiendo capitulo 2
+    * 164b7b9 Añadiendo capitulo 1
+    * 25b8dfa Añadir de nuevo xd
+    * b17903d Añadiendo capitulo 3 sobre gestion de ramas al indice
+    * 7968782 Añadiendo indice del libro
+    * 45d46db Añadiendo indice del libro
+
+Ejercicio 3
+
+    Cambiar a la rama bibliografia.
+
+    git checkout bibliografia  (con esto te mueves de rama a la creada anteriormente, en este caso la de bibliografia)
+
+    Crear el fichero bibliografia.txt y añadir la siguiente referencia
+
+            Chacon, S. and Straub, B. Pro Git. Apress.
+
+    nano bibliografia.txt
+
+    Añadir los cambios a la zona de intercambio temporal.
+
+    git add bibliografia.txt
+
+    Hacer un commit con el mensaje “Añadida primera referencia bibliográfica.”
+
+    git commit -m "Anadida primera referencia bibliografica"
+
+    Mostrar la historia del repositorio incluyendo todas las ramas.
+
+    git log --oneline --graph
+
+Ejercicio 4
+
+    Fusionar la rama bibliografia con la rama master.
+    
+
+    git checkout master
+    git merge bibliografia
+    erge made by the 'recursive' strategy.
+    capitulos/bibliografia.txt | 1 +
+    1 file changed, 1 insertion(+)
+    create mode 100644 capitulos/bibliografia.txt
+
+
+    Mostrar la historia del repositorio incluyendo todas las ramas.
+
+        fran@fran-B450M-DS3H:~/repositoriotest/capitulos$ git log --oneline --graph
+    *   53c4e68 (HEAD -> master) Merge branch 'bibliografia' me muevo a master con git checkout master y luego le hago un git merge bibliografia y me salta este creador de commits xdd
+    |\  
+    | * 5588f6a (bibliografia) Anadida primera referencia bibliografica
+    * | 46d1440 Anadiendo capitulo 4
+    |/  
+    * ee896f4 Esto porque translade el repositorio a casa
+    * f65bbd7 Añadiendo capitulo 5 al indice
+    * 6c25c95 Añadiendo el capitulo 3
+    * 9abf595 Añadiendo capitulo 2
+    * 164b7b9 Añadiendo capitulo 1
+    * 25b8dfa Añadir de nuevo xd
+    * b17903d Añadiendo capitulo 3 sobre gestion de ramas al indice
+    * 7968782 Añadiendo indice del libro
+    * 45d46db Añadiendo indice del libro
+
+    Eliminar la rama bibliografia.
+
+    git branch -d bibliografia 
+    Eliminada la rama bibliografia (era 5588f6a)..
+
+    Mostrar de nuevo la historia del repositorio incluyendo todas las ramas.
+
+
+    git log --oneline --graph
+
+Ejercicio 5
+
+    Crear la rama bibliografia.
+
+    git branch bibliografia
+
+    Cambiar a la rama bibliografia.
+
+    git checkout bibliografia
+
+
+    Cambiar el fichero bibliografia.txt para que contenga las siguientes referencias:
+
+            Scott Chacon and Ben Straub. Pro Git. Apress.
+            Ryan Hodson. Ry’s Git Tutorial. Smashwords (2014)
+
+    nano bibliografia.txt
+
+
+    Añadir los cambios a la zona de intercambio temporal y hacer un commit con el mensaje “Añadida nueva referencia bibliográfica.”
+
+    git add bibliográfia.txt
+    git commit -m "Anadida nueva referencia bibliografia"
+
+
+    Cambiar a la rama master.
+
+    git checkout master
+
+    Cambiar el fichero bibliografia.txt para que contenga las siguientes referencias:
+
+            Chacon, S. and Straub, B. Pro Git. Apress.
+            Loeliger, J. and McCullough, M. Version control with Git. O’Reilly.
+
+    nano bibilografia.txt
+
+
+    Añadir los cambios a la zona de intercambio temporal y hacer un commit con el mensaje “Añadida nueva referencia bibliográfica.”
+    git add bibliografia.txt
+    git commit -m "Anadida nueva referencia bibliografica"
+
+    Fusionar la rama bibliografia con la rama master.
+
+    git merge bibliografia 
+    Auto-fusionando capitulos/bibliografia.txt
+    CONFLICTO (contenido): Conflicto de fusión en capitulos/bibliografia.txt
+    Fusión automática falló; arregle los conflictos y luego realice un commit con el resultado.
+
+    Resolver el conflicto dejando el fichero bibliografia.txt con las referencias:
+
+            Chacon, S. and Straub, B. Pro Git. Apress.
+            Loeliger, J. and McCullough, M. Version control with Git. O’Reilly.
+            Hodson, R. Ry’s Git Tutorial. Smashwords (2014)
+    
+
+    nano bibliografia.txt (te informa de todo lo que hay en cada rama, y ya solo debes decididir que dejar etc)
+
+    Añadir los cambios a la zona de intercambio temporal y hacer un commit con el mensaje “Resuelto conflicto de bibliografía.”
+
+    git add bibliografia.txt
+    git commit -m "Resuelto el conflicto de bibliografia"
+    [master 1f5f345] Resuelto el conflicto de bibliografia
+
+
+    Mostrar la historia del repositorio incluyendo todas las ramas.
+    
+    git log --oneline --graph
+
+    *   1f5f345 (HEAD -> master) Resuelto el conflicto de bibliografia
+    |\  
+    | * 370fcd9 (bibliografia) Anadida nueva referencia bibliografica
+    * | 7bb792b Anadida nueva referencia bibliografia.txt
+    |/  
+    *   53c4e68 Merge branch 'bibliografia' me muevo a master con git checkout master y luego le hago un git merge bibliografia y me salta este creador de commits xdd
+    |\  
+    | * 5588f6a Anadida primera referencia bibliografica
+    * | 46d1440 Anadiendo capitulo 4
+    |/  
+    * ee896f4 Esto porque translade el repositorio a casa
