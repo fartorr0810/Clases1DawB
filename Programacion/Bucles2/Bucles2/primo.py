@@ -5,12 +5,12 @@ Created on 11 Nov 2020
 '''
 def introduceunnumero (num):
     for i in range (2,num):
-        if esPrimoShurmano(i)==True:
+        if esPrimo(i)==True:
             print("El numero",i,"es primo")
         else:
             print("No es primo el numero",i)
  
-def esPrimoShurmano(i):
+def esPrimo(i):
     acumulaor=0
     if i<2:
         return False
