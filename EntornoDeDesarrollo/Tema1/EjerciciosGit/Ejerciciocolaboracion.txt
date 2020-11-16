@@ -1,0 +1,56 @@
+Ejercicio 1
+
+    Crear un nuevo repositorio público en GitHub con el nombre libro-git.
+
+    https://github.com/xXxarroyoxXx/libro-git1
+
+    Añadirlo al repositorio local del libro.
+
+    git clone https://github.com/xXxarroyoxXx/libro-git1.git
+
+    Mostrar todos los repositorios remotos configurados.
+
+    git remote
+
+
+Ejercicio 2
+
+    Añadir los cambios del repositorio local al repositorio remoto de GitHub.
+
+    touch libro.txt
+    git add libro.txt
+    git commit -m "Anadimos libro"
+    git branch -M main
+    git push origin main
+
+    Acceder a GitHub y comprobar que se han subido los cambios 
+    mostrando el historial de versiones.
+
+    Observamos que se ha subido todo
+
+Ejercicio 3
+
+    Colaborar en el repositorio remoto libro-git de otro usuario.
+
+    Hecho
+
+    Clonar su repositorio libro-git.
+
+    git clone https://github.com/macabros554/libro-git.git repositoriomacabro
+
+    Añadir el fichero autores.txt que contenga el nombre del usuario y 
+    su correo electrónico.
+
+    nano autores.txt
+    
+    Añadir los cambios a la zona de intercambio temporal.
+
+    git autores.txt
+
+    Hacer un commit con el mensaje “Añadido autor.”
+
+    git commit -m "Anadimos autor"
+
+    Subir los cambios al repositorio remoto.
+
+    git push origin main

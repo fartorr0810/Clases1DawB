@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE videoclub[
+<!ELEMENT videoclub (facturas)>
+<!ELEMENT facturas EMPTY>
+<!ELEMENT facturas (factura)>
+<!ELEMENT factura (datocliente,datosticket)>
+<!ELEMENT factura EMPTY>
+<!ELEMENT datocliente (nombre,primerapellido,segundoapellido,dni,telefono)>
+<!ELEMENT datocliente (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT primerapellido (#PCDATA)>
+<!ELEMENT segundoapellido (#PCDATA)>
+<!ELEMENT dni (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT datosticket (alquieres,compra)>
+<!ELEMENT datosticket EMPTY>
+<!ELEMENT alquieres (alquiler)>
+<!ELEMENT alquieres EMPTY>
+<!ELEMENT alquiler (pelicula,titulo,genero,duracion,actores)>
+<!ELEMENT alquiler EMPTY>
+<!ELEMENT pelicula (#PCDATA)>
+<!ATTLIST pelicula idpeli CDATA #REQUIRED>
+<!ATTLIST pelicula valoracion PCDATA #REQUIRED>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT genero (#PCDATA)>
+<!ELEMENT duracion (#PCDATA)>
+<!ELEMENT actores (actor)>
+<!ELEMENT actores EMPTY>
+<!ELEMENT 
+
+
+
+]>
+<videoclub>
+	<facturas>
+		<factura>
+			<datocliente idcliente="">
+				<nombre></nombre>
+				<primerapellido></primerapellido>
+				<segundoapellido></segundoapellido>
+				<dni></dni>
+				<telefono></telefono>
+			</datocliente>
+			<datosticket>
+				<alquieres>
+					<alquiler>
+						<pelicula idpeli="" valoracion=""></pelicula>
+						<titulo></titulo>
+						<genero></genero>
+						<duracion></duracion>
+						<actores>
+							<actor>
+								<nombre></nombre>
+								<apellidos></apellidos>
+							</actor>
+							<actor>
+								<nombre></nombre>
+								<apellidos></apellidos>
+							</actor>
+							<actor>
+								<nombre></nombre>
+								<apellidos></apellidos>
+							</actor>
+						</actores>
+						<fechainicio></fechainicio>
+						<fechadevolucion></fechadevolucion>
+						<caractula>
+							<software></software>
+							<ruta></ruta>
+						</caractula>
+					</alquiler>
+				</alquieres>
+				<compras>
+					<compra>
+						<vhs>
+							<titulo></titulo>
+							<rebobinada></rebobinada>
+						</vhs>
+						<dvd>
+							<titulo></titulo>
+							<fechasalida></fechasalida>
+							<extras></extras>
+						</dvd>
+					</compra>
+				</compras>
+				<resguardo></resguardo>
+			</datosticket>
+		</factura>
+	</facturas>
+</videoclub>
+

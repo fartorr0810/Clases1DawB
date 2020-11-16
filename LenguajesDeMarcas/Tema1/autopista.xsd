@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="paneles">
+	<xs:Complextype>
+		<xs:element name="evento" maxOccurs="unbounded">
+			<xs:attributte name="tipo" type="xs:string"/>
+			<xs:attributte name="fecha" type="xs:dateTime"/>
+		</xs:element>
+		<xs:Complextype>
+			<xs:element name="via">
+				<xs:Complextype>
+					<xs:sequence>
+						<xs:element name="nombre" type="xs:string"/>
+						<xs:element name="ref" type="xs:string">
+							<xs:restriction type="xs:string">
+							</xs:restriction>
+						<xs:element name="origen">
+							<xs:restriction type="xs:string">
+								<xs:maxLenght value="30"/>
+							</xs:restriction>
+						</xs:element>
+						<xs:element name="destino" type="xs:string">
+							<xs:restriction type="xs:string">
+								<xs:maxLenght value="30"/>
+							</xs:restriction>
+						</xs:element>
+						<xs:element name="doble"/>
+						<xs:element name="carriles">
+							<xs:restriction name="carriles" type="xs:integer">
+								<xs:enumeration value="1"/>
+								<xs:enumeration value="2"/>
+								<xs:enumeration value="3"/>
+								<xs:enumeration value="4"/>
+								<xs:enumeration value="5"/>
+								<xs:enumeration value="6"/>
+								<xs:enumeration value="7"/>
+								<xs:enumeration value="8"/>
+							</xs:restriction>
+						</xs:element> 
+					</xs:sequence>
+				</xs:Complextype>
+			</xs:element>
+			<xs:element name="pk">
+				<xs:restriction pk="xs:decimal">
+					<xs:minInclusive value="1"/>
+					<xs:maxInclusive value="unbounded"/>
+					<xs:fractionDigits value="3"/>
+				</xs:restriction>
+			</xs:element>
+						<xs:element name="origen" type="xs:string"/>
+						<xs:element name="retencion">
+						<xs:attributte name="long" type="xs:integer"/>
+						</xs:element>
+						<xs:element name="sentido" type="xs:float">
+							<xs:restriction type="xs:float">
+								<xs:enumeration value="-1"/>
+								<xs:enumeration value="0"/>
+								<xs:enumeration value="1"/>
+							</xs:restriction>
+						</xs:element>
+						<xs:element name="carrilescortados">
+							<xs:attributte name="valor" minOcurrs="0"/>
+						</xs:element>
+					</xs:sequence>
+				</xs:Complextype>
+			</xs:element>
+		</xs:Complextype>
+	</xs:Complextype>
+</xs:element>
+</xs:schema>
