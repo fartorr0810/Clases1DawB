@@ -7,6 +7,7 @@ git branch bibliografia
 Ejercicio 2
 
 git branch (con un asterisco marca en que ramas estamos, en este caso estamos en master)
+Tambien sirve "git branch -av"
 
     Crear el fichero capitulos/capitulo4.txt y añadir el texto siguiente
 
@@ -67,7 +68,7 @@ Ejercicio 4
 
     git checkout master
     git merge bibliografia
-    erge made by the 'recursive' strategy.
+    merge made by the 'recursive' strategy.
     capitulos/bibliografia.txt | 1 +
     1 file changed, 1 insertion(+)
     create mode 100644 capitulos/bibliografia.txt
@@ -75,7 +76,8 @@ Ejercicio 4
 
     Mostrar la historia del repositorio incluyendo todas las ramas.
 
-        fran@fran-B450M-DS3H:~/repositoriotest/capitulos$ git log --oneline --graph
+    fran@fran-B450M-DS3H:~/repositoriotest/capitulos$ git log --oneline --graph
+
     *   53c4e68 (HEAD -> master) Merge branch 'bibliografia' me muevo a master con git checkout master y luego le hago un git merge bibliografia y me salta este creador de commits xdd
     |\  
     | * 5588f6a (bibliografia) Anadida primera referencia bibliografica
@@ -111,6 +113,8 @@ Ejercicio 5
 
     git checkout bibliografia
 
+    (git checkout -b bibliografia)
+
 
     Cambiar el fichero bibliografia.txt para que contenga las siguientes referencias:
 
@@ -139,12 +143,14 @@ Ejercicio 5
 
 
     Añadir los cambios a la zona de intercambio temporal y hacer un commit con el mensaje “Añadida nueva referencia bibliográfica.”
+
     git add bibliografia.txt
     git commit -m "Anadida nueva referencia bibliografica"
 
     Fusionar la rama bibliografia con la rama master.
 
     git merge bibliografia 
+    
     Auto-fusionando capitulos/bibliografia.txt
     CONFLICTO (contenido): Conflicto de fusión en capitulos/bibliografia.txt
     Fusión automática falló; arregle los conflictos y luego realice un commit con el resultado.
