@@ -13,11 +13,17 @@
     7.Añade el fichero stage_me.txt al área de preparación.
     git add stage_me.txt 
     8.Elimina el fichero stage_me.txt del área de preparación y del directorio de trabajo.
+    
     git rm --cached stage_me.txt && rm stage_me.txt
+    (git rm -f stage_me.txt)
+    (git reset --hard)
+    
     9.Crea un fichero nuevo llamado commit_me.txt.
     nano commit_me.txt
+    
     10.Añade el fichero commit_me.txt al área de preparación.
-    git add commit_me.txt 
+    git add commit_me.txt
+     
     11.Haz un commit con el mensaje "adding commit_me.txt"
     git commit -m "adding commit_me.txt"
     12.Crea otro fichero llamado second.txt.
@@ -31,6 +37,7 @@
 
 Para realizar los siguientes ejercicios debes investigar sobre los parámetros --soft --mixed y --hard del comando git reset.
 
+
     16.Utilizando git reset, deshaz el commit previo y devuelve los cambios al directorio de trabajo.
 
     git reset --mixed ee50faa
@@ -40,7 +47,7 @@ Para realizar los siguientes ejercicios debes investigar sobre los parámetros -
     git add second.txt
 
     18.Haz un commit con el mensaje "Trying to commit again".
-
+º
     git commit -m "Trying to commit again"
 
     19.Utilizando git reset deshaz el commit previo y devuelve los cambios al área de preparación.
