@@ -41,7 +41,7 @@ def eurtodolar (eur):
     dolar=eur*1.19
     return dolar
 def dolartoeur(dol):
-    eur=dol*0.945
+    eur=dol*0.89
     return eur
 def eurtolib(eur):
     return 1
