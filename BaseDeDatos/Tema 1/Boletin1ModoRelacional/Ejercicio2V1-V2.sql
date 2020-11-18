@@ -15,8 +15,8 @@ CREATE TABLE Profesor (
 	apellido	text
 );
 CREATE TABLE clase (
-	dni	text not null reference alumno,
-	matricula	text not null reference Coche,
-	nss	text not null reference Profesor,
+	dni	text not null references alumno,
+	matricula	text not null references Coche,
+	nss	text not null references Profesor,
 	primary key	(dni,nss,matricula)
 );

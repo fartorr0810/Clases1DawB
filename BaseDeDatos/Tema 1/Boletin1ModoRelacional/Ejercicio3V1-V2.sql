@@ -8,10 +8,11 @@ CREATE TABLE depende (
 );
 CREATE TABLE Empleado (
 	nss	text not null Primary Key,
+	nombre_departamento text not null references Departamento,
 	estadocivil	text,
 	dni	text,
 	apellido	text,
 	nombre	text,
-	nhijos	smallint,
+	nhijos	smallint
 );
 ALTER TABLE Departamento ADD jefe text references Empleado;

@@ -15,7 +15,7 @@ CREATE TABLE Cliente (
 	direccion	text
 );
 CREATE TABLE Compra (
-	nombre text not null reference Producto,
-	dni	text not null reference Cliente,
+	nombre text not null references Producto,
+	dni	text not null references Cliente,
 	fecha_compra	date
 );
