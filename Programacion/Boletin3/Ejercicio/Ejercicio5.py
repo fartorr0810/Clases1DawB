@@ -7,19 +7,20 @@ Created on 18 nov. 2020
 5.Realizar un programa que solicite la coordenada x e y de un punto 
 e informe si se encuentre en el primer, segundo, tercer o cuarto cuadrante.
 '''
-
 def calculo():
     x=int(input("Introduce las cordenadas en X"))
     y=int(input("Introduce las cordenadas en Y"))
-    if (x>0) and (y>0):
-        print("Punto en el primer cuadrante")
+    if x==0 and y==0:
+        mensaje="Esta en el origen"
+    elif x==0 or y==0:
+        mensaje="Esta en el eje"
+    elif (x>0) and (y>0):
+        mensaje="Punto en el primer cuadrante"
     elif (x>0) and (y<0):
-        print("Punto en el primer cuadrante")
+        mensaje="Punto en el segundo cuadrante"
     elif (x<0) and (y<0):
-        print("Punto en el primer cuadrante")
+        mensaje="Punto en el tercer cuadrante"
     elif (x<0) and (y>0):
-        print("Punto en el primer cuadrante")
-    else:
-        print("Estas en el punto de origen")    
-
+        mensaje="Punto en el cuarto cuadrante"    
+    return mensaje
 print(calculo())

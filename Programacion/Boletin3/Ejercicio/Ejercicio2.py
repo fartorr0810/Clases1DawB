@@ -1,9 +1,7 @@
 '''
 Created on 17 Nov 2020
-
-@author: estudiante
+@author: xXxArroyoxXx
 '''
-from duplicity.backend import retry
 '''
 2.Diseñar un programa que pida dos números, la base y la potencia, 
 y muestre el resultado de elevar la base a la potencia sin usar 
@@ -18,7 +16,7 @@ def calculapotencia(base,exponente):
             elevado*=base
             contador=contador + 1
         return elevado
-    if exponente<0:
+    elif exponente<0:
         contador=-1
         while contador >= exponente:
             elevado*=base
@@ -30,4 +28,8 @@ def calculapotencia(base,exponente):
 #print(calculapotencia(base, exponente))
 
 assert(calculapotencia(2, 10)==1024)
+assert(calculapotencia(-2, -2)==0.25)
+assert(calculapotencia(10, 4)==10000)
+assert(calculapotencia(2, 10)==1024)
+
 

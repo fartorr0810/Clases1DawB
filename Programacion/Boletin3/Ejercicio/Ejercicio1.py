@@ -12,7 +12,6 @@ y mostrar el perímetro.
 Se debe garantizar que los datos son correctos.
 '''
 def pedirlados ():
-    lados=0
     lados=int(input("Introduce el numero de lados"))
     while 0>=lados:
         lados=int(input("Introduce la longitud de los lados"))
