@@ -46,6 +46,11 @@ CREATE TABLE Especie (
 	inventarioespecie	smallint,
 	tipo_especie	text
 );
+CREATE TABLE Vegetales(
+    denominacioncientificia not null references Area,
+    floracion   date,
+    Area    text
+);
 CREATE TABLE Especie_Minerales(
 	denominacioncientificia	text not null references Especie,
 );
@@ -53,7 +58,17 @@ CREATE TABLE Especie_Animales(
 	denominacioncientificia	text not null references Especie,
 	alimento	text,
 	celo	date
-);CREATE TABLE Visitante(
+);
+CREATE TABLE Especie_Animales_Hervivoro_Alimenta(
+    denominacioncientificia not null references Vegetales,
+);
+CREATE TABLE Especie_Animales_Omnivoro_Alimenta(
+    denominacioncientificia not null references Especie_Animales
+);
+CREATE TABLE Especie_Animales_Carnivoro_Alimenta(
+    denominacioncientificia not null references Especie_Animales
+);
+CREATE TABLE Visitante(
 	nombre_parque	text not null references Parque,
 	dni	text not null primary key,
 	nombre	text,
