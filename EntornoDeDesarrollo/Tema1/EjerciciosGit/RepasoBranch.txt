@@ -1,0 +1,71 @@
+
+    Crea un directorio llamado branch_time
+
+    mkdir branch_time
+
+    Cámbiate a dicho directorio.
+
+    cd branch_time
+
+    Inicializa un repositorio vacío.
+
+    git init
+
+    Crea un fichero llamado first.txt después añade y haz commit con un 
+    solo comando.
+
+    echo "hola" >>first.txt
+    git add .
+    git commit -m "Primer commit"
+
+    Crea una nueva rama llamada amazing_feature.
+    
+    git checkout -b amazing_feature
+    
+    Cámbiate a dicha rama.
+
+    Crea un nuevo fichero llamado best.txt con el contenido "this is the best file".
+
+    echo "this is the best file" >> best.txt
+
+    Añade el fichero al área de preparación.
+
+    git add .
+
+    Haz commit del fichero con el mensaje "added best.txt".
+
+    git commit -m "added best.txt"
+
+    Vuelve a la rama master.
+
+    git checkout master
+
+    Une (merge) la rama feature a la rama master.
+
+    git merge amazing_feature
+
+    Borra la rama feature.
+
+    git branch -d amazing_feature 
+
+    Crea la rama conflict y cámbiate a ella con un solo comando.
+
+    git checkout -b conflict
+
+    Crea tu propio conflicto al mezclar dos ramas! Para ello trabaja en el 
+    mismo fichero en dos ramas separadas y une (merge) las dos ramas. Arregla los conflictos y finaliza la unión. En el mundo real nunca intentarás crear un conflicto en una unión de ramas, pero es importante que no te sientas intimidado por los conflictos al realizar una unión de ramas y ser capaz de arreglarlos con confianza.
+
+    nano problemas.txt (editamos la primera linea)
+    git add .
+    git commit -m "Anadimos cosas a problemas.txt"
+    git checkout master
+    nano problemas.txt (editamos y ponemos cosillas en la primera linea)
+    git add .
+    got commit -m "Anadimos cosas a master"
+    git merge conflict
+    (falla y nos dice que nos vayamos al archivo a arreglarlo, lo hacemos y listo)
+    git add .
+    git commit -m "Arreglado los conflictos"
+    git branch -d conflict
+
+    

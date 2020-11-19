@@ -1,18 +1,3 @@
-'''
-Created on 18 Nov 2020
-
-@author: xXxArroyoxXx
-'''
-'''
-4.Diseñar un programa que muestre un menu con las siguientes opciones:
-    1.Cambio de euros a dolares
-    2.Cambio de dólares a euros
-    3.Cambio de euros a libras
-    4.Cambio de libras a euros.
-    5.Cambio de libras a dolares
-    6.Cambio de dolares a libras
-    7.Salir
-'''
 def menu():
     eleccion=10
     while eleccion>7 or eleccion<0:
@@ -29,13 +14,14 @@ def menu():
     elif eleccion==2:
         return dolartoeur(dol=dolartoeur(dol=int(input("Introduce los dolares a convertir"))))
     elif eleccion==3:
-        return eurtolib(eur=eurtolib(eur=int(input("Introduce los dolares a convertir"))))
+        return eurtolib(eur=eurtolib(eur=int(input("Introduce los euros a convertir"))))
     elif eleccion==4:
-        return dolartoeur(dol=dolartoeur(dol=int(input("Introduce los dolares a convertir"))))
+        return dolartoeur(dol=libtoeur(dol=int(input("Introduce los euros a convertir"))))
     elif eleccion==5:
-        return dolartoeur(dol=dolartoeur(dol=int(input("Introduce los dolares a convertir"))))
+        return libtodol(lib=libtodol(dol=int(input("Introduce los dolares a convertir"))))
     elif eleccion==6:
-        return dolartoeur(dol=dolartoeur(dol=int(input("Introduce los dolares a convertir"))))
+        return doltolib(dol=doltolib(dol=int(input("Introduce los dolares a convertir"))))
+    
 
 def eurtodolar (eur):
     dolar=eur*1.19
@@ -44,11 +30,16 @@ def dolartoeur(dol):
     eur=dol*0.89
     return eur
 def eurtolib(eur):
-    return 1
+    lib=eur*0.89
+    return lib
 def libtoeur(lib):
-    return 1
+    eur=lib*1.12
+    return eur
 def libtodol(lib):
-    return 1
+    dol=lib*1.33
+    return dol
 def doltolib(dol):
-    return 1
+    lib=dol*0.75
+    return lib
 print(menu())
+
