@@ -1,15 +1,16 @@
 '''
 Created on 18 nov. 2020
 
-@author: fran
-'''
-'''
+@author: xXxArroyoxXx
+
 5.Realizar un programa que solicite la coordenada x e y de un punto 
 e informe si se encuentre en el primer, segundo, tercer o cuarto cuadrante.
 '''
-def calculo():
+def pedirDatos():
     x=int(input("Introduce las cordenadas en X"))
     y=int(input("Introduce las cordenadas en Y"))
+    return calculo(x,y)
+def calculo(x,y):
     if x==0 and y==0:
         mensaje="Esta en el origen"
     elif x==0 or y==0:
@@ -23,4 +24,4 @@ def calculo():
     elif (x<0) and (y>0):
         mensaje="Punto en el cuarto cuadrante"    
     return mensaje
-print(calculo())
+print(pedirDatos())

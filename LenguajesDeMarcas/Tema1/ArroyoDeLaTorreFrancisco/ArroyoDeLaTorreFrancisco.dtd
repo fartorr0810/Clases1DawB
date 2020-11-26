@@ -1,0 +1,10 @@
+<!ELEMENT BDAltas (cliente+)>
+<!ELEMENT cliente (usuario, telefono, nick, contrasena, mail, fecha, hora, producto)>
+<!ELEMENT usuario (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT nick (#PCDATA)>
+<!ELEMENT contrasena (#PCDATA)>
+<!ELEMENT mail (CDATA)>
+<!ELEMENT fecha (CDATA)>
+<!ELEMENT hora (CDATA)>
+<!ELEMENT producto (#PCDATA)>

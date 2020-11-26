@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="https://www.w3schools.com"
+xmlns="https://www.w3schools.com"
+elementFormDefault="qualified">
+	<xs:element name="BDAltas">
+		<xs:complexType>
+			<xs:element name="cliente" maxOcurrs="unbounded">
+				<xs:sequence>
+					<xs:element name="usuario" type="xs:string"/>
+					<xs:element name="telefono" type="xs:string"/>
+					<xs:element name="nick" type="xs:string"/>
+					<xs:element name="contrasena" type="xs:string"/>
+					<xs:element name="mail" type="xs:string"/>
+					<xs:element name="fecha" type="xs:date"/>
+					<xs:element name="hora" type="xs:time"/>
+					<xs:element name="producto" type="xs:string"/>
+				</xs:sequence>
+			</xs:element>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

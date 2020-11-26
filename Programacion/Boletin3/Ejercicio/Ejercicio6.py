@@ -20,12 +20,17 @@ def pidedatos():
             lado3=int(input("Introduce el tercer lado"))
     return tipotriangulo(lado1, lado2, lado3)
 def tipotriangulo(lado1,lado2,lado3):
-    if lado1==lado2 and lado1==lado3:
-        mensaje="Es Equilatero"
-    elif lado1!=lado2 and lado1!=lado3:
-        mensaje="Es escaleno"
+    if (lado1+lado2>lado3) and (lado1+lado3>lado2) and (lado2+lado3>lado1):
+        print("Es un triangulo")
+        if lado1==lado2 and lado1==lado3:
+            mensaje="Es Equilatero"
+        elif lado1!=lado2 and lado1!=lado3:
+            mensaje="Es escaleno"
+        else:
+            mensaje="Es isoceles"
+        return mensaje
     else:
-        mensaje="Es isoceles"
-    return mensaje
+        mensaje="No es un triangulo"
+        return mensaje
 print(pidedatos())
             

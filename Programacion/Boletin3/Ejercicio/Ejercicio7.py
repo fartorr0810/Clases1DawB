@@ -15,10 +15,12 @@ def pidedato():
     while ano==0:
         print("Año incorreco, porfavor introduzca un año mayor a 0")
         ano=int(input("Introduce el año deseado"))
-    return calculabisiesto
+    return calculabisiesto(ano)
 def calculabisiesto(ano):
-    
+    if ano%4==0 and (ano%100!=0 or ano%400==0):
+        mensaje="Es bisiesto"
+    else:
+        mensaje="No es bisiesto"
     return mensaje
-
 
 print(pidedato())

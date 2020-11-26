@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Hay un error en la primera linea porque termina con un signo de interrogacion, no con una barra "/"-->
+<!--Ademas no ha creado un elemento raiz , lo cual lo creare yo llamandolo futbolistas-->
+<futbolistas>
+	<futbolista id=”1”>
+	<!--Aqui ha metido un espacion sin sentido-->
+		<equipo>Betis</equipo>
+	<!--Aqui lo ha metido dentro de la etiqueta lo de "Betis"-->
+		<procedencia>ESP</procedencia>
+	<!--Aqui ha metido un espacion al cerrar la etiqueta, eso no vale-->
+		<nombre>Joaquín</nombre>
+		<apellidos>Sánchez</apellidos>
+	<!--Aqui ha abierto con apellido y ha cerrado con apellidos, eso es incorrecto-->
+		<http>http://joaquinsanchez.com</http>
+	<!--No se debe meter caracteres extraños en las etiquetas-->
+	</futbolista>
+	<!--Aqui no debe meter el atributo de id al cerrar-->
+	<futbolista id="2">
+		<equipo>Sevilla</equipo>
+	<!--Otro fallo igual , asi no se crean los atributos , el nombre de equipo Sevilla debe ir entre las etiquetas-->
+		<procedencia>ESP</procedencia>
+	<!--Aqui ha metido el dato en la etiqueta de cierre, ahi no va-->
+		<nombre>Jesús</nombre>
+		<apellidos>Navas</apellidos>
+	<!--Aqui ha abierto con apellido y ha cerrado con apellidos, eso es incorrecto-->
+		<http>http://jesusnavas.org</http>
+	<!--No se debe meter caracteres extraños en las etiquetas-->
+	</futbolista>
+	<!--Aqui no debe meter el atributo de id al cerrar-->
+</futbolistas>

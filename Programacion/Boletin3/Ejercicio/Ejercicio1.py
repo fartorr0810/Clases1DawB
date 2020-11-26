@@ -19,7 +19,18 @@ def pedirlados ():
     for i in range(1,lados+1):
         ladoss=int(input("Introduce el lado"))
         lado.append(ladoss)
-    print("El perimetro es de :"+str(sumalados(lado)))
+        sumadeloslados=sumalados(lado)
+    for i in range (1,len(lado)):
+        if lado[i]>=0:
+            print("El perimetro es de :"+str(sumalados(lado)))
+    for i in range(0,len(lado)):
+        suma=0
+        for j in range(0,len(lado)):
+            if j!=i:
+                suma=suma+j
+        if suma<=i:
+            print("No es un poligono")
+                
 def sumalados(lado):
     sumalados=0
     for i in lado:

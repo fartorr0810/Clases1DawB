@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clientes>
+	<cliente id="123">
+		<nombreempresa cif="321312">Cacerolas</nombreempresa>
+		<direccion>C/ Pedro</direccion>
+		<telefono>92222222</telefono>
+		<correoelectronico>cacerolas@gmai.com</correoelectronico>
+		<paginaweb>cacerola.com</paginaweb>
+		<perfiles>
+			<facebook>cacerolasantonio</facebook>
+			<twitter>caceroladasss</twitter>
+		</perfiles>
+		<personascontacto>
+			<personacontacto>
+				<nombre>Josee</nombre>			
+				<apellido>Trombon</apellido>
+				<telefonos>
+					<telefono>654453443</telefono>
+					<telefono>45645646</telefono>
+				</telefonos>
+				<correoprofesinal>josevitttrombon@gmail.com</correoprofesinal>
+			</personacontacto>
+		</personascontacto>
+	</cliente>
+	<cliente id="123232">
+		<nombreempresa cif="321312">Caracoles</nombreempresa>
+		<direccion>C/ Caracoles</direccion>
+		<telefono>4352342</telefono>
+		<correoelectronico>caracoles@outlock.com</correoelectronico>
+		<paginaweb>www.caracolsacaelsol.com</paginaweb>
+		<perfiles>
+			<facebook>caracolll</facebook>
+			<twitter>caracol012</twitter>
+		</perfiles>
+		<personascontacto>
+			<personacontacto>
+			<nombre>Tertulias</nombre>			
+			<apellido>Temprano</apellido>
+			<telefonos>
+				<telefono>34534534</telefono>
+				<telefono>345345</telefono>
+			</telefonos>
+			<correoprofesinal>caracol@gmai.com</correoprofesinal>
+			</personacontacto>
+		</personascontacto>
+	</cliente>
+</clientes>
