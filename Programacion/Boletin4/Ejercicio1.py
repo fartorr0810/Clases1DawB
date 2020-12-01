@@ -14,23 +14,25 @@ Created on 25 Nov 2020
 # palabra="aman a panama"
 # print(palidromeono(palabra))
 #Funciona si todo esta junto, no se como hacer los espacios :(
+# def palindrome(cadena):
+#     inversa=""
+#     for i in cadena:
+#         inversa=i+inversa
+#     if inversa==cadena:
+#         return True
+#     else:
+#         return False
 def palindrome(cadena):
-    inversa=""
-    for i in cadena:
-        inversa=i+inversa
-    if inversa==cadena:
-        return True
+    for i in range(0,len(cadena)//2):
+        soniguales=(cadena[i]==cadena[len(cadena)-1-i])
+    if soniguales:
+        palindromesono=True
     else:
-        return False
+        palindromesono=False
+    return palindromesono
 print(palindrome("anana"))
 print(palindrome("amolapaloma"))
 print(palindrome("Cualquier cadena saludos"))
-
-
-
-
-
-
 
 
 

@@ -1,15 +1,13 @@
 '''
-Created on 29 nov. 2020
-
-@author: fran
-
+9.Crear una función que, tomando una cadena de texto como entrada, 
+construya y devuelva otra cadena formada 
+de la siguiente manera: el método debe colocar todas las consonantes al principio y 
+todas las vocales al final
+ de la misma, eliminando los blancos.
+Por ejemplo, pasándole la cadena
+"curso de programacion", una posible solución sería "crsdprgrmcnuoeoaaio"
 '''
-#9.Crear una funcion que, tomando una cadena de texto como entrada, 
-#construya y devuelva otra cadena formada de la siguiente manera:
-#el metodo debe colocar todas las consonantes al principio y todas las vocales al final 
-#de la misma, eliminando los blancos.Por ejemplo,
-#pasandole la cadena "curso de programacion", 
-#una posible solucion seria "crsdprgrmcnuoeoaaio
+cadena="Esa cadena debe de ser eliminado"
 cadenavocales=[]
 cadenaconsonantes=[]
 cadenas="curso de programacion"
@@ -22,10 +20,4 @@ def cadenass (cadenas):
             cadenaconsonantes.append(cadenas[i])
     cadenasresultado=cadenaconsonantes+cadenavocales
     return cadenasresultado
-
-
-
-
-
-
 print(cadenass(cadenas))

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<style>
+    form {
+        margin: 0 auto;
+        width: 600px;
+        padding: 1em;
+        border: 1px solid #CCC;
+        border-radius: 1em;
+    }
+</style>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Denuncia</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <form action="">
+        <h4>Datos de la victima</h4>
+        <p>Tipo de violencia
+            <input type="radio" name="genero" value="genero" required> Violencia de genero
+            <input type="radio" name="genero" value="hombre"> Violencia domestica
+        </p>
+        <p>Nombre: <input type="text" name="nombre" required></p>
+        <p>Apellidos: <input type="text" name="nombre" required></p>
+        <p>DNI: <input type="text" name="nombre" required></p>
+        <p>Direccion del domicilio: <input type="text" name="nombre" required></p>
+        <p>Tipo de agresion:
+            <input type="radio" name="tipoagresion" value="Psicologica" required>Psicologica
+            <input type="radio" name="tipoagresion" value="Fisica">Fisica
+            <input type="radio" name="tipoagresion" value="Sexual">Sexual
+        </p>
+        <p>Descripcion del caso<input type="text" name="nombredelacaja"></p>
+        <h4>Datos del agresor</h4>
+        <p>Nombre: <input type="text" name="nombre" required></p>
+        <p>Apellidos: <input type="text" name="nombre" required></p>
+        <p>DNI: <input type="text" name="nombre" required></p>
+        <p>Direccion del domicilio: <input type="text" name="nombre" required></p>
+        <p>Relacion con la victima:
+            <input type="radio" name="tiporelacion" value="pareja" required>Pareja
+            <input type="radio" name="tiporelacion" value="familiar">Familiar
+            <input type="radio" name="tiporelacion" value="uknown">Desconocido
+        </p>
+        <button type="submit">Envie su Denuncia la policia</button>
+    </form>
+    <script src="" async defer></script>
+</body>
+
+</html>
