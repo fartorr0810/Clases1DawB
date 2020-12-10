@@ -25,3 +25,7 @@ CREATE TABLE Alumnos(
     fecha_nacimiento    DATE,
     cod_curso   NUMBER(4) REFERENCES CURSOS
 );
+
+INSERT INTO Profesores
+(nombre, apellido1, direccion, titulo, gana, dni)
+VALUES 
