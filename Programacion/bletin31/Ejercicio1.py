@@ -1,17 +1,11 @@
-'''
-Created on 29 nov. 2020
 
-@author: fran
-1.Design a method called factorial that receives a positive integer and returns the factorial. 
-If the number is negative the method should return -1.
-'''
 def factorial(number):
-    factorial=0
+    factorial=1
     if number<0:
-        return -1
+        factorial= -1
     else:
-        for i in range(1,number+1):
-            factorial+=number*i
+        for i in range(number):
+            factorial=factorial*(i+1)
     return factorial
 
 print(factorial(-2))
