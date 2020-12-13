@@ -1,0 +1,8 @@
+#tablaca {
+    border-left: red 5px solid;
+    border-top: blue 5px solid;
+    border-right: yellow 5px solid;
+    border-bottom: green 5px solid;
+    padding: 3px 10px;
+    border-radius: 20px;
+}
