@@ -10,7 +10,7 @@ CREATE TABLE Profesores(
 );
 CREATE TABLE CURSOS(
     nombre_curso    VARCHAR2(20) NOT NULL,
-    cod_curso   NUMBER(4) PRIMARY KEY,
+    cod_curso   NUMBER(4) PRIMARY KEY ON DELETE CASCADE,
     dni_prof VARCHAR2(8) REFERENCES Profesores,
     max_alu NUMBER(6),
     fecha_ini   DATE NOT NULL,
@@ -29,6 +29,8 @@ CREATE TABLE Alumnos(
 );
 
 --Ejercicio 2
+--Si no se indica los campos de la tabla, el vales se introduce los datos segun
+--El orden del script de la creacion de la tabla
 INSERT INTO Profesores
 (nombre, apellido1, apellido2, direccion, titulo, gana, dni)
 VALUES ('Juan', 'Arch', 'Lopez', 'Puerta Negra,4', 'Ing. Informatica', '7500', '32432455')
@@ -39,7 +41,7 @@ VALUES ('Maria', 'Oliva', 'Rubio', 'Juan Alfonso 32', 'Lda Fil Inglesa', '5400',
 
 INSERT INTO CURSOS
 (nombre_curso, cod_curso, dni_prof, max_alu, fecha_ini, fecha_fin ,num_hor)
-VALUES ('Ingles basico', 1, '43215463', 15, 00001101, 00001222, 120)
+VALUES ('Ingles basico', 1, '43215463', 15, 00001101, '0000.12.22.HH:MM:SS', 120)
 
 INSERT INTO CURSOS
 (nombre_curso, cod_curso, dni_prof, fecha_ini, num_hor)
@@ -109,21 +111,23 @@ CREATE TABLE NombreDeAlumnos (
 
 --Ejercicio 10
 DELETE FROM CURSOS
-    WHERE cod_curso = 1
+    WHERE cod_curso = 1;
     
 --Ejercicio 11
 ALTER TABLE CURSOS ADD (numero_alumnos  NUMBER(4));
 
 UPDATE CURSOS
     set numero_alumnos = 1
-    WHERE cod_curso = 2
+    WHERE cod_curso = 2;
 
 --En el curso 1 no se puede saber porque las otras inserciones fallaron , por lo tanto tecnicamente no hay ninguno
 
 --Ejercicio 12
 UPDATE Alumnos
     set fecha_nacimiento = 20120101
-    WHERE fecha_nacimiento = null
+    WHERE fecha_nacimiento IS null;
+
+
 
 
 
