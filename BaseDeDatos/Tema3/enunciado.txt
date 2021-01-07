@@ -1,0 +1,7 @@
+Una editorial quiere crear una base de datos sobre su negocio, esta tiene varias sucursales de las cuales se necesita su domicilio, telefono y su codigo correspondiente.
+Por supuesto cada una de sus sucursales tienen varios empleados y se necesitara saber su nombre,apellidos, nif y telefono, ademas debemos tener en cuenta que los empleados solo trabajaran en una unica sucursal.
+En estas sucursales se publican revistas de la cual almacenaremos su titulo, numero de registro,tipo y cada cuanto tiempo publican
+Estas revistas pueden ser publicadas por varias sucursales.
+Las editoriales tiene contratado a periodistas (pero no trabajan en las sucursales) que escriben articulos para las revistas. Guardaremos de este la informacion de su nombre,apellidos, nif, telefono y su especialidad.
+De las revistas debemos guardar las secciones fijas que tiene cada revistas las cuales tienen una extension y un titulo.
+Por ultimo, para cada revista guardaremos la informacion de cada ejemplar, el cual se debe incluir la fecha, el numeor de paginas y el numero de estos ejemplares vendidos.
