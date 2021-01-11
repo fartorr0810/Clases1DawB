@@ -1,0 +1,102 @@
+
+    1.Crea un repositorio remoto en Riouxsvn.
+    sourceforge
+    2.Obtén una copia local del mismo en tu máquina.
+    svn checkout --username=franarroyo https://svn.code.sf.net/p/chorizo/code/ chorizo
+
+    3.Dentro de la copia local dentro de la carpeta trunk, crea un directorio que representará un proyecto de desarrollo y añade dos o tres ficheros de texto y un directorio con dos o tres ficheros de texto (los ficheros pueden estar en blanco)
+
+estudiante@franarroyo:~/chorizo$ touch prueba1.txt
+estudiante@franarroyo:~/chorizo$ touch prueba2.txt
+estudiante@franarroyo:~/chorizo$ mkdir prueba
+estudiante@franarroyo:~/chorizo$ cd prueba/
+estudiante@franarroyo:~/chorizo/prueba$ touch file1
+estudiante@franarroyo:~/chorizo/prueba$ touch file2.txt
+estudiante@franarroyo:~/chorizo/prueba$ cd ..
+estudiante@franarroyo:~/chorizo$ mkdir prueba2
+estudiante@franarroyo:~/chorizo$ cd prueba
+estudiante@franarroyo:~/chorizo/prueba$ cd ..
+estudiante@franarroyo:~/chorizo$ cd prueba2
+estudiante@franarroyo:~/chorizo/prueba2$
+    svn add *
+    svn commit -m "Cositas"
+    
+    4.Modifica varios de los archivos de la copia de trabajo.
+
+
+
+
+
+    5.Crea algún archivo nuevo.
+
+    6.Elimina algún archivo.
+
+estudiante@franarroyo:~/chorizo$ ls
+prueba  prueba1.txt  prueba2  prueba2.txt  prueba.txt
+estudiante@franarroyo:~/chorizo$ nano prueba1.txt 
+estudiante@franarroyo:~/chorizo$ nano prueba2.txt 
+estudiante@franarroyo:~/chorizo$ nano prueba3.txt
+estudiante@franarroyo:~/chorizo$ rm prueba2
+rm: cannot remove 'prueba2': Is a directory
+estudiante@franarroyo:~/chorizo$ rm -d prueba2
+
+    7.Mira el estado de la copia de trabajo y comprueba los códigos asociados a los archivos modificados (svn status, svn status -u).
+    svn status
+estudiante@franarroyo:~/chorizo$ svn status
+M       prueba1.txt
+!       prueba2
+M       prueba2.txt
+?       prueba3.txt
+estudiante@franarroyo:~/chorizo$ svn status -u
+M                1   prueba1.txt
+M                1   prueba2.txt
+?                    prueba3.txt
+!                1   prueba2
+Status against revision:      1
+
+    8.Añade al control de versiones los archivos nuevos y elimina los archivos borrados. Crea una nueva revisión con los cambios realizados (svn add, svn rm).
+    svn add prueba3.txt
+    svn rm prueba2
+
+    svn commit -m "Cambios, todo son cambios, aveces me siento en un mundo extraño, viviendo en piloto automatico"
+
+
+    9.Mira en qué revisión se encuentra la copia de trabajo (svn info) y mira todos los registros (svn log).
+    estudiante@franarroyo:~/chorizo$ svn info
+    Path: .
+    Working Copy Root Path: /home/estudiante/chorizo
+    URL: https://svn.code.sf.net/p/chorizo/code
+    Relative URL: ^/
+    Repository Root: https://svn.code.sf.net/p/chorizo/code
+    Repository UUID: 45eb137d-d0df-4a00-84dd-e48984bf52b1
+    Revision: 0
+    Node Kind: directory
+    Schedule: normal
+    Last Changed Rev: 0
+    Last Changed Date: 2021-01-11 13:48:34 +0100 (lun, 11 ene 2021)
+
+    svn update (normalmente despues de cada commit porque tu version local no se mueve de revision, entonces con update si estas en la revision correspondiente a la del repositorio remoto)
+
+    estudiante@franarroyo:~/chorizo$ svn update
+    Updating '.':
+    At revision 2.
+
+    10.Revierte alguno de los archivos que has modificado (svn revert).
+    nano prueba1.txt
+    estudiante@franarroyo:~/chorizo$ cat prueba1.txt
+    Esto quee eee
+    estudiante@franarroyo:~/chorizo$ svn revert prueba1.txt 
+    Reverted 'prueba1.txt'
+    estudiante@franarroyo:~/chorizo$ cat prueba1.txt
+    Esto quee eee , esto no es git 
+
+    11.Manda una nueva revisión al repositorio (svn commit).
+    svn 
+
+
+    12.Repite el punto 10. ¿Qué ha ocurrido?.
+
+    13.Actualiza la copia de trabajo (svn update) y repite el punto numero 10 ¿Qué ha ocurrido?.
+
+
+Para ir adquiriendo soltura antes de realizar un nuevo commit repite de manera libre los puntos 5 al 11, es decir, realiza modificaciones de todo tipo y envíalas al repositorio. Consulta frecuentemente el estado de tu copia de trabajo a medida que haces cambios. Cuando te sientas cómodo y veas que has entendido todo lo que estás haciendo pasa al siguiente ejercicio.

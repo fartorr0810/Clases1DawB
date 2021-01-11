@@ -45,7 +45,6 @@ CREATE TABLE SucursalPublicaRevista(
     FOREIGN KEY (idrevista) REFERENCES REVISTA,
 	FOREIGN KEY (codsucursal) REFERENCES SUCURSAL, 
     PRIMARY KEY(codsucursal,idrevista)
-
     );
 
 CREATE TABLE PERIODISTA(
@@ -83,3 +82,6 @@ CREATE TABLE EJEMPLAR(
 	FOREIGN KEY (idrevista) REFERENCES REVISTA,
 	PRIMARY KEY (idrevista)
 	);
+CREATE SEQUENCE secuenciaidrevista START with 1 INCREMENT BY 1 maxvalue 99999999 minvalue 1;
+
+ 
