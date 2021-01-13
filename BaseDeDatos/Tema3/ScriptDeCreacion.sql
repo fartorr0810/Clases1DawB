@@ -10,6 +10,7 @@ CREATE TABLE Guardias(
 	PRIMARY KEY (idguardia),
 	FOREIGN KEY (cifseguridad) REFERENCES EmpresaSeguridad
 	);
+CREATE SEQUENCE secuenciaGuardias START with 1 INCREMENT BY 1 maxvalue 99999999 minvalue 1;
 CREATE TABLE SUCURSAL (
 	codsucursal number(4), 
 	direccion   varchar2(30),
@@ -20,7 +21,7 @@ CREATE TABLE SUCURSAL (
 	FOREIGN KEY (cifseguridad) REFERENCES EmpresaSeguridad,
 	PRIMARY KEY (codsucursal)
 	);
-
+CREATE SEQUENCE secuenciaSucursal START with 1 INCREMENT BY 1 maxvalue 99999999 minvalue 1;
 CREATE TABLE EMPLEADO(
 	idtrabajador    number(5),
 	nif varchar2(9),
@@ -32,6 +33,7 @@ CREATE TABLE EMPLEADO(
 	FOREIGN KEY (codigo_sucursal) REFERENCES SUCURSAL,
 	PRIMARY KEY (idtrabajador)
 	);
+CREATE SEQUENCE secuenciaEmpleado START with 1 INCREMENT BY 1 maxvalue 99999999 minvalue 1;
 CREATE TABLE REVISTA(
     idrevista   number(5),
     título  varchar2(30),
@@ -39,6 +41,7 @@ CREATE TABLE REVISTA(
     periodicidad    date,
     PRIMARY KEY (idrevista)
 	);
+CREATE SEQUENCE secuenciaRevista START with 1 INCREMENT BY 1 maxvalue 99999999 minvalue 1;
 CREATE TABLE SucursalPublicaRevista(
     codsucursal	number(4),
     idrevista	number(5),
@@ -56,7 +59,7 @@ CREATE TABLE PERIODISTA(
  	tiponacionalidadperiodista	varchar2(10),
     PRIMARY KEY (idperiodista)
     );
-
+CREATE SEQUENCE secuenciaPeriodista START with 1 INCREMENT BY 1 maxvalue 99999999 minvalue 1;
 CREATE TABLE Periodista_Escribe_Revista(
 	idperiodista	number(4),
 	idrevista	number(5),
@@ -72,6 +75,7 @@ CREATE TABLE SECCION(
 	idrevista number(5),
 	FOREIGN KEY (idrevista) REFERENCES REVISTA,
 	PRIMARY KEY (idseccion)
+CREATE SEQUENCE secuenciaSeccion START with 1 INCREMENT BY 1 maxvalue 99999999 minvalue 1;
 	);
 CREATE TABLE EJEMPLAR(
 	idejemplar	number(5),
@@ -82,6 +86,6 @@ CREATE TABLE EJEMPLAR(
 	FOREIGN KEY (idrevista) REFERENCES REVISTA,
 	PRIMARY KEY (idrevista)
 	);
-CREATE SEQUENCE secuenciaidrevista START with 1 INCREMENT BY 1 maxvalue 99999999 minvalue 1;
+CREATE SEQUENCE secuenciaEjemplar START with 1 INCREMENT BY 1 maxvalue 99999999 minvalue 1;
 
  
