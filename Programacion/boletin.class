@@ -1,7 +1,7 @@
-package method;
+package dale;
 
 
-public class Ejercicio {
+public class ejerciciotocho {
 	
 	public static final Double PI = 3.14;
 	
@@ -88,29 +88,86 @@ public class Ejercicio {
 	}
 	
 	public static Double longitudCirculo(Double r) {
-		
+		double longitud;
+		longitud=2*PI*r;
+		return longitud;
 	}
 	
 	public static boolean esMultiplo(int a, int b) {
-		
+		boolean multiplo=false;
+		if (a%b==0 &&  b%a==0) {
+			multiplo=true;
+		}
+		return multiplo;
 	}
 	
 	public static int horaMayor(int hora1, int min1, int seg1, int hora2, int min2, int seg2) {
-		
-		
+		int hhmayor=0;
+		if (hora1>hora2) {
+			return hhmayor=1;
+		}
+		if (hora2>hora1) {
+			return hhmayor=2;
+		}
+		else {
+			if (hora1==hora2 && min1>min2) {
+				return hhmayor=1;
+			}
+			if (hora1==hora2 && min1<min2) {
+				return hhmayor=2;
+			}else {
+				if (hora1==hora2 && min1==min2 && seg1>seg2) {
+					return hhmayor=1;
+				}
+				if (hora1==hora2 && min1==min2 && seg1<seg2) {
+					return hhmayor=2;
+				}
+				if (hora1==hora2 && min1==min2 && seg1==seg2) {
+					return hhmayor=0;
+				}
+
+			}
+		}
+		return hhmayor=-1000;
 	}
+		
 	
 	public static int segundosEntre(int hora1, int min1, int seg1, int hora2, int min2, int seg2) {
-				
-		
+	 int segundos1,segundos2,segundosentre=0;
+	 segundos1=(hora1*3600)+(min1*60)+(seg1);
+	 segundos2=(hora1*3600)+(min1*60)+(seg1);
+	 if (segundos1>segundos2) {
+		 segundosentre= segundos1-segundos2;
+	 }
+	 if (segundos1<segundos2) {
+		 segundosentre= segundos2-segundos1;
+	 }
+	 if (segundos1==segundos2) {
+		 segundosentre= segundos1;
+	 }
+	 return segundosentre;
 	}
 	
 	public static int maximoComunDivisor(int a, int b) {
-		
+        while(a!=b) {
+            if(a>b) {
+            	 a=a-b;
+            }  
+            else {
+                b=b-a;
+
+            }
+        }
+    	return a;
 	}
-	
 	public static int minimoComunMultiplo(int a, int b) {
-		
+		int num;
+	    while (b != 0) {
+	        num=b;
+	        b=a%b;
+	        a=num;
+	    }
+	    return a;
 	}
 	
 	public static String binario(int num) {
