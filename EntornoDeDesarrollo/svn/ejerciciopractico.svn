@@ -1,0 +1,184 @@
+Ejercicio práctico SVN
+Ejercicio 1
+
+svn checkout --username=franarroyo https://svn.code.sf.net/p/practicassvn2021/code/ practicassvn2021
+
+Crea un nuevo proyecto en Sourceforge llamado practicaSVN20 con un repositorio SVN y dame acceso
+Ejercicio 2
+
+estudiante@franarroyo:~$ cd practicassvn2021/
+estudiante@franarroyo:~/practicassvn2021$ mkdir trunk
+estudiante@franarroyo:~/practicassvn2021$ mkdir branch
+estudiante@franarroyo:~/practicassvn2021$ mkdir tags
+estudiante@franarroyo:~/practicassvn2021$ svn add *
+A         branch
+A         tags
+A         trunk
+estudiante@franarroyo:~/practicassvn2021$ svn commit -m "Creo estructura basica"
+Adding         branch
+Adding         tags
+Adding         trunk
+Committing transaction...
+Committed revision 1.
+estudiante@franarroyo:~/practicassvn2021$ svn update
+Updating '.':
+At revision 1.
+estudiante@franarroyo:~/practicassvn2021$ 
+
+Prepara el repositorio para que cumpla con la estructura recomendada de un repositorio SVN.
+
+Ejercicio 3
+
+
+estudiante@franarroyo:~/practicassvn2021$ svn add trunk/*
+A         trunk/EjercicioPracticoSVN20.md
+A         trunk/planets.txt
+A         trunk/temperature.txt
+estudiante@franarroyo:~/practicassvn2021$ svn commit -m "Importamos los archivos"
+Adding         trunk/EjercicioPracticoSVN20.md
+Adding         trunk/planets.txt
+Adding         trunk/temperature.txt
+Transmitting file data ...done
+Committing transaction...
+Committed revision 2.
+estudiante@franarroyo:~/practicassvn2021$ svn update
+Updating '.':
+At revision 2.
+estudiante@franarroyo:~/practicassvn2021$ 
+
+
+
+
+Importa los ficheros que te ha proporcionado el profesor y asegúrate de que se encuentran en el repositorio.
+
+Ejercicio 4
+
+Obtén una nueva copia de trabajo en el directorio svnwc1. Modifica “January Low” de Winnipeg a -23.5. Sube el fichero al respositorio asegurándote de incluir un comentario adecuado.
+
+estudiante@franarroyo:~/practicassvn2021$ cd ..
+estudiante@franarroyo:~$ svn checkout --username=franarroyo https://svn.code.sf.net/p/practicassvn2021/code/ copiastrabajo/svnwc1
+estudiante@franarroyo:~/copiastrabajo/svnwc1/trunk$ nano temperature.txt 
+estudiante@franarroyo:~/copiastrabajo/svnwc1/trunk$ svn update
+Updating '.':
+At revision 2.
+estudiante@franarroyo:~/copiastrabajo/svnwc1/trunk$ svn status
+M       temperature.txt
+estudiante@franarroyo:~/copiastrabajo/svnwc1/trunk$ svn commit -m "Modificamos el archivo temperature.txt"
+Sending        temperature.txt
+Transmitting file data .done
+Committing transaction...
+Committed revision 3.
+
+
+
+
+Ejercicio 5
+
+Añade una segunda línea que contenga * 10^6 miles justo debajo de Mean Distance From Sun. Sube el fichero al repositorio asegurándote de incluir un comentario adecuado.
+
+nano planets.txt
+estudiante@franarroyo:~/copiastrabajo/svnwc1/trunk$ svn commit -m "Modificamos planets.txt"
+Sending        planets.txt
+Transmitting file data .done
+Committing transaction...
+Committed revision 4.
+
+Ejercicio 6
+
+
+Obtén una nueva copia de trabajo en el directorio svnwc2. Modifica en esa copia el fichero planets.txt cambiando 10^6 por 1000000 y añade al final Saturn 889.0. Sube el fichero al repositorio asegurándote de incluir un comentario adecuado.
+
+svn checkout --username=franarroyo https://svn.code.sf.net/p/practicassvn2021/code/ svnwc2/
+estudiante@franarroyo:~/copiastrabajo/svnwc2$ cd trunk/planets.txt
+bash: cd: trunk/planets.txt: Not a directory
+estudiante@franarroyo:~/copiastrabajo/svnwc2$ nano trunk/planets.txt
+estudiante@franarroyo:~/copiastrabajo/svnwc2$ svn commit -m "Modificamos planets.txt desde svnwc2"
+Sending        trunk/planets.txt
+Transmitting file data .done
+Committing transaction...
+Committed revision 5.
+
+
+
+
+Ejercicio 7
+
+Vuelve a trabajar en la copia de trabajo svnwc1, pero no la actualices. En el fichero planets.txt hay una errata, cambia Marz por Mars. Cambia también 10^6 miles por million miles para que sea más legible. Sube el fichero al repositorio, que debe quedar así en el repositorio:
+
+Planet       Mean Distance From Sun 
+            * million miles
+Mercury      36.0
+Venus        67.1
+Earth        92.9
+Mars         140.9
+Jupiter      483.4
+Saturn       889.0
+
+estudiante@franarroyo:~/copiastrabajo/svnwc1$ nano trunk/planets.txt 
+estudiante@franarroyo:~/copiastrabajo/svnwc1$ svn commit -m "Modificamos planets"
+Sending        trunk/planets.txt
+Transmitting file data .svn: E155011: Commit failed (details follow):
+svn: E155011: File '/home/estudiante/copiastrabajo/svnwc1/trunk/planets.txt' is out of date
+svn: E170004: File '/trunk/planets.txt' is out of date
+estudiante@franarroyo:~/copiastrabajo/svnwc1$ svn update 
+Updating '.':
+G    trunk/planets.txt
+Updated to revision 5.
+estudiante@franarroyo:~/copiastrabajo/svnwc1$ svn commit -m "Modificamos planets"
+Sending        trunk/planets.txt
+Transmitting file data .done
+Committing transaction...
+Committed revision 6.
+estudiante@franarroyo:~/copiastrabajo/svnwc1$ cat trunk/planets.txt 
+Planet       Mean Distance From Sun 
+		* million miles
+Mercury      36.0
+Venus        67.1
+Earth        92.9
+Mars         140.9
+Jupiter      483.4
+Saturn	     889.0
+
+
+
+
+Ejercicio 8
+
+Modifica en el fichero temperature.txt January high de Toronto a +600. Deshaz el cambio anterior utilizando SVN (no puedes modificarlo a mano)
+
+
+
+
+Ejercicio 9
+
+De nuevo modifica en el fichero temperature.txt January high de Toronto a +600. Sube el cambio al repositorio. Deshaz el cambio en el repositorio.
+
+estudiante@franarroyo:~/copiastrabajo/svnwc1$ nano trunk/temperature.txt 
+
+
+
+Ejercicio 10
+
+Crea un fichero nuevo llamado interests.txt que contenga una linea que empiece con tu nombre, seguido de : y una lista de aplicaciones o tecnologías separadas por comas que son de tu interés. Por ejemplo:
+
+Joaquín: Linux, Vuejs, Laravel, Python
+
+Sube el fichero al repositorio asegurándote de incluir un comentario adecuado.
+Ejercicio 11
+
+Crea una rama llamada transalate. En dicha rama traduce el fichero planets.txt al castellano, pero de momento no subas los cambios.
+Ejercicio 12
+
+En la rama principal añade al fichero temperatures.txt la línea con las temperaturas de Fredericton, NB, siendo la mínima de -15.3 y la máxima de -2.1. Sube los cambios al repositorio.
+Ejercicio 13
+
+Incorpora los cambios de la rama principal a la rama translate. Después sube los cambios con la traducción al repositorio.
+Ejercicio 14
+
+Incorpora los cambios de la rama translate a la rama principal y elimina la rama translate.
+Ejercicio 15
+
+Elimina el fichero interests.txt y haz que se elimine también del repositorio.
+Ejercicio 16
+
+Recupera el fichero interests.txt en tu copia local y haz que vuelva a estar disponible en el repositorio también.
