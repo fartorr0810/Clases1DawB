@@ -146,6 +146,10 @@ Ejercicio 8
 
 Modifica en el fichero temperature.txt January high de Toronto a +600. Deshaz el cambio anterior utilizando SVN (no puedes modificarlo a mano)
 
+fran@fran-B450M-DS3H:~/copiastrabajo/svnwc1$ nano trunk/temperature.txt 
+fran@fran-B450M-DS3H:~/copiastrabajo/svnwc1$ svn revert trunk/temperature.txt 
+
+
 
 
 
@@ -154,6 +158,8 @@ Ejercicio 9
 De nuevo modifica en el fichero temperature.txt January high de Toronto a +600. Sube el cambio al repositorio. Deshaz el cambio en el repositorio.
 
 estudiante@franarroyo:~/copiastrabajo/svnwc1$ nano trunk/temperature.txt 
+fran@fran-B450M-DS3H:~/copiastrabajo/svnwc1$ svn commit -m "Ejerciico 9 pa"
+fran@fran-B450M-DS3H:~/copiastrabajo/svnwc1$ svn merge -r 7:6 https://svn.code.sf.net/p/practicassvn2021/code/
 
 
 
@@ -164,21 +170,43 @@ Crea un fichero nuevo llamado interests.txt que contenga una linea que empiece c
 Joaquín: Linux, Vuejs, Laravel, Python
 
 Sube el fichero al repositorio asegurándote de incluir un comentario adecuado.
+fran@fran-B450M-DS3H:~/copiastrabajo/svnwc1$ nano trunk/interests.txt
+fran@fran-B450M-DS3H:~/copiastrabajo/svnwc1$ svn add trunk/interests.txt 
+A         trunk/interests.txt
+fran@fran-B450M-DS3H:~/copiastrabajo/svnwc1$ svn commit -m "Anado el archivo interets.txt para el ejercicio 10"
+svn update
+
+
 Ejercicio 11
 
 Crea una rama llamada transalate. En dicha rama traduce el fichero planets.txt al castellano, pero de momento no subas los cambios.
+fran@fran-B450M-DS3H:~/copiastrabajo/svnwc1$ svn co https://svn.code.sf.net/p/practicassvn2021/code/branch/
+Revisión obtenida: 8
+fran@fran-B450M-DS3H:~/copiastrabajo/svnwc1$ nano trunk/planets.txt
+
+
+
+
+
+
+
 Ejercicio 12
 
 En la rama principal añade al fichero temperatures.txt la línea con las temperaturas de Fredericton, NB, siendo la mínima de -15.3 y la máxima de -2.1. Sube los cambios al repositorio.
+fran@fran-B450M-DS3H:~/copiastrabajo/svnwc1$ nano trunk/temperature.txt 
+svn commit -m "Ejercicio 12"
 Ejercicio 13
 
 Incorpora los cambios de la rama principal a la rama translate. Después sube los cambios con la traducción al repositorio.
+svn merge --reintegrate https://svn.code.sf.net/p/practicassvn2021/code/branch/
 Ejercicio 14
 
 Incorpora los cambios de la rama translate a la rama principal y elimina la rama translate.
 Ejercicio 15
-
+svn merge --reintegrate  https://svn.code.sf.net/p/practicassvn2021/code/branch/
 Elimina el fichero interests.txt y haz que se elimine también del repositorio.
 Ejercicio 16
 
 Recupera el fichero interests.txt en tu copia local y haz que vuelva a estar disponible en el repositorio también.
+
+svn revert
