@@ -1,0 +1,101 @@
+<head>
+    <h1 align="center">
+        <font face="Georgia">CURSOS ONLINE</font>
+    </h1>
+    <h4 align="center">
+        <font face="sarif">Formulario de registro</font>
+    </h4>
+</head>
+
+<body>
+    <p>
+        <font face="Arial">
+            <form action="http://www.iesjacarandabrenes.org/lmsgi/resultado.php" method="post">
+                <fieldset>
+                    <legend><b>¿Quien eres?</b></legend>
+                    <p>
+                        <label for="nombre"><b>Nombre</b></label>
+                        <input type="text" name="nombre" id="nombre" />
+                        <label for="apellidos"><b>Apellidos</b></label>
+                        <input type="text" name="apellidos" id="apellidos" />
+                    </p>
+                    <p>
+                        <label for="nombre"><b>Correo electrónico</b></label>
+                        <input type="text" name="correo" id="email" />
+                    </p>
+
+                    <p>
+                        <label for="dia"><b>Fecha de nacimiento</b></label>
+                        <select name="dia">
+<option><b>Dia</b></option>
+</select>
+
+                        <select name="mes">
+<option><b>Mes</b></option>
+</select>
+
+                        <select name="anio">
+<option><b>Año</b></option>
+</select>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend><b>¿De donde eres?</b></legend>
+                    <p>
+                        <label for="ciudad"><b>Ciudad</b></label>
+                        <input type="text" name="ciudad" id="ciudad" />
+                    </p>
+
+                    <p>
+                        <label for="codigopostal"><b>Codigo postal</b></label>
+                        <input type="text" name="cp" id="codigopostal" />
+                    </p>
+
+                    <p>
+                        <label for="pais"><b>Pais</b></label>
+                        <select name="pais">
+<option>Pais</option>
+</select>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend><b>¿Como quieres iniciar sesion</b></legend>
+                    <p>
+                        <label for="nombreusuario"><b>Nombre de usuario</b></label>
+                        <input type="text" name="nombreusuario" id="nombreusuario" />
+                    </p>
+
+                    <p>
+                        <label for="password"><b>Contraseña</b></label>
+                        <input type="password" name="password" />
+                    </p>
+
+                    <p>
+                        <label for="veri"><b>Vuelve a escribir la contraseña</b></label>
+                        <input type="password" name="veri" />
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend><b>Condiciones de registro</b></legend>
+                    <p>
+                        <label><b>Deseo recibir ofertas</b></label>
+                        <input type="radio" name="oferta" id="oferta1" value="1" />
+                        <label for="oferta1" class="inline">Una vez al dia</label>
+                        <input type="radio" name="oferta" id="oferta2" value="2" />
+                        <label for="oferta2" class="inline">Una vez a la semana</label>
+                        <input type="radio" name="ofertas" id="oferta3" value="3" />
+                        <label for="oferta3" class="inline">Una vez al mes</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="aceptar" id="aceptar" />
+                        <label for="aceptar" class="inline">Acepto el acuerdo de los servicios , la declaracion de privacidad y la declaracion de uso de cookies</label>
+                    </p>
+                </fieldset>
+                <p>
+                    <input type="submit" value="Crear cuenta" id="botondecrear" />
+                </p>
+        </font>
+    </p>
+    </form>

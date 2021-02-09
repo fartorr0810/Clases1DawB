@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <form action="http://www.iesjacarandabrenes.org/lmsgi/resultado.php" method="post">
+        <fieldset>
+            <legend><b>Formulario del pedido</b></legend>
+            Paso 1. Identificacion
+            <fieldset>
+                <legend>Datos del cliente</legend>
+                <p><label for="nombre"><b>Correo electrónico</b></label>
+                    <input type="email" name="correo" id="email" />
+                    <p>
+                        <label for="password"><b>Contraseña</b></label>
+                        <input type="password" name="password" maxlength="8" /> Longitud maxima 6 caracteres
+                    </p>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Tipo de cliente</legend>
+                <input type="radio" name="transporte" value="1">Particular
+
+                <br>
+
+                <input type="radio" name="transporte" value="2">Empresa
+
+                <br>
+
+                <input type="radio" name="transporte" value="3">Asociacion
+            </fieldset>
+            <b>Paso 2. Pedido</b>
+            <fieldset>
+                <legend>Datos del cliente</legend>
+                <select name="" id="">
+                  <optgroup label="Armaduras">Armaduras
+                      <option value="ARR001">AR001 Oro reluciente</option>
+                      <option value="ARR001">AR002 Plata pulida</option>
+                      <option value="ARR001">AR003 Bronce reforzado</option>
+                  </optgroup>
+                  <optgroup label="Armaduras">Extras
+                    <option value="AX001">AX001 Escudo</option>
+                    <option value="AX002">AX002 Invisibilidad</option>
+                </optgroup>
+              </select>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Informacion de interes</legend>
+                Comentarios
+                <input type="text-box" name="correo" id="email" />
+
+
+            </fieldset>
+            <fieldset>
+                <legend>Datos de envio</legend>
+                Comentarios
+                <label for="oferta1" class="inline">Direccion</label>
+                <input type="text" name="correo" id="direccion" />
+                <label for="oferta1" class="inline">Ciudad</label>
+                <input type="text" name="correo" id="ciuda" />
+                <label for="oferta1" class="inline">Codigo postal</label>
+                <input type="text" name="correo" id="email" maxlength="5" />
+
+
+
+            </fieldset>
+        </fieldset>
+        <button type="reset">Reset</button>
+        <input type="submit" value="Enviar pedido" id="botondecrear" />
+
+        <script src="" async defer></script>
+</body>
+
+</html>
