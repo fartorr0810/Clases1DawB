@@ -4,7 +4,6 @@ ul li {
     padding: 0;
     list-style: none
 }
-
 h1,
 h2,
 h3,
@@ -19,7 +18,7 @@ form {
 }
 
 img {
-    border: none
+    border: 0
 }
 
 #contenedor {
@@ -79,7 +78,7 @@ img {
     float: right
 }
 
-#menu ul#menu_principal li {
+#menu ul #menu_principal li {
     display: inline;
     float: left
 }
@@ -131,7 +130,7 @@ img {
 }
 
 #pie {
-    padding: .5em 0;
+    padding: .4em 0;
     margin-top: 1em
 }
 
