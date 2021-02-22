@@ -1,0 +1,42 @@
+ El contestador del gimnasio Jacafit tiene memoria para almacenar hasta tres mensajes ( en nuestro caso será una cadena de texto cada mensaje) que pueden dejar los usuarios cuando el teléfono no está disponible. Este contestador permite realizar las siguientes operaciones marcando el número adecuado en la estructura del menú:
+
+
+1. Consultar número de mensajes
+
+2. Consultar mensaje
+
+1. Mensaje número 1
+
+1. Oír
+
+2. Borrar
+
+2. Mensaje número 2
+
+1. Oír
+
+2. Borrar
+
+3. Mensaje número 3
+
+1. Oír
+
+2. Borrar
+
+3.- Añadir mensaje
+
+4. Borrar todos los mensajes
+
+5. Salir
+
+
+Si al añadir mensaje el buzón esta lleno, nos debe aparecer el mensaje “Buzón completo” y no pedir nuevo mensaje. En caso contrario deberá añadir el mensaje que introduzca el usuario en el primer mensaje que encuentre vacío.
+
+Si intenta oír un mensaje que no existe el buzón deberá lanzar una excepción que deberá ser gestionada en el menú principal para informar al usuario de que dicho mensaje no existe.
+
+En nuestro caso, cuando se seleccione la opción oír se deberá imprimir el mensaje.
+
+La clase contestador deberá tener un constructor sin argumentos que inicialice todos los mensajes a vacío. Cuando se desee borrar un mensaje se deberá poner el mensaje a vacío. La clase constructor deberá tener un método anadirMensaje que reciba como argumento el mensaje e intente añadirlo, así como el método borrarTodosLosMensajes que deberá eliminar todos los mensajes del contestador.
+
+
+Realizar una clase para el contestador del gimnasio y otro para mostrar el menú anterior.
