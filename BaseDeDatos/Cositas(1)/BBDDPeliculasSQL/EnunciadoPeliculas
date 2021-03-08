@@ -1,0 +1,39 @@
+#1. Obtén las diferentes ciudades donde hay cines
+SELECT DISTINCT CIUDAD_CINE FROM CINE;
+#2. Obtener las películas con un presupuesto mayor de 2000 o cuya duración sea superior a 100.
+SELECT DISTINCT TITULO_P FROM PELICULA WHERE presupuesto>2000 OR DURACION>100;
+#3. Obtener las películas cuyo título (da igual el original o el español) contenga la cadena la sin importar que esté en mayúsculas o minúsculas.
+SELECT DISTINCT TITULO_P FROM PELICULA WHERE upper(TITULO_P) LIKE '%LA%' or upper(TITULO_S) LIKE '%LA%';
+#4. Obtener el nombre y la nacionalidad de los personajes que sean hombres ordenado por nacionalidad y nombre.
+SELECT NOMBRE_PERSONA,NACIONALIDAD_PERSONA FROM PERSONAJE WHERE SEXO_PERSONA='H' ORDER BY NACIONALIDAD_PERSONA,NOMBRE_PERSONA;
+#5. Obtener las películas estrenadas en el mes de septiembre.
+SELECT DISTINCT CIP FROM PROYECCION WHERE extract(month FROM FECHA_ESTRENO)=9;
+#6. Obtener las diferentes tareas que ha desempeñado alguna persona alguna vez.
+SELECT DISTINC TAREA FROM TRABAJO;
+#7. Obtener el numero de sala y el aforo de todas las salas de los cines que terminen en vocal.
+SELECT SALA,AFORO FROM SALA WHERE CINE LIKE '%a' or CINE LIKE '%e' or CINE LIKE '%i' or CINE LIKE '%o' or CINE LIKE '%u';
+SELECT SALA,AFORO FROM SALA WHERE REGEXP_LIKE(CINE,'[aeiou]$');
+#8. Obtener las distintas ciudades que tienen cines con alguna sala con aforo superior a 100 ordenadas por el nombre de la ciudad de la z a la a.
+SELECT DISTINCT CIUDAD_CINE FROM CINE,SALA WHERE ciudad.cine=sala.cine AFORO>100 ORDER BY CIUDAD_CINE desc;
+#9. Obtener los títulos (ambos) y la nacionalidad de las películas que hayan obtenido una recaudación en alguna sala 10000 mayor que su presupuesto ordenadas de mayor a menor beneficio.
+SELECT TITULO_P,TITULO_S,NACIONALIDAD,RECAUDACION-PRESUPUESTO FROM PELICULA,PROYECCION WHERE PELICULA.CIP=PROYECCION.CIP AND RECAUDACION>PRESUPUESTO*10000 ORDER BY RECAUDACION-PRESUPUESTO desc;
+#10. Obtener el nombre de los actores hombres que participen en la película Viaje al centro de la tierra.
+SELECT PERSONAJE.NOMBRE_PERSONA FROM PERSONAJE,TRABAJO,PELICULA WHERE PERSONAJE.NOMBRE_PERSONA=TRABAJO.NOMBRE_PERSONA AND TRABAJO.CIP=PELICULA.CIP AND TITULO_P='Viaje al centro de la tierra' AND SEXO_PERSONA='H';
+#11. Obtener el nombre del cine y el número de películas diferentes estrenadas por cada cine ordenadas por el número de películas ordenadas de mayor a menor.
+SELECT CINE,COUNT(DISTINCT CIP) FROM PROYECCION GROUP BY CINE ORDER BY COUNT(DISTINCT CIP) DESC;
+#12. Obtener el nombre y nacionalidad de las personas que hayan trabajado en alguna película dediferente nacionalidad a la suya.
+SELECT DISTINCT PERSONAJE.NOMBRE_PERSONA,NACIONALIDAD_PERSONA FROM PERSONAJE,TRABAJO,PELICULA WHERE PERSONAJE.NOMBRE_PERSONA=TRABAJO.NOMBRE_PERSONA AND TRABAJO.CIP=PELICULA.CIP AND NACIONALIDAD_PERSONA<>NACIONALIDAD;
+#13. Obtener por cada cine, el nombre, las salas y el nombre de la película.
+SELECT CINE,COUNT(TITULO_P),TITULO_P FROM PROYECCION,PELICULA WHERE PROYECCION.CIP=PELICULA.CIP GROUP BY CINE,SALA,PROYECCION.CIP,TITULO_P ORDER BY CINE,PELICULA;
+SELECT CINE,SALA,TITULO_P FROM PROYECCION,PELICULA WHERE PROYECCION.CIP=PELICULA.CIP;
+#14. Obtener la recaudación total de cada cine ordenada de mayor a menor recaudación total.
+SELECT CINE,SUM(RECAUDACION) FROM PROYECCION GROUP BY CINE ORDER BY SUM(RECAUDACION) DESC;
+#15. Obtener aquellas personas que hayan realizado una tarea cuyo sexo sea diferente al suyo, teniendo en cuenta que para productor y director no hay un sexo definido.
+SELECT NOMBRE_PERSONA FROM PERSONAJE,TRABAJO,TAREA WHERE PERSONAJE.NOMBRE_PERSONA=TRABAJO.NOMBRE_PERSONA AND TRABAJO.TAREA=TAREA.TAREA AND SEXO_TAREA<>SEXO_PERSONA AND SEXO_TAREA<>'N';
+#16. Obtener el título, al año de producción, el presupuesto y la recaudación total de las películas que han sido proyectadas en algún cine de la ciudad de Córdoba.
+#Esta consulta nos da la recaudación obtenida en Córdoba, para obtener la total es necesario realizar una subconsulta
+SELECT TITULO_P,ANO_PRODUCCION,PRESUPUESTO,SUM(RECAUDACION) FROM PELICULA,PROYECCION,CINE WHERE PELICULA.CIP=PROYECCION.CIP AND PROYECCION.CINE=CINE.CINE AND CIUDAD_CINE='Cordoba' GROUP BY TITULO_P,ANO_PRODUCCION,PRESUPUESTO;
+#17. Obtener el título de las películas cuya recaudación por espectador (con 2 decimales) sea mayor de 700.
+SELECT TITULO_P,SUM(RECAUDACION)/SUM(ESPECTADORES) FROM PELICULA,PROYECCION WHERE PELICULA.CIP=PROYECCION.CIP GROUP BY TITULO_P HAVING (SUM(RECAUDACION)/SUM(ESPECTADORES))>700 ;
+#18. Obtener el nombre de los actores que han participado en más de 2 películas.
+SELECT NOMBRE_PERSONA FROM TRABAJO GROUP BY NOMBRE_PERSONA HAVING COUNT(CIP)>2;

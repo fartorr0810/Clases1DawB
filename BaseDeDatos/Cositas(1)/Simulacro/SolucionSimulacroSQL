@@ -1,0 +1,116 @@
+/*1*/
+SELECT nombre FROM TRABAJADOR WHERE tarifa BETWEEN 10 AND 12;
+
+
+/*2*/
+SELECT OFICIO
+FROM TRABAJADOR T, ASIGNACION A
+WHERE T.ID_T=A.ID_T
+AND A.ID_E=435;
+
+/*3*/
+SELECT t.nombre AS TRABAJADOR, s.NOMBRE AS SUPERVISOR
+from TRABAJADOR t, TRABAJADOR s
+where t.id_SUPV=s.id_t;
+
+
+/*4*/
+select distinct t.NOMBRE
+FROM ASIGNACION a, EDIFICIO e, TRABAJADOR t
+WHERE t.id_t=a.id_t
+and a.id_e=e.id_e
+and upper(e.tipo) = 'OFICINA'
+order by t.nombre;
+
+/*5*/
+
+SELECT t.nombre FROM TRABAJADOR t, trabajador s
+WHERE t.ID_SUPV=s.ID_T
+AND t.TARIFA>s.TARIFA;
+
+
+SELECT t1.NOMBRE FROM TRABAJADOR t1
+WHERE t1.TARIFA > (SELECT t2.TARIFA FROM 
+				 TRABAJADOR t2 
+				  WHERE t1.ID_SUPV=t2.ID_T);
+
+
+/*6*/
+select sum(a.num_dias)
+from ASIGNACION a, TRABAJADOR t
+where
+a.id_e=312
+and a.id_t=t.id_t
+and upper(t.oficio) like 'FONTANERO';
+
+/*7*/
+SELECT COUNT(DISTINCT oficio) FROM trabajador;
+
+
+/*8*/
+SELECT t.id_supv, max(t.tarifa)
+from TRABAJADOR t
+GROUP BY t.id_supv
+ORDER BY t.id_supv ;
+
+/*Si queremos el nombre seria asi*/
+SELECT s.NOMBRE AS SUPERVISOR, max(s.TARIFA)
+from TRABAJADOR t, TRABAJADOR s
+where t.id_SUPV=s.id_t
+GROUP BY s.NOMBRE, s.ID_SUPV
+
+
+/*9*/
+
+SELECT t.id_supv, max(t.tarifa)
+from TRABAJADOR t
+GROUP BY t.id_supv
+HAVING COUNT(T.ID_T)> 1;
+
+
+/*10*/
+SELECT tipo, AVG(nivel_calidad)
+FROM edificio
+WHERE categoria = 1
+AND nivel_calidad < 3
+GROUP BY tipo;
+
+/*11*/
+SELECT nombre
+FROM trabajador
+WHERE tarifa < 
+    (SELECT AVG(tarifa)
+    FROM trabajador);
+   
+
+
+/*12*/
+select t1.nombre
+from TRABAJADOR t1
+where t1.tarifa < (select avg(t2.tarifa) from TRABAJADOR t2 
+					WHERE t1.oficio = t2.oficio);
+
+/*13*/
+select t1.nombre
+from TRABAJADOR t1
+where t1.tarifa < (select avg(t2.tarifa) from TRABAJADOR t2 
+					WHERE 
+					t1.id_supv=t2.id_supv);
+
+/*14*/
+SELECT t.nombre, to_char(a.fecha_inicio,'YYYY-MM-DD') AS FECHA_INICIO
+FROM trabajador t, asignacion a
+WHERE t.id_t = a.id_t
+AND UPPER(t.oficio) LIKE 'ELECTRICISTA'
+AND a.id_e = 435;
+
+/*15*/
+
+SELECT distinct(T.nombre) 
+	from trabajador t, trabajador T2
+	where T.ID_T = T2.ID_SUPV 
+	AND T2.tarifa > '12' 
+	and T2.nombre not in (select nombre from trabajador 
+						 WHERE id_t = id_supv);
+
+
