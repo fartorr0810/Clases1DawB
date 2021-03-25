@@ -32,9 +32,61 @@ BEGIN
 
 
 CALL dummy.serie(1,12,1);
-4.Crea una función AZAR que reciba dos parámetros y genere un número alazar  entre  un  mínimo  y  máximoindicado.  La  forma  de  la  función  serála siguiente:
-AZAR (minimo NUMBER, maximo NUMBER) RETURN NUMBER
 
-5.Crea una función NOTA que reciba un parámetro que seráuna notanumérica entre 0 y 10 y devuelva una cadena de textocon la calificación(Suficiente, Bien, Notable, ...). La forma de la función serála siguiente:
-NOTA(nota NUMBER) RETURN VARCHAR2
- */
+/*4.Crea una función AZAR que reciba dos parámetros y genere un número alazar  entre  un  mínimo  y  máximoindicado.  
+La  forma  de  la  función  serála siguiente:
+AZAR (minimo NUMBER, maximo NUMBER) RETURN NUMBER*/
+CREATE OR REPLACE FUNCTION DUMMY.AZAR (minimo NUMBER, maximo NUMBER) RETURN NUMBER IS 
+ 
+	NUMEROO NUMBER:=NULL;
+BEGIN
+	numeroo:= ABS(DBMS_RANDOM.RANDOM)+minimo;
+ RETURN NUMEROO ;
+ END AZAR;
+/*5.Crea una función NOTA que reciba un parámetro que seráuna notanumérica entre 0 y 10 y 
+devuelva una cadena de textocon la calificación(Suficiente, Bien, Notable, ...). 
+La forma de la función serála siguiente:
+NOTA(nota NUMBER) RETURN VARCHAR2*/
+
+CREATE OR REPLACE FUNCTION NOTA (nota NUMBER) RETURN VARCHAR2 IS 
+	MENSAJE VARCHAR2(30):='null';
+BEGIN
+CASE nota 
+	WHEN 10 THEN 
+	MENSAJE:='SOBRESALIENTE';
+	WHEN 9  THEN 
+	MENSAJE:='SOBRESALIENTE';
+	WHEN 8  THEN 
+	MENSAJE:='NOTABLE';
+	WHEN 7  THEN 
+	MENSAJE:='NOTABLE';
+	WHEN 6  THEN 
+	MENSAJE:='BIEN';
+	WHEN 5  THEN 
+	MENSAJE:='SUFICIENTE';
+	WHEN 4  THEN 
+	MENSAJE:='INSUFICIENTE';
+	WHEN 3  THEN 
+	MENSAJE:='INSUENTE';
+	WHEN 2  THEN 
+	MENSAJE:='INSUENTE';
+	WHEN 1  THEN 
+	MENSAJE:='INSUENTE';
+	WHEN 0  THEN 
+	MENSAJE:='INSUENTE';
+	ELSE 
+	DBMS_OUTPUT.PUT_LINE('NOTA INVALIDA');
+	END CASE;
+RETURN  MENSAJE;
+ END NOTA;
+
+
+
+SELECT NOTA(7) FROM DUAL;
+
+
+
+
+
+
+
