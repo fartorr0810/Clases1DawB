@@ -1,0 +1,30 @@
+#contenedor {
+    width: 85%;
+    margin: 0 auto;
+}
+
+#cabecera {}
+
+#menu {
+    float: left;
+    width: 15%;
+}
+
+#contenido {
+    float: left;
+    width: 85%;
+}
+
+#contenido #contenidoprincipal {
+    float: left;
+    width: 80%
+}
+
+#contenido #lateral {
+    float: left;
+    width: 20%
+}
+
+#pie {
+    clear: both;
+}
