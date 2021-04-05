@@ -101,7 +101,7 @@ public class Ejercicio4 extends Exception {
 	   return mes;
    }
    public int getAno() {
-	   return ano;
+	   return ano;                                
    }
    public int DiaDeUnMes(int mes, int ano) {
 	return ano;
