@@ -103,7 +103,7 @@ public class Juego {
 	
 	
 	/**
-	 * ¿BARRA?
+	 * ï¿½BARRA?
 	 */
 	private String barra() {
 		return null;
@@ -190,7 +190,7 @@ public class Juego {
 	 */
 	public String lucha() {
 		return null;
-		//"El jugador " + 1ºJUGADOR + " ha ganado, el jugador " + 2ºJUGADOR + " ha perdido."
+		//"El jugador " + 1ï¿½JUGADOR + " ha ganado, el jugador " + 2ï¿½JUGADOR + " ha perdido."
 	}
 	
 	/**
@@ -223,7 +223,7 @@ public class Juego {
 	 */
 	public String getGanador() {
 		return null;
-		//"El jugador " + SEÑALIZACION + " es el ganador."
+		//"El jugador " + SEï¿½ALIZACION + " es el ganador."
 	}
 	
 }

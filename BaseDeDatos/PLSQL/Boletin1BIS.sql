@@ -84,7 +84,7 @@ BEGIN
 END ENTREANOYANOHAY;
 
 
-SELECT ENTREANOYANOHAY('23122000','12121999') FROM dual;
+SELECT ENTREANOYANOHAY(SYSDATE,SYSDATE-1) FROM dual;
 
 /* 7) Escribir una función que, haciendo uso de la función anterior devuelva 
 los trienios que hay entre dos fechas. (Un trienio son tres años completos).
@@ -117,7 +117,7 @@ call SUMAR5NUMEROS(2,2,2,2,2);
 /* 9) Escribir una función que devuelva solamente caracteres alfabéticos sustituyendo
  cualquier otro carácter por blancos a partir de una cadena que se pasará en la llamada.
  */
-CREATE OR REPALCE FUNCTION substituircaracterporblanco (cad VARCHAR2)
+CREATE OR REPLACE FUNCTION substituircaracterporblanco (cad VARCHAR2)
 RETURN VARCHAR2 as 
 	aux char;
 	cadenanueva	VARCHAR2(30);

@@ -5,7 +5,7 @@ const PI = 3.14;
 numero = 54;
 /*no se te peta, el javascript se cree que es una variable mas aunque no se lo digas.
  */
-console.log(numero);
+console.log(numeroooo);
 console.log(palabra);
 console.log(respuesta);
 console.log(PI);
