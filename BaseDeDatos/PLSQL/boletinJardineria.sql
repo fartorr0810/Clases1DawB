@@ -20,10 +20,10 @@ BEGIN
     ELSE
         	DBMS_OUTPUT.PUT_LINE('Es igual a 10');
     end IF;
-   
+ 
 END  ESMAYORADIEZ;
 
- 
+
 /*3Declarar una variable numéricay pedir su valor y mostrarlo.
 */
 CREATE OR REPLACE 
@@ -135,15 +135,47 @@ BEGIN
   DBMS_OUTPUT.PUT_LINE('El pedido total es '|| v_total);
 END PRECIOTOTALPORPEDIDO;
 
- 12. Mostrar el nombre de un cliente dado su código. Controla en caso de que no 
- se encuentre, mostrando un mensaje,por ejemplo.
- 13. Realizar una función que me devuelva la suma de pagos que ha realizado. Pasa el codigo por parametro.
+/*  12. Mostrar el nombre de un cliente dado su código. Controla en caso de que no 
+ se encuentre, mostrando un mensaje,por ejemplo. */
+CREATE OR REPLACE FUNCTION NOMBREEXCEPTION(codcliente clientes.codigocliente%type)
+RETURN VARCHAR2 AS
+	v_codigocliente clientes.codigocliente%type;
+	v_nombrecliente clientes.nombrecliente%type;
+BEGIN
+  SELECT c.NOMBRECLIENTE into v_nombrecliente
+  FROM CLIENTES c
+  WHERE c.NOMBRECLIENTE = v_codigocliente;
+  DBMS_OUTPUT.PUT_LINE('Se llama' || v_nombrecliente);
+EXCEPTION
+	WHEN NO_DATA_FOUND THEN
+    DBMS_OUTPUT.PUT_LINE('No existe pto');
+END NOMBREEXCEPION;
+
+/*  13. Realizar una función que me devuelva la suma de pagos que ha realizado. Pasa el codigo por parametro.
  Controla en caso de que no se encuentre, en ese caso devuelve un 
  -1.14.  Realizar  un  método  o  procedimiento  que  muestre  el  total  
- en euros de un pedido, pásaleel códigopor parámetro. Controla en caso de que 
+ en euros de un pedido, pásale el códigopor parámetro. Controla en caso de que 
  no se encuentre, en ese caso devuelve un 0. Pásaleotro parámetro,  si  supera  ese  
- limite,  lanzaremos  una excepciónpropia y devolveremos un 0.
-15. Crea una función a la que le pasaremos como parámetros de 
+ limite,  lanzaremos  una excepciónpropia y devolveremos un 0. */
+
+CREATE OR REPLACE FUNCTION DUMMY.PAGARCLIENTE(V_CODIGOCLIENTE CLIENTES.CODIGOCLIENTE%TYPE)
+RETURN NUMBER AS 
+SUMARPAGO PAGOS.CANTIDAD%TYPE:=0;
+BEGIN
+  SELECT SUM(p.CANTIDAD) INTO SUMARPAGO
+  FROM PAGOS p
+  WHERE CODIGOCLIENTE = V_CODIGOCLIENTE;	
+  IF SUMARPAGO IS NULL THEN
+    RAISE NO_DATA_FOUND;
+	ELSE
+  	  RETURN SUMARPAGO;
+  END IF;
+EXCEPTION
+  WHEN NO_DATA_FOUND THEN
+    RETURN -1;
+END PAGARCLIENTE;
+
+/* 15. Crea una función a la que le pasaremos como parámetros de 
 entrada:  MATRICULA,  NUEVO_PRECIO_COMPRA.  la  función modificara los datos del 
 coche que tenga la matricula introducida actualizando el precio_compra de la siguiente forma:
 -Si   precio_compra   es   nulo   hacer   un   update   en  
@@ -152,12 +184,34 @@ coche que tenga la matricula introducida actualizando el precio_compra de la sig
  valor de precio_compra+(precio_compra-nuevo_precio_compra).La  función 
   devolverá  el  numero  de  filas  actualizadas  crea  un bloque  anónimo 
    que  ejecute  la  función  anterior  y  muestre  el resultado devuelto por la función.
+ */   
+CREATE OR REPLACE FUNCTION DUMMY.PRECIOS(v_matricula coche.matricula%type, nuevopreciocoche number)
+return number as
+nuevopreciocoche	coche.precio_compra%type;
+BEGIN
+	SELECT c.precio_compra into nuevopreciocoche
+	from coche c where c.matricula=v_matricula;
+	IF nuevopreciocoche is null then 
+		update coche
+    	set precio_compra = v_nuevopreciocoche
+    	where matricula = v_matricula;
+
+	else
+    	update coche
+    	set precio_compra = precio_compra+(precio_compra-v_nuevo_precio_compra)
+    	where matricula = v_matricula;
+  	end if;
+
+
+
+
 16.   Crea   procedimiento   que   reciba   como   parámetros   de 
 entrada:P_ID_MARCA,P_NUMERO_COCHES.  Utiliza  un  bucle para insertar N registros nuevos en 
 la tabla COCHE. El numero de registros    a    insertar    viene    indicado    por    el   
 parámetro P_NUMEROS_COCHES(CONTADOR) y el bucle empezará en 1, los datos
 a insertar serán:-matricula=’A00’||CONTADOR-DESCRIPCION=p_id_marca-id_marca=p_id_marca-precio_compra=nuloControlar 
 excepción para cuando exista algún coche en la BBDD y se viole la pk.
+
 17.Crea un procedimiento al que le pasaremos el dni_cliente y la matricula. 
 El procedimiento deberá controlar en las ventas de los coches(tabla vende) los 
 siguientes supuestos:
@@ -168,5 +222,7 @@ I. mostrara el precio antiguo ||II. actualizara el precio subiendo 1000 eurosIII
 devolverá     en     un     parámetro     de     salida     del procedimiento(ps_nuevo_precio)   
 el   precio   nuevo   tras   la actualización   crea   un   bloque   anónimo   que   llame   
 al procedimiento  anterior  y  muestre  el  precio  nuevo  devuelto por el procedimiento.
+
 18. Crear un cursor para ver todos los clientes que no hayan hecho pagos. Hazlo con un loop.
+
 19. Crear un cursor para ver todos los clientes que no hayan hecho pagos. Hazlo con un for.
