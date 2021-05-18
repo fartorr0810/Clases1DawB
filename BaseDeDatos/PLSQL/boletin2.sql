@@ -63,19 +63,30 @@ Deber. crearse un cursor explícito al que se le pasarán estosparámetros y que
 los datos de los empleados que pertenezcan aldepartamento y con el número de hijos indicados.
 Al final se indicar. el número deempleados obtenidos.
  */
-CREATE OR REPLACE PROCEDURE DATOSEMPLEADOS(v_numdep	DEPARTAMENTOS.NUMDE%TYPE, v_numhijos	empleados.NUMHI%TYPE) AS 
+/* 3.Escribe   un   procedimiento   que   reciba   dos   parámetros   (número   dedepartamento, hijos).
+Deber. crearse un cursor explícito al que se le pasarán estosparámetros y que mostrar.
+los datos de los empleados que pertenezcan aldepartamento y con el número de hijos indicados.
+Al final se indicar. el número deempleados obtenidos.
+ */
+CREATE OR REPLACE PROCEDURE DATOSEMPLEADOS(v_numdep	DEPARTAMENTOS.NUMDE%TYPE, v_numhijos	empleados.NUMHI%TYPE)
+AS
+...
 CURSOR parametros IS 
 SELECT e.NUMDE , e.NUMHI 
 FROM empleados e,departamentos d2
-WHERE e.NUMDE=d2.numde;
+WHERE e.NUMDE=d2.numde AND e.NUMHI=v_numhijos ;
 	variablenumdep	departamentos.numde%TYPE;
 	variablenumhijos empleados.numhijos%TYPE;
+	v_empleados	empleados%rowtype;
 BEGIN
 	OPEN parametros;
-	FETCH parametros INTO variablenumdep,variablenumhijos;
+	FETCH parametros INTO v_empleados;
+	LOOP 
 	  DBMS_OUTPUT.PUT_LINE('El numero de dapartamento es '||variablenumdep||'y los hijos son'||VARIABLENUMHIJOS);
 	 CLOSE parametros;
 END DATOSEMPLEADOS;
+
+CALL DATOSEMPLEADOS(112,1);
 
 /* 4.Escribe un procedimiento con un parámetro 
 para el nombre de empleado,que nos muestrela edad de dicho empleado en años, meses y días. */

@@ -14,6 +14,14 @@
 
             var nuevoElemento = "<li>Texto de prueba</li>";
             lista.innerHTML = lista.innerHTML + nuevoElemento;
+
+        }
+
+        function eliminar() {
+            var elemento = document.removeChild(0);
+            var lista = document.getElementById("lista");
+            lista.removeChild(elemento);
+
         }
     </script>
 </head>
@@ -28,6 +36,7 @@
         <li>Miel</li>
     </ul>
     <input type="button" value="Anadir elemento" onclick="anade();">
+    <input type="button" value="Eliminar elemento" onclick="eliminar();">
 
 </body>
 
