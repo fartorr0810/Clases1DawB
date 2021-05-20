@@ -54,4 +54,20 @@ for (let i = 0; i < num; i++) {
 y que escriba si el número es primo o no.Un número primo es aquel
  que solo es divisible por sí mismo y la unidad */
 let numeru = prompt("Introduce un numero mayor a 1");
-if (numeru % num)
+for (let i = 2; i < numero; i++) {
+    if (numeru % i === 0) {
+        console.log("Por ahora es primo");
+    } else {
+        break;
+    }
+}
+/* 5 -Escriba  un  programa  que  pida  un  número  entero  mayor  que cero y calcule su factorial.
+El  factorial  es  el  resultado  de  multiplicar  ese  número  por  sus anteriores hasta la
+ unidad. */
+
+let numeruu = prompt("Introduce un numero para calcular factorial");
+let acum = 1;
+for (let i = 0; i < numeruu; i++) {
+    acum *= acum * numeruu;
+}
+console.log(acum);

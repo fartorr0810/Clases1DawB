@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Liga BBVA CLASIFICACION</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: "Open Sans", sans-serif;
+            line-height: 1.25;
+        }
+        
+        table {
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            table-layout: fixed;
+        }
+        
+        table caption {
+            font-size: 1.5em;
+            margin: .5em 0 .75em;
+        }
+        
+        table tr {
+            background-color: #f8f8f8;
+            border: 1px solid #ddd;
+            padding: .35em;
+        }
+        
+        table th,
+        table td {
+            padding: .625em;
+            text-align: left;
+        }
+        
+        table th {
+            font-size: .85em;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+        }
+        
+        @media screen and (max-width: 600px) {
+            table {
+                border: 0;
+            }
+            table caption {
+                font-size: 1.3em;
+            }
+            table thead {
+                border: none;
+                clip: rect(0 0 0 0);
+                height: 1px;
+                margin: -1px;
+                overflow: hidden;
+                padding: 0;
+                position: absolute;
+                width: 2px;
+            }
+            table tr {
+                border-bottom: 3px solid #ddd;
+                display: block;
+                margin-bottom: .625em;
+            }
+            table td {
+                border-bottom: 1px solid #ddd;
+                display: block;
+                font-size: .8em;
+                text-align: left;
+            }
+            table td::before {
+                content: attr(data-label);
+                float: left;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            table td:last-child {
+                border-bottom: 0;
+            }
+        }
+    </style>
+    <table border="1px" id="tablita">
+        <tr>
+            <td>Posicion</td>
+            <td>Equipo</td>
+            <td>Puntos</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>FC BARCELONA</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>REAL MADRID</td>
+            <td>17</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>ATLETICO DE MADRID</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>SEVILLA FC</td>
+            <td>9</td>
+        </tr>
+
+    </table>
+    <script src="ejercicio1.js" async defer></script>
+    <label for="name">Posicion:</label>
+    <input type="text" id="posicion" name="posicion" size="10"></body>
+<label for="name">Equipo:</label>
+<input type="text" id="equipo" name="equipo" size="10"></body>
+<label for="name">Puntos:</label>
+<input type="text" id="puntos" name="puntos" size="10"></body>
+<input type="button" id="botonboton">
+
+</html>
