@@ -1,0 +1,32 @@
+/*Para hacer una seleccion se hace asi:*/
+/*Este siempre selecciona al primer h3, por lo tanto
+sele ldebe añadir una clase*/
+document.querySelector('h3');
+document.querySelector('.h3-dangerr');
+document.querySelector('#h3-danger');
+document.getElementById('parrafo')
+    /*De esta forma se seleccionan todos los h3-danger que existan*/
+document.querySelectorAll('h3')
+    /*Desde esta forma cambio el contenido de un html */
+let parrafo = document.querySelector('.parrafo');
+parrafo.textContent = 'texto desde js';
+/**De esta forma puedes hasta meter etiquetas */
+parrafo.innerHTML = "<b>texto con innerhtml</b>";
+/*Anado clase en h3*/
+parrafo.classList.add('h3-danger');
+
+// EL create element  puedo meter cosas nuevas en el html
+//para ello le damos una id en el httml
+const lista = document.getElementById('lista');
+const li = document.createElement('li');
+li.textContent = 'primer elemento';
+lista.appendChild(li);
+
+//
+const arrayelemento = ['primer', 'segundo', 'tercero']
+arrayElement.forEach(item => {
+    const li = document.createElement('li');
+    li.textContent = item
+    lista.appendChild(li);
+    //console.log(item);
+})

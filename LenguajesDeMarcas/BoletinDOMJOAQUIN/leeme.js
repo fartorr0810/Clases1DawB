@@ -1,6 +1,6 @@
 function mostrar() {
     document.getElementById('adicionaloculto').style.display = 'block';
-    adicionaloculto
+    document.write('.adicionaloculto')
 }
 
 document.getElementById(adicionaloculto);
