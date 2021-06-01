@@ -1,0 +1,15 @@
+
+--1.Escribe unprocedimiento que muestre el número de empleados y el salariomínimo,
+--máximo y medio del departamento de FINANZAS. Debe hacerse uso decursores implícitos, 
+--es decir utilizar SELECT ... INTO.
+CREATE OR REPLACE PROCEDURE ejercicio1 IS
+	sueldos EMPLEADOS%ROWTYPE;
+	sueldomax NUMBER;
+	sueldomin	NUMBER;
+	sueldomed	NUMBER;
+BEGIN 
+	SELECT max(e.SALAR),MIN(e.SALAR),AVG(e.SALAR) INTO sueldos; 
+	FROM EMPLEADOS e,DEPARTAMENTOS d 
+	WHERE e.NUMDE = d.numde;
+	DBMS_OUTPUT.PUT_LINE ('El salario maximo es  : '||sueldos.salar||' el minimo :'||sueldos.salar||'el medio'||sueldos.salar);
+END ejercicio1;
