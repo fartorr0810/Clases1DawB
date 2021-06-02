@@ -92,7 +92,7 @@ public class Empresa {
 	public String listarPorNombres() {
 		String sb=new String();
 		String mensaje;
-		Collections.sort(listaproductos);
+		Collections.sort(listaproductos,new OrdenarSoloPorNombre());
 		for (Producto producto : listaproductos) {
 			sb+=""+producto.toString()+"\n";
 		}
@@ -125,13 +125,44 @@ public class Empresa {
 	//episodio ala serie. Devolverá true si se puede añadir el episodio de la serie y false en caso contrario.
 	public boolean addEpisodio(String nombreserie,String nombreepisodio,int pos) {
 		boolean result=false;
-		Capitulo cap=new Capitulo("Aprobaremos");
-		for (Producto producto : listaproductos) {
+		boolean encontrado=false;
+		Iterator<Producto> sig = listaproductos.iterator();
+		while (sig.hasNext( ) && !encontrado) {
+			Producto producto = (Producto) sig.next();
 			if (producto instanceof Serie) {
-				//Por aqui me he quedado por hoy 2 junio 00:15AM
+				if (producto.getNombre().equals(nombreserie)){
+					encontrado=true;
+					
+					try {
+						((Serie) producto).AddEpisodio(nombreepisodio, pos);
+					} catch (Exception e) {
+						e.printStackTrace();
+					}
+					result=true;
+				}
 			}
 		}
 		return result;
 	}
+	public void delEpisodio(String nombreserie, String nombreepisodio) throws Exception {
+		boolean encontrado=false;
+		Iterator<Producto> sig = listaproductos.iterator();
+		while (sig.hasNext( ) && !encontrado) {
+			Producto producto = (Producto) sig.next();
+			if (producto instanceof Serie) {
+				if (producto.getNombre().equals(nombreserie)){
+					try {
+						((Serie) producto).delEpisodio(nombreepisodio);
+					} catch (Exception e) {
+						System.out.println(e.getMessage());
+					}
+				}
+			}
+		}
+		if (encontrado) {
+			throw new Exception("Serie no encontrada");
+		}
+	}
+	
 	
 }

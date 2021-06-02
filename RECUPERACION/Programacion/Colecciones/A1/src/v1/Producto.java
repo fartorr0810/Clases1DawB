@@ -1,6 +1,5 @@
 package v1;
 
-import java.beans.FeatureDescriptor;
 import java.time.LocalDate;
 
 public abstract class Producto implements Comparable<Producto>,VisualizacionPorAno {
