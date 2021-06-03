@@ -13,15 +13,32 @@ public class Tarea implements Temporizable,Comparable<Tarea> {
 	private Prioridad prioridad;
 	private boolean resulta;
 	
-	public Tarea(String descripcion, String prioridad) {
+
+	public Tarea(String descripcion, String prioridad) throws Exception {
 		super();
 		this.descripcion = descripcion;
 		this.fechaalta = LocalDate.now();
-		this.prioridad = Prioridad.valueOf(prioridad);
+		if (!prioridad.equals("ALTA") && !prioridad.equals("MEDIA") && !prioridad.equals("BAJA")) {
+			throw new Exception("Solo se permite ALTA/MEDIA/BAJA");
+		}else {
+			this.prioridad = Prioridad.valueOf(prioridad);			
+		}
 		this.resulta=false;
 		NextCode++;
 	}
+	public Prioridad getPrioridad() {
+		return prioridad;
+	}
+	public String getDescripcion() {
+		return descripcion;
+	}
+	public LocalDate getFechaalta() {
+		return fechaalta;
+	}
 
+	public boolean isResulta() {
+		return resulta;
+	}
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -36,10 +53,10 @@ public class Tarea implements Temporizable,Comparable<Tarea> {
 	@Override
 	public String toString() {
 		String linea="";
-		if (this.resulta=false) {
+		if (resulta==false) {
 			linea="Tarea con codigo " + codigo + "su descripcion es" + descripcion + ",  la fechaalta=" + fechaalta
 					+ "y su prioridad es " + prioridad + "y su estado de resulta es: " + resulta;
-		}else if (this.resulta=true) {
+		}else if (resulta==true) {
 			linea="Tarea con codigo " + codigo + "su descripcion es" + descripcion + ",  la fechaalta=" + fechaalta
 					+ "y su fecha de solucion es: "+fechasolucion+" y su prioridad es " + prioridad + "y su estado de resulta es: " + resulta;
 		}
@@ -90,5 +107,7 @@ public class Tarea implements Temporizable,Comparable<Tarea> {
 		}
 		return result;
 	}
-	
+	public void resolverTarea() {
+		this.resulta=true;
+	}
 }

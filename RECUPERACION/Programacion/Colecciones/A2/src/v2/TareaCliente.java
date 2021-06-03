@@ -4,7 +4,7 @@ public class TareaCliente extends Tarea{
 	private String nombrecliente;
 	private String ciudad;
 	
-	public TareaCliente(String descripcion, String prioridad, String nombrecliente, String ciudad) {
+	public TareaCliente(String descripcion, String prioridad, String nombrecliente, String ciudad) throws Exception {
 		super(descripcion, prioridad);
 		this.nombrecliente=nombrecliente;
 		this.ciudad=ciudad;
