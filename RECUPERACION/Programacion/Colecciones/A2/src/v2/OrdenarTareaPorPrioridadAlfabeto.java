@@ -7,9 +7,9 @@ public class OrdenarTareaPorPrioridadAlfabeto implements Comparator<Tarea> {
 	@Override
 	public int compare(Tarea o1, Tarea o2) {
 		int result=0;
-		if(o1.getPrioridad().getNumhoras() < o2.getPrioridad().getNumhoras()) {
+		if(o1.getPrioridad().getNumhoras() > o2.getPrioridad().getNumhoras()) {
 			result = -1;
-		}else if(o1.getPrioridad().getNumhoras() > o2.getPrioridad().getNumhoras()){
+		}else if(o1.getPrioridad().getNumhoras() < o2.getPrioridad().getNumhoras()){
 			result = 1; 
 			}
 		else {

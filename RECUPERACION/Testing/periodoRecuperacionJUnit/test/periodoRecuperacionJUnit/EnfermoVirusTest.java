@@ -26,7 +26,8 @@ class EnfermoVirusTest {
 		Arguments.of("Bart","Sim",17,"adolescente"),
 		Arguments.of("Bart","Sim",18,"adulto"),
 		Arguments.of("Bart","Sim",19,"adulto"),
-		Arguments.of("Bart","Sim",0,"")
+		Arguments.of("Bart","Sim",0,"bebe"),
+		Arguments.of("Bart","Sim",-1,"No se admiten valores negativos")
 		);
 	}
 	@ParameterizedTest
