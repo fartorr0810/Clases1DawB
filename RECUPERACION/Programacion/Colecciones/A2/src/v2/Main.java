@@ -20,7 +20,7 @@ public class Main {
 		System.out.println(emp.mostrarTareasPrioridad());
 		System.out.println(emp.numTareasPendientes());
 		//Eso peta porque lo compruebo en el cosntructor
-		//emp.AddTareaCliente("Instalar W12", "AaaLTA", "PEPE", "Madrid");
+		emp.AddTareaCliente("Instalar W12", "ALTA", "PEPE", "Madrid");
 
 
 	}

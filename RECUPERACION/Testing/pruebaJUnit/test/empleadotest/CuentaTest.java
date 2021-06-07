@@ -21,6 +21,7 @@ class CuentaTest {
 	void testIngresar() throws IngresoNegativoException {
 		try {
 			cc.ingresar("Negativo", -100);
+			fail();
 		} catch (IngresoNegativoException e) {
 			assertEquals("No se puede ingresar una cantidad negativa", e.getMessage());
 		}
@@ -31,16 +32,25 @@ class CuentaTest {
 
 	@Test
 	void testRetirar() throws IngresoNegativoException, SaldoInsuficienteException {
+		cc.ingresar("asd", 123);
+		
 		try {
-			cc.retirar("Quitar con saldo negativo", -1000);
+			cc.retirar("Quitar con saldo negativo", -120);
+			fail("Deberia lanzar la excepcion saldo");
 		} catch (IngresoNegativoException e) {
 			assertEquals("No se puede retirar una cantidad negativa", e.getMessage());
 		} catch (SaldoInsuficienteException e) {
 			assertEquals("Saldo insuficiente", e.getMessage());
 		}
-		cc.ingresar("Prueba", 1000);
-		cc.retirar("quito 500", 500);
-		assertEquals(500, cc.getSaldo());
+		try {
+			cc.retirar("Quitar con saldo negativo", 1000);
+		} catch (IngresoNegativoException e) {
+		} catch (SaldoInsuficienteException e) {
+			assertEquals("Saldo insuficiente", e.getMessage());
+		}
+		//cc.ingresar("Prueba", 1000);
+		//cc.retirar("quito 500", 500);
+		//assertEquals(500, cc.getSaldo());
 		
 		//assertEquals(500, cc.retirar("saco 500", 500));
 		
@@ -50,13 +60,14 @@ class CuentaTest {
 	void testGetSaldo() {
 		fail("Not yet implemented");
 	}
-
+//	Este metodo no se puede comprobar 
 	@Test
-	void testAddMovimiento() {
+	void testAddMovimiento() throws IngresoNegativoException {
 		//no puedo meter movimientos porque NO HAY CONSTRUCTOR 
 		Movimiento m1=new Movimiento();
+		cc.ingresar("asd", 120);
 		cc.addMovimiento(m1);
-		assertEquals(cc.getSaldo(), cc.getSaldo());
+		assertEquals(0, cc.getSaldo());
 	}
 
 }

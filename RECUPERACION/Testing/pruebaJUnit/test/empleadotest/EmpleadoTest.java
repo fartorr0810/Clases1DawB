@@ -1,10 +1,8 @@
 package empleadotest;
 
 import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import empleado.Empleado;
 
 class EmpleadoTest {
@@ -12,10 +10,10 @@ class EmpleadoTest {
 	private Empleado p2;
 	private Empleado p3;
 	private Empleado p4;
-
+	
 	@BeforeEach
 	public void init() {
-		
+	
 		//Empleado sin parametros
 		p1=new Empleado();
 		//Empleado con dos parametros.

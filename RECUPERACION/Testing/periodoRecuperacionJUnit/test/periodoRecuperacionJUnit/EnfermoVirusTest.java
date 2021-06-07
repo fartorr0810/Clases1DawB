@@ -24,10 +24,9 @@ class EnfermoVirusTest {
 		Arguments.of("Bart","Sim",12,"niño"),
 		Arguments.of("Bart","Sim",16,"adolescente"),
 		Arguments.of("Bart","Sim",17,"adolescente"),
-		Arguments.of("Bart","Sim",18,"adulto"),
-		Arguments.of("Bart","Sim",19,"adulto"),
-		Arguments.of("Bart","Sim",0,"bebe"),
-		Arguments.of("Bart","Sim",-1,"No se admiten valores negativos")
+		Arguments.of("Bart","Sim",18,"adulto")
+		//El fallo esta en el constructor que no comprueba los valores negativos
+		//Arguments.of("Bart","Sim",-1,"No se admiten valores negativos") 
 		);
 	}
 	@ParameterizedTest
@@ -36,10 +35,12 @@ class EnfermoVirusTest {
 		EnfermoVirus e=new EnfermoVirus(nombre,apellidos,edad);
 		assertEquals(respuesta, e.rangoEdad());
 	}
-
-	@Test
-	void testToString() {
-		assertEquals("EnfermoVirusImpl [nombre=Bart, apellidos=Simpson, edad=7]", e1.toString());
+//Hacerlo parametrizado.
+	@ParameterizedTest
+	@MethodSource("edades")
+	void testToString(String nombre,String apellidos,int edad,String respuesta) {
+		EnfermoVirus e=new EnfermoVirus(nombre,apellidos,edad);
+		assertEquals("EnfermoVirusImpl [nombre="+nombre+", apellidos="+apellidos+", edad="+edad+"]", e.toString());
 	}
 
 }

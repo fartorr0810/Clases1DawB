@@ -29,11 +29,23 @@ class BarcoTest {
 			}
 		//Ahora comprobaremos que se incrementa la carga
 			Barco b2=new Barco("20","BMW","Motora","Juanito el golondrino",2);
+			
 			assertEquals(0, b2.getCargaActual());
 			b2.cargaContenedor(c);
 			assertEquals(1, b2.getCargaActual());
 			//Volvemos a cargar otro contenedor igual y vemos si llega al 2
 			b2.cargaContenedor(c);
 			assertEquals(2, b2.getCargaActual());
+			//Otra forma de hacerlo, con variable, en caso de que se pueda hacerlo
+			Barco b3=new Barco("20","BMW","Motora","Juanito el golondrino",2);
+			int cargaActual=b3.getCargaActual();
+			b3.cargaContenedor(c);
+			assertEquals(cargaActual++, b3.getCargaActual());
 		}
+	//Comprobar que se hace vacio, lo hace arriba ya.
+	@Test
+	void testBarcoVacio() {
+		Barco b3=new Barco("20","BMW","Motora","Juanito el golondrino",0);
+		//assertEquals(expected, actual);
+	}
 }

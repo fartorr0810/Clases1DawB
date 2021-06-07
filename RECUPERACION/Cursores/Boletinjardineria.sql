@@ -64,20 +64,35 @@ END mostrareurodepedido;
 /* 12. Mostrar el nombre de un cliente dado su código. Controla en caso de que no se encuentre,
 mostrando un mensaje,por ejemplo. */
 CREATE OR REPLACE PROCEDURE DUMMY.mostrarclienteconexcepciones (codigo NUMBER) IS 
-	v_cliente CLIENTES%ROWTYPE;
-	
-	--Falta declarar bloque de excepcion. en el is.
-BEGIN
-	SELECT * INTO v_cliente
+	v_cliente CLIENTES.NOMBRECLIENTE%TYPE;
+	noencontrado EXCEPTION;
+	BEGIN
+	SELECT c.NOMBRECLIENTE INTO v_cliente
 	FROM CLIENTES c
-	WHERE c.CODIGOCLIENTE=codigo ;
-	IF codigo IS NULL THEN
-    RAISE importe_mal;
+	WHERE c.CODIGOCLIENTE=codigo;
+	IF v_cliente IS NULL  THEN
+    RAISE noencontrado;
 	ELSE 
-		dbms_output.put_line('Se llama: '||v_cliente.nombrecliente);
+		dbms_output.put_line('Se llama: '||v_cliente);
 	END IF;
+	EXCEPTION
+		WHEN no_data_found THEN DBMS_OUTPUT.PUT_LINE('Cliente no encontrado');
 END mostrarclienteconexcepciones;
 
-13. Realizar una función que me devuelva la suma de pagos 
+/* 13. Realizar una función que me devuelva la suma de pagos 
 que ha realizado. Pasa el codigo por parametro. Controla en caso de que no se encuentre, 
 en ese caso devuelve un -1.
+ */
+CREATE OR REPLACE FUNCTION DUMMY.sumapagosExceptions(codigo number) RETURN NUMBER IS 
+	v_sumas NUMBER;
+	sinvalor EXCEPTION;
+	BEGIN
+		SELECT sum(p.CANTIDAD) INTO v_sumas
+		FROM PAGOS p ,CLIENTES c 
+		WHERE p.CODIGOCLIENTE=codigo AND c.CODIGOCLIENTE =p.CODIGOCLIENTE ;
+	IF v_sumas IS NULL THEN
+		RAISE sinvalor;
+	END IF;
+	EXCEPTION WHEN no_data_found then v_sumas:=-1;
+	RETURN v_sumas;
+	END sumapagosExceptions;
