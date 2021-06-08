@@ -32,7 +32,7 @@ public class MuchasCiudades {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
-		}
-		
+		}	
 	}
+	
 }	

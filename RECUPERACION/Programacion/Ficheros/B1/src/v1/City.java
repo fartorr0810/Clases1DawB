@@ -1,14 +1,14 @@
 package v1;
 
-import java.util.LinkedList;
-
 public class City {
-	private LinkedList<Adress> calles;
-	private String ciudad;
-	public City(LinkedList<Adress> calles, String ciudad) {
-		super();
-		calles=new LinkedList<Adress>();
-		this.ciudad = ciudad;
-	}
+	private int cityid;
+	private String nombrecity;
+	private int idcountry;
 	
+	public City(int cityid, String nombrecity, int idcountry) {
+		super();
+		this.cityid = cityid;
+		this.nombrecity = nombrecity;
+		this.idcountry = idcountry;
+	}
 }

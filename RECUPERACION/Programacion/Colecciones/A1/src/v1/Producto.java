@@ -21,7 +21,7 @@ public abstract class Producto implements Comparable<Producto>,VisualizacionPorA
 		}
 	}	
 	
-	private static int getMenosAno() {		
+	public static int getMenosAno() {		
 		return menorano;
 	}
 	

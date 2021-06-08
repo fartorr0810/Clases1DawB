@@ -6,6 +6,8 @@ public class Main {
 		// TODO Auto-generated method stub
 		MuchosPaises mc=new MuchosPaises();
 		mc.cargarPaises();
+		System.out.println(mc.toStringPaises());
+		mc.cargarCiudades();
 		System.out.println(mc.toStringCiudades());
 	}
 

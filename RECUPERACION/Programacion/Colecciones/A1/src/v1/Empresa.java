@@ -44,7 +44,7 @@ public class Empresa {
 	}
 	//Este metodo es auxiliar al metodo addPeliSerie para comprobar que no se repitan productos, ya que 
 	//los array lo permiten , de esta forma lo evitamos.
-	public boolean Comprobador(Producto p) {
+	private boolean Comprobador(Producto p) {
 		boolean encontrado=false;
 		Iterator<Producto> sig = listaproductos.iterator();
 		while (sig.hasNext( ) && !encontrado) {
@@ -132,7 +132,6 @@ public class Empresa {
 			if (producto instanceof Serie) {
 				if (producto.getNombre().equals(nombreserie)){
 					encontrado=true;
-					
 					try {
 						((Serie) producto).AddEpisodio(nombreepisodio, pos);
 					} catch (Exception e) {
@@ -153,6 +152,7 @@ public class Empresa {
 				if (producto.getNombre().equals(nombreserie)){
 					try {
 						((Serie) producto).delEpisodio(nombreepisodio);
+						encontrado=true;
 					} catch (Exception e) {
 						System.out.println(e.getMessage());
 					}
