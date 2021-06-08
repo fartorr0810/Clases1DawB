@@ -10,7 +10,7 @@ class EmpleadoTest {
 	private Empleado p2;
 	private Empleado p3;
 	private Empleado p4;
-	
+	@
 	@BeforeEach
 	public void init() {
 	

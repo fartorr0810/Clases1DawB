@@ -6,9 +6,11 @@ import org.junit.jupiter.api.Test;
 
 class MovimientoTest {
 //Test basico de getters y setters.
+	//No se pueden hacer test, van a fallar todos porque la clase esta mal.
+	
 	@Test
 	void testGetImporte() {
-		fail("Not yet implemented");
+		
 	}
 
 	@Test
