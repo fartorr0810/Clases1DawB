@@ -8,7 +8,6 @@ public class Main {
 		mc.cargarPaises();
 		System.out.println(mc.toStringPaises());
 		mc.cargarCiudades();
-		mc.cargarDirecciones();
 		System.out.println(mc.toString());
 		}
 

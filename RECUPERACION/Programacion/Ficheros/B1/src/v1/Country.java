@@ -25,22 +25,26 @@ public class Country {
 		}
 		return result;
 	}
-	public boolean addDireccionCiudad(int codciudad,Adress calle) {
-		City c=new City(codciudad, null);
-		boolean result=false;
-		if (ciudades.contains(c)) {
-			c.addDireccion(calle);
-			ciudades.get(ciudades.indexOf(c));
-			result=true;
+	
+	public void addCiudades(City c) {
+		if(!ciudades.contains(c)){
+			ciudades.add(c);
 		}
-		return result;
+	}
+	
+	public boolean addDirecciones(int idCity,String city, Adress a) {
+		boolean resul=false;
+		City c = new City(idCity,city);
+		if(ciudades.contains(c)) {
+			ciudades.get(ciudades.indexOf(c)).addDirecciones(a);
+			resul=true;
+		}
+		return resul;
 	}
 	public int getCountryid() {
 		return countryid;
 	}
-	public void addciudad(City c) {
-		ciudades.add(c);
-	}
+
 	@Override
 	public String toString() {
 		return "Country [countryid=" + countryid + ", countryname=" + countryname + "]";
