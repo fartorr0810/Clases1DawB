@@ -17,39 +17,41 @@ public class Country {
 		this.countryname = countryname;
 		ciudades=new LinkedList<City>();	
 	}
-	public void cargarCiudades()  {
-		String linea;
-		String aux[];
-		try {
-			FileReader lectura = new FileReader("./ficheros/country.txt");
-			BufferedReader buffer=new BufferedReader(lectura);
-			linea=buffer.readLine();
-			while (linea!=null) {				
-				aux=linea.split(",");
-				if (aux[2].equals(String.valueOf(countryid))) {
-					City city=new City(Integer.parseInt(aux[0]),aux[1],Integer.parseInt(aux[2]));
-					ciudades.add(city);
-				}
-				linea=buffer.readLine();
-			}
-			buffer.close();
-			lectura.close();
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
+	public boolean contieneCiudad(int codciudad) {
+		boolean result=false;
+		City c=new City(codciudad,"");
+		if(ciudades.contains(c)) {
+			result=true;
 		}
+		return result;
 	}
-	
+	public boolean addDireccionCiudad(int codciudad,Adress calle) {
+		City c=new City(codciudad, null);
+		boolean result=false;
+		if (ciudades.contains(c)) {
+			c.addDireccion(calle);
+			ciudades.get(ciudades.indexOf(c));
+			result=true;
+		}
+		return result;
+	}
 	public int getCountryid() {
 		return countryid;
 	}
-
+	public void addciudad(City c) {
+		ciudades.add(c);
+	}
 	@Override
 	public String toString() {
 		return "Country [countryid=" + countryid + ", countryname=" + countryname + "]";
 	}
 	//Crear metodo que anada ciudades junto a su respetivo id.
-	
+	public String toStringCiudades() {
+		String mensaje="";
+		for (City ciudad : ciudades) {
+			mensaje+=ciudades.toString()+"\n";
+		}
+		return mensaje; 
+	}
 
 }
