@@ -1,0 +1,999 @@
+nombre pais:AfghanistanCity [city_id=251, city=Kabul]Adress [adressid=222, adressname=1168 Najafabad Parkway]
+
+
+nombre pais:AlgeriaCity [city_id=59, city=Batna]Adress [adressid=446, adressname=1924 Shimonoseki Drive]
+
+City [city_id=63, city=Bchar]Adress [adressid=73, adressname=1031 Daugavpils Parkway]
+
+City [city_id=483, city=Skikda]Adress [adressid=180, adressname=757 Rustenburg Avenue]
+
+
+nombre pais:American SamoaCity [city_id=516, city=Tafuna]Adress [adressid=325, adressname=1892 Nabereznyje Telny Lane]
+
+
+nombre pais:AngolaCity [city_id=67, city=Benguela]
+City [city_id=360, city=Namibe]Adress [adressid=388, adressname=368 Hunuco Boulevard]
+
+
+nombre pais:AnguillaCity [city_id=493, city=South Hill]Adress [adressid=386, adressname=1368 Maracabo Boulevard]
+
+
+nombre pais:ArgentinaCity [city_id=20, city=Almirante Brown]Adress [adressid=364, adressname=1623 Kingstown Drive]
+
+City [city_id=43, city=Avellaneda]
+City [city_id=45, city=Baha Blanca]Adress [adressid=327, adressname=1427 A Corua La Corua Place]
+
+City [city_id=128, city=Crdoba]Adress [adressid=28, adressname=96 Tafuna Way]
+
+City [city_id=161, city=Escobar]Adress [adressid=450, adressname=203 Tambaram Street]
+
+City [city_id=165, city=Ezeiza]
+City [city_id=289, city=La Plata]Adress [adressid=93, adressname=1926 El Alto Avenue]
+
+City [city_id=334, city=Merlo]Adress [adressid=111, adressname=1532 Dzerzinsk Way]
+
+City [city_id=424, city=Quilmes]
+City [city_id=454, city=San Miguel de Tucumn]Adress [adressid=247, adressname=1483 Pathankot Street]
+
+City [city_id=457, city=Santa F]Adress [adressid=336, adressname=430 Kumbakonam Drive]
+
+City [city_id=524, city=Tandil]Adress [adressid=410, adressname=88 Nagaon Manor]
+
+City [city_id=567, city=Vicente Lpez]Adress [adressid=223, adressname=1244 Allappuzha Alleppey Place]
+
+
+nombre pais:ArmeniaCity [city_id=586, city=Yerevan]Adress [adressid=45, adressname=42 Brindisi Place]
+
+
+nombre pais:AustraliaCity [city_id=576, city=Woodridge]Adress [adressid=2, adressname=28 MySQL Boulevard]
+Adress [adressid=4, adressname=1411 Lillydale Drive]
+
+
+nombre pais:AustriaCity [city_id=186, city=Graz]Adress [adressid=177, adressname=1010 Klerksdorp Way]
+
+City [city_id=307, city=Linz]Adress [adressid=163, adressname=1440 Compton Place]
+
+City [city_id=447, city=Salzburg]Adress [adressid=271, adressname=1587 Loja Manor]
+
+
+nombre pais:AzerbaijanCity [city_id=48, city=Baku]Adress [adressid=338, adressname=431 Szkesfehrvr Avenue]
+
+City [city_id=505, city=Sumqayit]Adress [adressid=339, adressname=503 Sogamoso Loop]
+
+
+nombre pais:BahrainCity [city_id=14, city=al-Manama]
+
+nombre pais:BangladeshCity [city_id=143, city=Dhaka]Adress [adressid=337, adressname=1838 Tabriz Lane]
+
+City [city_id=234, city=Jamalpur]Adress [adressid=334, adressname=1816 Bydgoszcz Loop]
+
+City [city_id=525, city=Tangail]Adress [adressid=25, adressname=262 A Corua La Corua Parkway]
+
+
+nombre pais:BelarusCity [city_id=339, city=Mogiljov]
+City [city_id=340, city=Molodetno]Adress [adressid=148, adressname=1027 Songkhla Manor]
+
+
+nombre pais:BoliviaCity [city_id=153, city=El Alto]Adress [adressid=460, adressname=659 Gatineau Boulevard]
+
+City [city_id=501, city=Sucre]Adress [adressid=436, adressname=287 Cuautla Boulevard]
+
+
+nombre pais:BrazilCity [city_id=21, city=Alvorada]
+City [city_id=25, city=Angra dos Reis]Adress [adressid=312, adressname=1354 Siegen Street]
+
+City [city_id=26, city=Anpolis]Adress [adressid=233, adressname=356 Olomouc Manor]
+
+City [city_id=28, city=Aparecida de Goinia]Adress [adressid=220, adressname=1201 Qomsheh Manor]
+
+City [city_id=30, city=Araatuba]Adress [adressid=81, adressname=1692 Ede Loop]
+
+City [city_id=44, city=Bag]Adress [adressid=403, adressname=1190 0 Place]
+
+City [city_id=66, city=Belm]Adress [adressid=367, adressname=1163 London Parkway]
+
+City [city_id=83, city=Blumenau]Adress [adressid=210, adressname=1304 s-Hertogenbosch Way]
+
+City [city_id=84, city=Boa Vista]Adress [adressid=347, adressname=1293 Nam Dinh Way]
+
+City [city_id=89, city=Braslia]Adress [adressid=330, adressname=981 Kumbakonam Place]
+
+City [city_id=183, city=Goinia]Adress [adressid=96, adressname=984 Effon-Alaiye Avenue]
+
+City [city_id=189, city=Guaruj]Adress [adressid=432, adressname=259 Ipoh Drive]
+
+City [city_id=190, city=guas Lindas de Gois]Adress [adressid=134, adressname=758 Junan Lane]
+
+City [city_id=215, city=Ibirit]Adress [adressid=315, adressname=543 Bergamo Avenue]
+
+City [city_id=247, city=Juazeiro do Norte]Adress [adressid=51, adressname=686 Garland Manor]
+
+City [city_id=248, city=Juiz de Fora]
+City [city_id=317, city=Luzinia]Adress [adressid=187, adressname=1839 Szkesfehrvr Parkway]
+
+City [city_id=328, city=Maring]Adress [adressid=250, adressname=829 Grand Prairie Way]
+
+City [city_id=410, city=Po]Adress [adressid=130, adressname=1666 Qomsheh Drive]
+
+City [city_id=413, city=Poos de Caldas]Adress [adressid=259, adressname=1338 Zalantun Lane]
+
+City [city_id=431, city=Rio Claro]Adress [adressid=78, adressname=1206 Dos Quebradas Place]
+
+City [city_id=456, city=Santa Brbara dOeste]Adress [adressid=182, adressname=1891 Rizhao Boulevard]
+
+City [city_id=461, city=Santo Andr]Adress [adressid=359, adressname=519 Nyeri Manor]
+
+City [city_id=485, city=So Bernardo do Campo]
+City [city_id=486, city=So Leopoldo]Adress [adressid=448, adressname=614 Denizli Parkway]
+
+City [city_id=490, city=Sorocaba]Adress [adressid=319, adressname=1957 Yantai Lane]
+
+City [city_id=569, city=Vila Velha]Adress [adressid=43, adressname=306 Antofagasta Place]
+
+City [city_id=572, city=Vitria de Santo Anto]Adress [adressid=379, adressname=1133 Rizhao Avenue]
+
+
+nombre pais:BruneiCity [city_id=53, city=Bandar Seri Begawan]Adress [adressid=95, adressname=1370 Le Mans Avenue]
+
+
+nombre pais:BulgariaCity [city_id=436, city=Ruse]
+City [city_id=498, city=Stara Zagora]Adress [adressid=219, adressname=1229 Valencia Parkway]
+
+
+nombre pais:CambodiaCity [city_id=60, city=Battambang]
+City [city_id=406, city=Phnom Penh]Adress [adressid=232, adressname=754 Valencia Place]
+
+
+nombre pais:CameroonCity [city_id=52, city=Bamenda]Adress [adressid=357, adressname=1641 Changhwa Place]
+
+City [city_id=585, city=Yaound]Adress [adressid=366, adressname=114 Jalib al-Shuyukh Manor]
+
+
+nombre pais:CanadaCity [city_id=179, city=Gatineau]
+City [city_id=196, city=Halifax]Adress [adressid=468, adressname=1844 Usak Avenue]
+
+City [city_id=300, city=Lethbridge]Adress [adressid=1, adressname=47 MySakila Drive]
+Adress [adressid=3, adressname=23 Workhaven Lane]
+
+City [city_id=313, city=London]
+City [city_id=383, city=Oshawa]Adress [adressid=193, adressname=891 Novi Sad Manor]
+
+City [city_id=430, city=Richmond Hill]Adress [adressid=415, adressname=432 Garden Grove Street]
+
+City [city_id=565, city=Vancouver]Adress [adressid=441, adressname=983 Santa F Way]
+
+
+nombre pais:ChadCity [city_id=363, city=NDjamna]
+
+nombre pais:ChileCity [city_id=27, city=Antofagasta]Adress [adressid=49, adressname=1718 Valencia Street]
+
+City [city_id=127, city=Coquimbo]
+City [city_id=428, city=Rancagua]Adress [adressid=469, adressname=1872 Toulon Loop]
+
+
+nombre pais:ChinaCity [city_id=46, city=Baicheng]
+City [city_id=47, city=Baiyin]
+City [city_id=80, city=Binzhou]
+City [city_id=109, city=Changzhou]Adress [adressid=201, adressname=817 Bradford Loop]
+
+City [city_id=136, city=Datong]Adress [adressid=265, adressname=1158 Mandi Bahauddin Parkway]
+
+City [city_id=139, city=Daxian]Adress [adressid=68, adressname=1966 Amroha Avenue]
+
+City [city_id=145, city=Dongying]Adress [adressid=471, adressname=1322 Mosul Parkway]
+
+City [city_id=157, city=Emeishan]Adress [adressid=394, adressname=753 Ilorin Avenue]
+
+City [city_id=159, city=Enshi]Adress [adressid=114, adressname=804 Elista Drive]
+
+City [city_id=166, city=Ezhou]Adress [adressid=318, adressname=1774 Yaound Place]
+
+City [city_id=174, city=Fuyu]Adress [adressid=215, adressname=1333 Haldia Street]
+
+City [city_id=175, city=Fuzhou]Adress [adressid=286, adressname=1308 Sumy Loop]
+
+City [city_id=193, city=Haining]
+City [city_id=199, city=Hami]Adress [adressid=169, adressname=154 Tallahassee Loop]
+
+City [city_id=207, city=Hohhot]Adress [adressid=142, adressname=1587 Sullana Lane]
+
+City [city_id=210, city=Huaian]Adress [adressid=389, adressname=500 Lincoln Parkway]
+
+City [city_id=240, city=Jinchang]Adress [adressid=172, adressname=475 Atinsk Way]
+
+City [city_id=241, city=Jining]
+City [city_id=242, city=Jinzhou]
+City [city_id=249, city=Junan]Adress [adressid=440, adressname=722 Bradford Lane]
+
+City [city_id=277, city=Korla]Adress [adressid=288, adressname=226 Halifax Street]
+
+City [city_id=291, city=Laiwu]Adress [adressid=155, adressname=1560 Jelets Boulevard]
+
+City [city_id=293, city=Laohekou]Adress [adressid=427, adressname=1557 Cape Coral Parkway]
+
+City [city_id=298, city=Lengshuijiang]Adress [adressid=272, adressname=1762 Paarl Parkway]
+
+City [city_id=299, city=Leshan]
+City [city_id=302, city=Liaocheng]Adress [adressid=133, adressname=1854 Tieli Street]
+
+City [city_id=332, city=Meixian]Adress [adressid=94, adressname=1952 Chatsworth Drive]
+
+City [city_id=362, city=Nanyang]Adress [adressid=41, adressname=1440 Fukuyama Loop]
+
+City [city_id=407, city=Pingxiang]Adress [adressid=173, adressname=1294 Firozabad Drive]
+
+City [city_id=422, city=Qinhuangdao]Adress [adressid=246, adressname=1246 Boksburg Parkway]
+
+City [city_id=432, city=Rizhao]
+City [city_id=462, city=Sanya]
+City [city_id=468, city=Shanwei]Adress [adressid=429, adressname=1269 Botosani Manor]
+
+City [city_id=469, city=Shaoguan]
+City [city_id=471, city=Shenzhen]Adress [adressid=383, adressname=686 Donostia-San Sebastin Lane]
+
+City [city_id=502, city=Suihua]
+City [city_id=535, city=Tianjin]Adress [adressid=253, adressname=1760 Oshawa Manor]
+
+City [city_id=536, city=Tiefa]Adress [adressid=307, adressname=1908 Gaziantep Place]
+
+City [city_id=537, city=Tieli]
+City [city_id=540, city=Tongliao]Adress [adressid=447, adressname=105 Dzerzinsk Manor]
+
+City [city_id=574, city=Weifang]
+City [city_id=578, city=Xiangfan]Adress [adressid=245, adressname=1103 Bilbays Parkway]
+
+City [city_id=579, city=Xiangtan]Adress [adressid=71, adressname=1586 Guaruj Place]
+
+City [city_id=580, city=Xintai]
+City [city_id=581, city=Xinxiang]Adress [adressid=344, adressname=1909 Benguela Lane]
+
+City [city_id=584, city=Yantai]Adress [adressid=277, adressname=85 San Felipe de Puerto Plata Drive]
+
+City [city_id=587, city=Yinchuan]
+City [city_id=588, city=Yingkou]
+City [city_id=590, city=Yuncheng]Adress [adressid=158, adressname=798 Cianjur Avenue]
+
+City [city_id=591, city=Yuzhou]Adress [adressid=329, adressname=867 Benin City Avenue]
+
+City [city_id=592, city=Zalantun]Adress [adressid=97, adressname=832 Nakhon Sawan Manor]
+
+City [city_id=594, city=Zaoyang]
+City [city_id=599, city=Zhoushan]
+
+nombre pais:ColombiaCity [city_id=96, city=Buenaventura]Adress [adressid=239, adressname=98 Stara Zagora Boulevard]
+
+City [city_id=147, city=Dos Quebradas]Adress [adressid=124, adressname=241 Mosul Lane]
+
+City [city_id=170, city=Florencia]Adress [adressid=465, adressname=734 Tanshui Avenue]
+
+City [city_id=405, city=Pereira]Adress [adressid=184, adressname=1410 Benin City Parkway]
+
+City [city_id=480, city=Sincelejo]Adress [adressid=91, adressname=1740 Portoviejo Avenue]
+
+City [city_id=487, city=Sogamoso]
+
+nombre pais:CongoCity [city_id=315, city=Lubumbashi]Adress [adressid=392, adressname=514 Ife Way]
+
+City [city_id=348, city=Mwene-Ditu]Adress [adressid=380, adressname=1519 Santiago de los Caballeros Loop]
+
+
+nombre pais:Czech RepublicCity [city_id=378, city=Olomouc]Adress [adressid=270, adressname=682 Halisahar Place]
+
+
+nombre pais:Dominican RepublicCity [city_id=290, city=La Romana]Adress [adressid=442, adressname=1245 Ibirit Way]
+
+City [city_id=450, city=San Felipe de Puerto Plata]Adress [adressid=423, adressname=437 Chungho Drive]
+
+City [city_id=460, city=Santiago de los Caballeros]Adress [adressid=263, adressname=532 Toulon Street]
+
+
+nombre pais:EcuadorCity [city_id=311, city=Loja]
+City [city_id=414, city=Portoviejo]Adress [adressid=267, adressname=816 Cayenne Parkway]
+
+City [city_id=434, city=Robamba]
+
+nombre pais:EgyptCity [city_id=79, city=Bilbays]
+City [city_id=216, city=Idfu]Adress [adressid=237, adressname=1736 Cavite Place]
+
+City [city_id=337, city=Mit Ghamr]
+City [city_id=421, city=Qalyub]Adress [adressid=138, adressname=765 Southampton Drive]
+
+City [city_id=465, city=Sawhaj]Adress [adressid=428, adressname=1727 Matamoros Place]
+
+City [city_id=476, city=Shubra al-Khayma]Adress [adressid=123, adressname=1987 Coacalco de Berriozbal Loop]
+
+
+nombre pais:EstoniaCity [city_id=530, city=Tartu]Adress [adressid=449, adressname=1289 Belm Boulevard]
+
+
+nombre pais:EthiopiaCity [city_id=6, city=Addis Abeba]Adress [adressid=397, adressname=614 Pak Kret Street]
+
+
+nombre pais:Faroe IslandsCity [city_id=545, city=Trshavn]Adress [adressid=322, adressname=1359 Zhoushan Parkway]
+
+
+nombre pais:FinlandCity [city_id=387, city=Oulu]Adress [adressid=303, adressname=898 Jining Lane]
+
+
+nombre pais:FranceCity [city_id=92, city=Brest]Adress [adressid=407, adressname=1346 Mysore Drive]
+
+City [city_id=297, city=Le Mans]Adress [adressid=166, adressname=1740 Le Mans Loop]
+
+City [city_id=543, city=Toulon]Adress [adressid=108, adressname=1386 Yangor Avenue]
+
+City [city_id=544, city=Toulouse]Adress [adressid=39, adressname=391 Callao Drive]
+
+
+nombre pais:French GuianaCity [city_id=105, city=Cayenne]Adress [adressid=69, adressname=698 Otsu Street]
+
+
+nombre pais:French PolynesiaCity [city_id=167, city=Faaa]Adress [adressid=47, adressname=1447 Imus Way]
+
+City [city_id=397, city=Papeete]Adress [adressid=60, adressname=1668 Saint Louis Place]
+
+
+nombre pais:GambiaCity [city_id=54, city=Banjul]
+
+nombre pais:GermanyCity [city_id=148, city=Duisburg]Adress [adressid=118, adressname=442 Rae Bareli Place]
+
+City [city_id=160, city=Erlangen]Adress [adressid=453, adressname=319 Springs Loop]
+
+City [city_id=198, city=Halle/Saale]Adress [adressid=255, adressname=1966 Tonghae Street]
+
+City [city_id=325, city=Mannheim]Adress [adressid=200, adressname=1074 Binzhou Manor]
+
+City [city_id=439, city=Saarbrcken]Adress [adressid=231, adressname=430 Alessandria Loop]
+
+City [city_id=477, city=Siegen]Adress [adressid=199, adressname=1792 Valle de la Pascua Place]
+
+City [city_id=575, city=Witten]Adress [adressid=205, adressname=68 Molodetno Manor]
+
+
+nombre pais:GreeceCity [city_id=38, city=Athenai]Adress [adressid=7, adressname=692 Joliet Street]
+
+City [city_id=401, city=Patras]
+
+nombre pais:GreenlandCity [city_id=371, city=Nuuk]Adress [adressid=211, adressname=850 Salala Loop]
+
+
+nombre pais:Holy See Vatican City StateCity [city_id=121, city=Citt del Vaticano]Adress [adressid=30, adressname=18 Duisburg Boulevard]
+
+
+nombre pais:Hong KongCity [city_id=279, city=Kowloon and New Kowloon]Adress [adressid=294, adressname=1912 Allende Manor]
+
+
+nombre pais:HungaryCity [city_id=512, city=Szkesfehrvr]
+
+nombre pais:IndiaCity [city_id=8, city=Adoni]Adress [adressid=372, adressname=230 Urawa Drive]
+
+City [city_id=9, city=Ahmadnagar]Adress [adressid=302, adressname=922 Vila Velha Loop]
+
+City [city_id=18, city=Allappuzha Alleppey]Adress [adressid=179, adressname=431 Xiangtan Avenue]
+
+City [city_id=22, city=Ambattur]Adress [adressid=229, adressname=1014 Loja Manor]
+
+City [city_id=24, city=Amroha]
+City [city_id=51, city=Balurghat]Adress [adressid=212, adressname=624 Oshawa Boulevard]
+
+City [city_id=71, city=Berhampore Baharampur]Adress [adressid=418, adressname=126 Acua Parkway]
+
+City [city_id=73, city=Bhavnagar]Adress [adressid=384, adressname=97 Mogiljov Lane]
+
+City [city_id=74, city=Bhilwara]Adress [adressid=213, adressname=43 Dadu Avenue]
+
+City [city_id=75, city=Bhimavaram]
+City [city_id=76, city=Bhopal]Adress [adressid=19, adressname=419 Iligan Lane]
+
+City [city_id=77, city=Bhusawal]Adress [adressid=206, adressname=642 Nador Drive]
+
+City [city_id=78, city=Bijapur]Adress [adressid=473, adressname=1257 Guadalajara Street]
+
+City [city_id=107, city=Chandrapur]Adress [adressid=171, adressname=1540 Wroclaw Drive]
+
+City [city_id=110, city=Chapra]
+City [city_id=144, city=Dhule Dhulia]Adress [adressid=445, adressname=495 Bhimavaram Lane]
+
+City [city_id=164, city=Etawah]Adress [adressid=125, adressname=211 Chiayi Drive]
+
+City [city_id=169, city=Firozabad]Adress [adressid=196, adressname=9 San Miguel de Tucumn Manor]
+
+City [city_id=176, city=Gandhinagar]Adress [adressid=121, adressname=1967 Sincelejo Place]
+
+City [city_id=191, city=Gulbarga]Adress [adressid=375, adressname=1049 Matamoros Parkway]
+
+City [city_id=195, city=Haldia]Adress [adressid=190, adressname=435 0 Way]
+
+City [city_id=197, city=Halisahar]Adress [adressid=264, adressname=1027 Banjul Place]
+
+City [city_id=208, city=Hoshiarpur]Adress [adressid=417, adressname=791 Salinas Street]
+
+City [city_id=211, city=Hubli-Dharwad]Adress [adressid=140, adressname=788 Atinsk Street]
+
+City [city_id=231, city=Jaipur]Adress [adressid=64, adressname=81 Hodeida Way]
+
+City [city_id=239, city=Jhansi]Adress [adressid=36, adressname=176 Mandaluyong Place]
+
+City [city_id=243, city=Jodhpur]Adress [adressid=228, adressname=60 Poos de Caldas Street]
+
+City [city_id=257, city=Kamarhati]Adress [adressid=35, adressname=33 Gorontalo Way]
+
+City [city_id=261, city=Kanchrapara]
+City [city_id=263, city=Karnal]Adress [adressid=279, adressname=1884 Shikarpur Avenue]
+
+City [city_id=264, city=Katihar]Adress [adressid=424, adressname=1948 Bayugan Parkway]
+
+City [city_id=283, city=Kumbakonam]Adress [adressid=276, adressname=1675 Xiangfan Manor]
+
+City [city_id=336, city=Miraj]Adress [adressid=321, adressname=651 Pathankot Loop]
+
+City [city_id=346, city=Munger Monghyr]Adress [adressid=32, adressname=1425 Shikarpur Manor]
+
+City [city_id=350, city=Mysore]Adress [adressid=63, adressname=1213 Ranchi Parkway]
+
+City [city_id=354, city=Nagaon]Adress [adressid=156, adressname=1963 Moscow Place]
+
+City [city_id=395, city=Palghat Palakkad]Adress [adressid=273, adressname=1519 Ilorin Place]
+
+City [city_id=398, city=Parbhani]Adress [adressid=305, adressname=41 El Alto Parkway]
+
+City [city_id=399, city=Pathankot]Adress [adressid=99, adressname=1697 Tanauan Lane]
+
+City [city_id=400, city=Patiala]Adress [adressid=301, adressname=951 Stara Zagora Manor]
+
+City [city_id=416, city=Pudukkottai]Adress [adressid=426, adressname=1661 Abha Drive]
+
+City [city_id=417, city=Pune]Adress [adressid=139, adressname=943 Johannesburg Avenue]
+
+City [city_id=418, city=Purnea Purnia]Adress [adressid=431, adressname=1596 Acua Parkway]
+
+City [city_id=425, city=Rae Bareli]Adress [adressid=82, adressname=936 Salzburg Lane]
+
+City [city_id=426, city=Rajkot]
+City [city_id=427, city=Rampur]Adress [adressid=341, adressname=1920 Weifang Avenue]
+
+City [city_id=429, city=Ranchi]Adress [adressid=363, adressname=604 Bern Place]
+
+City [city_id=448, city=Sambhal]Adress [adressid=221, adressname=866 Shivapuri Manor]
+
+City [city_id=464, city=Satna]Adress [adressid=361, adressname=45 Aparecida de Goinia Place]
+
+City [city_id=473, city=Shimoga]Adress [adressid=242, adressname=1964 Gijn Manor]
+
+City [city_id=475, city=Shivapuri]Adress [adressid=72, adressname=57 Arlington Manor]
+
+City [city_id=478, city=Siliguri Shiliguri]
+City [city_id=522, city=Tambaram]Adress [adressid=292, adressname=1993 Tabuk Lane]
+
+City [city_id=550, city=Udaipur]Adress [adressid=174, adressname=1877 Ezhou Lane]
+
+City [city_id=554, city=Uluberia]Adress [adressid=451, adressname=1704 Tambaram Manor]
+
+City [city_id=559, city=Uttarpara-Kotrung]Adress [adressid=235, adressname=954 Kimchon Place]
+
+City [city_id=564, city=Valparai]Adress [adressid=408, adressname=990 Etawah Loop]
+
+City [city_id=566, city=Varanasi Benares]Adress [adressid=127, adressname=117 Boa Vista Way]
+
+City [city_id=568, city=Vijayawada]
+City [city_id=582, city=Yamuna Nagar]Adress [adressid=16, adressname=808 Bhopal Manor]
+
+
+nombre pais:IndonesiaCity [city_id=117, city=Cianjur]Adress [adressid=416, adressname=1445 Carmen Parkway]
+
+City [city_id=118, city=Ciomas]Adress [adressid=243, adressname=47 Syktyvkar Lane]
+
+City [city_id=119, city=Ciparay]Adress [adressid=333, adressname=1860 Taguig Loop]
+
+City [city_id=184, city=Gorontalo]Adress [adressid=207, adressname=1688 Nador Lane]
+
+City [city_id=232, city=Jakarta]Adress [adressid=157, adressname=456 Escobar Way]
+
+City [city_id=301, city=Lhokseumawe]
+City [city_id=318, city=Madiun]
+City [city_id=396, city=Pangkal Pinang]
+City [city_id=403, city=Pemalang]Adress [adressid=120, adressname=544 Malm Parkway]
+
+City [city_id=412, city=Pontianak]
+City [city_id=415, city=Probolinggo]Adress [adressid=377, adressname=154 Oshawa Manor]
+
+City [city_id=419, city=Purwakarta]
+City [city_id=509, city=Surakarta]Adress [adressid=455, adressname=1947 Paarl Way]
+
+City [city_id=532, city=Tegal]Adress [adressid=463, adressname=935 Aden Boulevard]
+
+
+nombre pais:IranCity [city_id=31, city=Arak]Adress [adressid=40, adressname=334 Munger Monghyr Lane]
+
+City [city_id=162, city=Esfahan]Adress [adressid=14, adressname=1531 Sal Drive]
+
+City [city_id=265, city=Kermanshah]Adress [adressid=382, adressname=220 Hidalgo Drive]
+
+City [city_id=356, city=Najafabad]Adress [adressid=373, adressname=1922 Miraj Way]
+
+City [city_id=423, city=Qomsheh]Adress [adressid=464, adressname=76 Kermanshah Manor]
+
+City [city_id=467, city=Shahr-e Kord]Adress [adressid=189, adressname=927 Barcelona Street]
+
+City [city_id=481, city=Sirjan]Adress [adressid=454, adressname=956 Nam Dinh Manor]
+
+City [city_id=514, city=Tabriz]Adress [adressid=284, adressname=600 Bradford Street]
+
+
+nombre pais:IraqCity [city_id=344, city=Mosul]
+
+nombre pais:IsraelCity [city_id=34, city=Ashdod]Adress [adressid=106, adressname=659 Vaduz Drive]
+
+City [city_id=36, city=Ashqelon]
+City [city_id=57, city=Bat Yam]Adress [adressid=320, adressname=1542 Lubumbashi Boulevard]
+
+City [city_id=533, city=Tel Aviv-Jaffa]Adress [adressid=165, adressname=97 Shimoga Avenue]
+
+
+nombre pais:ItalyCity [city_id=17, city=Alessandria]Adress [adressid=37, adressname=127 Purnea Purnia Manor]
+
+City [city_id=70, city=Bergamo]Adress [adressid=444, adressname=231 Kaliningrad Place]
+
+City [city_id=91, city=Brescia]Adress [adressid=314, adressname=1224 Huejutla de Reyes Boulevard]
+
+City [city_id=93, city=Brindisi]
+City [city_id=309, city=Livorno]
+City [city_id=511, city=Syrakusa]Adress [adressid=225, adressname=1926 Gingoog Street]
+
+City [city_id=551, city=Udine]
+
+nombre pais:JapanCity [city_id=10, city=Akishima]
+City [city_id=172, city=Fukuyama]Adress [adressid=145, adressname=928 Jaffna Loop]
+
+City [city_id=203, city=Higashiosaka]Adress [adressid=269, adressname=446 Kirovo-Tepetsk Lane]
+
+City [city_id=204, city=Hino]Adress [adressid=198, adressname=345 Oshawa Boulevard]
+
+City [city_id=205, city=Hiroshima]Adress [adressid=304, adressname=1635 Kuwana Boulevard]
+
+City [city_id=224, city=Isesaki]
+City [city_id=226, city=Iwaki]Adress [adressid=244, adressname=1148 Saarbrcken Parkway]
+
+City [city_id=227, city=Iwakuni]Adress [adressid=58, adressname=1964 Allappuzha Alleppey Street]
+
+City [city_id=228, city=Iwatsuki]Adress [adressid=401, adressname=168 Cianjur Manor]
+
+City [city_id=229, city=Izumisano]Adress [adressid=396, adressname=767 Pyongyang Drive]
+
+City [city_id=253, city=Kakamigahara]Adress [adressid=167, adressname=1287 Xiangfan Boulevard]
+
+City [city_id=256, city=Kamakura]Adress [adressid=83, adressname=586 Tete Way]
+
+City [city_id=260, city=Kanazawa]
+City [city_id=276, city=Koriyama]Adress [adressid=406, adressname=454 Patiala Lane]
+
+City [city_id=284, city=Kurashiki]Adress [adressid=38, adressname=61 Tama Street]
+
+City [city_id=287, city=Kuwana]
+City [city_id=331, city=Matsue]Adress [adressid=360, adressname=619 Hunuco Avenue]
+
+City [city_id=338, city=Miyakonojo]Adress [adressid=258, adressname=752 Ondo Loop]
+
+City [city_id=355, city=Nagareyama]Adress [adressid=57, adressname=17 Kabul Boulevard]
+
+City [city_id=376, city=Okayama]
+City [city_id=377, city=Okinawa]Adress [adressid=370, adressname=1565 Tangail Manor]
+
+City [city_id=380, city=Omiya]Adress [adressid=409, adressname=1266 Laredo Parkway]
+
+City [city_id=382, city=Onomichi]Adress [adressid=342, adressname=124 al-Manama Way]
+
+City [city_id=386, city=Otsu]Adress [adressid=290, adressname=1336 Benin City Drive]
+
+City [city_id=440, city=Sagamihara]Adress [adressid=15, adressname=1542 Tarlac Parkway]
+
+City [city_id=463, city=Sasebo]Adress [adressid=5, adressname=1913 Hanoi Way]
+
+City [city_id=474, city=Shimonoseki]Adress [adressid=33, adressname=786 Aurora Avenue]
+
+City [city_id=521, city=Tama]Adress [adressid=390, adressname=102 Chapra Drive]
+
+City [city_id=547, city=Tsuyama]Adress [adressid=434, adressname=1404 Taguig Drive]
+
+City [city_id=552, city=Ueda]
+City [city_id=555, city=Urawa]Adress [adressid=151, adressname=1337 Lincoln Parkway]
+
+
+nombre pais:KazakstanCity [city_id=402, city=Pavlodar]Adress [adressid=80, adressname=602 Paarl Street]
+
+City [city_id=598, city=Zhezqazghan]
+
+nombre pais:KenyaCity [city_id=271, city=Kisumu]Adress [adressid=197, adressname=447 Surakarta Loop]
+
+City [city_id=372, city=Nyeri]Adress [adressid=368, adressname=1658 Jastrzebie-Zdrj Loop]
+
+
+nombre pais:KuwaitCity [city_id=233, city=Jalib al-Shuyukh]Adress [adressid=238, adressname=346 Skikda Parkway]
+
+
+nombre pais:LatviaCity [city_id=137, city=Daugavpils]Adress [adressid=352, adressname=1673 Tangail Drive]
+
+City [city_id=303, city=Liepaja]Adress [adressid=27, adressname=1780 Hino Boulevard]
+
+
+nombre pais:LiechtensteinCity [city_id=560, city=Vaduz]Adress [adressid=61, adressname=943 Tokat Street]
+
+
+nombre pais:LithuaniaCity [city_id=570, city=Vilnius]
+
+nombre pais:MadagascarCity [city_id=319, city=Mahajanga]Adress [adressid=85, adressname=320 Baiyin Parkway]
+
+
+nombre pais:MalawiCity [city_id=304, city=Lilongwe]Adress [adressid=170, adressname=710 San Felipe del Progreso Avenue]
+
+
+nombre pais:MalaysiaCity [city_id=223, city=Ipoh]Adress [adressid=175, adressname=316 Uruapan Street]
+
+City [city_id=282, city=Kuching]Adress [adressid=62, adressname=1114 Liepaja Street]
+
+City [city_id=507, city=Sungai Petani]Adress [adressid=311, adressname=715 So Bernardo do Campo Lane]
+
+
+nombre pais:MexicoCity [city_id=4, city=Acua]
+City [city_id=19, city=Allende]Adress [adressid=419, adressname=397 Sunnyvale Avenue]
+
+City [city_id=40, city=Atlixco]Adress [adressid=88, adressname=125 Citt del Vaticano Boulevard]
+
+City [city_id=103, city=Carmen]
+City [city_id=106, city=Celaya]
+City [city_id=124, city=Coacalco de Berriozbal]Adress [adressid=251, adressname=1473 Changhwa Parkway]
+
+City [city_id=125, city=Coatzacoalcos]
+City [city_id=129, city=Cuauhtmoc]Adress [adressid=472, adressname=1447 Chatsworth Place]
+
+City [city_id=130, city=Cuautla]Adress [adressid=328, adressname=479 San Felipe del Progreso Avenue]
+
+City [city_id=131, city=Cuernavaca]
+City [city_id=154, city=El Fuerte]Adress [adressid=456, adressname=814 Simferopol Loop]
+
+City [city_id=188, city=Guadalajara]Adress [adressid=369, adressname=817 Laredo Avenue]
+
+City [city_id=202, city=Hidalgo]Adress [adressid=154, adressname=781 Shimonoseki Drive]
+
+City [city_id=212, city=Huejutla de Reyes]
+City [city_id=213, city=Huixquilucan]Adress [adressid=112, adressname=1002 Ahmadnagar Manor]
+
+City [city_id=246, city=Jos Azueta]
+City [city_id=250, city=Jurez]Adress [adressid=374, adressname=433 Florencia Street]
+
+City [city_id=288, city=La Paz]
+City [city_id=330, city=Matamoros]Adress [adressid=181, adressname=146 Johannesburg Way]
+
+City [city_id=335, city=Mexicali]Adress [adressid=348, adressname=785 Vaduz Street]
+
+City [city_id=341, city=Monclova]
+City [city_id=365, city=Nezahualcyotl]Adress [adressid=119, adressname=1107 Nakhon Sawan Avenue]
+
+City [city_id=393, city=Pachuca de Soto]Adress [adressid=358, adressname=1698 Southport Loop]
+
+City [city_id=445, city=Salamanca]Adress [adressid=278, adressname=144 South Hill Loop]
+
+City [city_id=451, city=San Felipe del Progreso]Adress [adressid=324, adressname=1145 Vilnius Manor]
+
+City [city_id=452, city=San Juan Bautista Tuxtepec]Adress [adressid=430, adressname=355 Vitria de Santo Anto Way]
+
+City [city_id=541, city=Torren]Adress [adressid=137, adressname=261 Saint Louis Way]
+
+City [city_id=556, city=Uruapan]Adress [adressid=459, adressname=251 Florencia Drive]
+
+City [city_id=563, city=Valle de Santiago]Adress [adressid=293, adressname=86 Higashiosaka Lane]
+
+City [city_id=595, city=Zapopan]Adress [adressid=470, adressname=1088 Ibirit Place]
+
+
+nombre pais:MoldovaCity [city_id=115, city=Chisinau]Adress [adressid=42, adressname=269 Cam Ranh Parkway]
+
+
+nombre pais:MoroccoCity [city_id=68, city=Beni-Mellal]
+City [city_id=353, city=Nador]Adress [adressid=44, adressname=671 Graz Street]
+
+City [city_id=443, city=Sal]Adress [adressid=26, adressname=28 Charlotte Amalie Street]
+
+
+nombre pais:MozambiqueCity [city_id=64, city=Beira]Adress [adressid=262, adressname=771 Yaound Manor]
+
+City [city_id=351, city=Naala-Porto]Adress [adressid=438, adressname=596 Huixquilucan Place]
+
+City [city_id=534, city=Tete]Adress [adressid=101, adressname=1599 Plock Drive]
+
+
+nombre pais:MyanmarCity [city_id=342, city=Monywa]Adress [adressid=261, adressname=51 Laredo Avenue]
+
+City [city_id=349, city=Myingyan]Adress [adressid=8, adressname=1566 Inegl Manor]
+
+
+nombre pais:NauruCity [city_id=583, city=Yangor]
+
+nombre pais:NepalCity [city_id=81, city=Birgunj]Adress [adressid=326, adressname=470 Boksburg Street]
+
+
+nombre pais:NetherlandsCity [city_id=23, city=Amersfoort]Adress [adressid=420, adressname=992 Klerksdorp Loop]
+
+City [city_id=29, city=Apeldoorn]Adress [adressid=141, adressname=1749 Daxian Place]
+
+City [city_id=151, city=Ede]Adress [adressid=346, adressname=1217 Konotop Avenue]
+
+City [city_id=158, city=Emmen]
+City [city_id=438, city=s-Hertogenbosch]Adress [adressid=188, adressname=741 Ambattur Manor]
+
+
+nombre pais:New ZealandCity [city_id=200, city=Hamilton]Adress [adressid=12, adressname=478 Joliet Way]
+
+
+nombre pais:NigeriaCity [city_id=69, city=Benin City]Adress [adressid=289, adressname=1279 Udine Parkway]
+
+City [city_id=141, city=Deba Habe]Adress [adressid=414, adressname=1936 Lapu-Lapu Parkway]
+
+City [city_id=152, city=Effon-Alaiye]Adress [adressid=291, adressname=1155 Liaocheng Place]
+
+City [city_id=217, city=Ife]Adress [adressid=84, adressname=1888 Kabul Drive]
+
+City [city_id=218, city=Ikerre]Adress [adressid=202, adressname=955 Bamenda Way]
+
+City [city_id=220, city=Ilorin]Adress [adressid=107, adressname=1177 Jelets Way]
+
+City [city_id=252, city=Kaduna]Adress [adressid=22, adressname=320 Brest Avenue]
+
+City [city_id=374, city=Ogbomosho]Adress [adressid=282, adressname=556 Baybay Manor]
+
+City [city_id=381, city=Ondo]Adress [adressid=160, adressname=1367 Yantai Manor]
+
+City [city_id=389, city=Owo]Adress [adressid=285, adressname=1006 Santa Brbara dOeste Manor]
+
+City [city_id=390, city=Oyo]Adress [adressid=254, adressname=786 Stara Zagora Way]
+
+City [city_id=488, city=Sokoto]
+City [city_id=596, city=Zaria]Adress [adressid=236, adressname=885 Yingkou Manor]
+
+
+nombre pais:North KoreaCity [city_id=420, city=Pyongyang]Adress [adressid=161, adressname=1386 Nakhon Sawan Boulevard]
+
+
+nombre pais:OmanCity [city_id=329, city=Masqat]Adress [adressid=13, adressname=613 Korolev Drive]
+
+City [city_id=444, city=Salala]
+
+nombre pais:PakistanCity [city_id=134, city=Dadu]Adress [adressid=421, adressname=966 Arecibo Loop]
+
+City [city_id=324, city=Mandi Bahauddin]Adress [adressid=227, adressname=1820 Maring Parkway]
+
+City [city_id=327, city=Mardan]Adress [adressid=24, adressname=1688 Okara Way]
+
+City [city_id=375, city=Okara]Adress [adressid=404, adressname=734 Bchar Place]
+
+City [city_id=472, city=Shikarpur]Adress [adressid=29, adressname=934 San Felipe de Puerto Plata Street]
+
+
+nombre pais:ParaguayCity [city_id=37, city=Asuncin]Adress [adressid=230, adressname=201 Effon-Alaiye Way]
+
+City [city_id=122, city=Ciudad del Este]Adress [adressid=209, adressname=1679 Antofagasta Street]
+
+City [city_id=453, city=San Lorenzo]Adress [adressid=350, adressname=1628 Nagareyama Lane]
+
+
+nombre pais:PeruCity [city_id=99, city=Callao]Adress [adressid=309, adressname=827 Yuncheng Drive]
+
+City [city_id=214, city=Hunuco]
+City [city_id=305, city=Lima]Adress [adressid=126, adressname=1175 Tanauan Way]
+
+City [city_id=503, city=Sullana]
+
+nombre pais:PhilippinesCity [city_id=61, city=Baybay]Adress [adressid=75, adressname=492 Cam Ranh Street]
+
+City [city_id=62, city=Bayugan]Adress [adressid=192, adressname=1166 Changhwa Street]
+
+City [city_id=82, city=Bislig]Adress [adressid=98, adressname=152 Kitwe Parkway]
+
+City [city_id=98, city=Cabuyao]Adress [adressid=376, adressname=1061 Ede Avenue]
+
+City [city_id=104, city=Cavite]Adress [adressid=393, adressname=717 Changzhou Lane]
+
+City [city_id=138, city=Davao]Adress [adressid=31, adressname=217 Botshabelo Place]
+
+City [city_id=182, city=Gingoog]Adress [adressid=466, adressname=118 Jaffna Loop]
+
+City [city_id=192, city=Hagonoy]Adress [adressid=260, adressname=127 Iwakuni Boulevard]
+
+City [city_id=219, city=Iligan]
+City [city_id=221, city=Imus]Adress [adressid=354, adressname=953 Hodeida Street]
+
+City [city_id=294, city=Lapu-Lapu]Adress [adressid=248, adressname=582 Papeete Loop]
+
+City [city_id=323, city=Mandaluyong]Adress [adressid=268, adressname=1831 Nam Dinh Loop]
+
+City [city_id=391, city=Ozamis]Adress [adressid=439, adressname=1351 Aparecida de Goinia Parkway]
+
+City [city_id=458, city=Santa Rosa]
+City [city_id=517, city=Taguig]Adress [adressid=76, adressname=89 Allappuzha Alleppey Manor]
+
+City [city_id=519, city=Talavera]
+City [city_id=523, city=Tanauan]Adress [adressid=378, adressname=1191 Tandil Drive]
+
+City [city_id=527, city=Tanza]Adress [adressid=240, adressname=1479 Rustenburg Boulevard]
+
+City [city_id=528, city=Tarlac]
+City [city_id=548, city=Tuguegarao]Adress [adressid=266, adressname=862 Xintai Lane]
+
+
+nombre pais:PolandCity [city_id=97, city=Bydgoszcz]Adress [adressid=323, adressname=1769 Iwaki Lane]
+
+City [city_id=133, city=Czestochowa]
+City [city_id=236, city=Jastrzebie-Zdrj]Adress [adressid=132, adressname=1050 Garden Grove Avenue]
+
+City [city_id=255, city=Kalisz]Adress [adressid=275, adressname=906 Goinia Way]
+
+City [city_id=314, city=Lublin]
+City [city_id=409, city=Plock]
+City [city_id=549, city=Tychy]Adress [adressid=385, adressname=1642 Charlotte Amalie Drive]
+
+City [city_id=577, city=Wroclaw]
+
+nombre pais:Puerto RicoCity [city_id=32, city=Arecibo]Adress [adressid=365, adressname=1009 Zanzibar Lane]
+
+City [city_id=411, city=Ponce]Adress [adressid=287, adressname=1405 Chisinau Place]
+
+
+nombre pais:RomaniaCity [city_id=86, city=Botosani]Adress [adressid=234, adressname=1256 Bislig Boulevard]
+
+City [city_id=95, city=Bucuresti]
+
+nombre pais:RunionCity [city_id=442, city=Saint-Denis]Adress [adressid=152, adressname=1952 Pune Lane]
+
+
+nombre pais:Russian FederationCity [city_id=39, city=Atinsk]Adress [adressid=402, adressname=616 Hagonoy Avenue]
+
+City [city_id=49, city=Balaiha]Adress [adressid=59, adressname=1697 Kowloon and New Kowloon Loop]
+
+City [city_id=150, city=Dzerzinsk]Adress [adressid=435, adressname=740 Udaipur Lane]
+
+City [city_id=156, city=Elista]Adress [adressid=21, adressname=270 Toulon Boulevard]
+
+City [city_id=225, city=Ivanovo]Adress [adressid=110, adressname=1867 San Juan Bautista Tuxtepec Avenue]
+
+City [city_id=235, city=Jaroslavl]Adress [adressid=226, adressname=810 Palghat Palakkad Boulevard]
+
+City [city_id=238, city=Jelets]Adress [adressid=104, adressname=1913 Kamakura Place]
+
+City [city_id=254, city=Kaliningrad]Adress [adressid=306, adressname=1883 Maikop Lane]
+
+City [city_id=259, city=Kamyin]
+City [city_id=270, city=Kirovo-Tepetsk]Adress [adressid=183, adressname=1089 Iwatsuki Avenue]
+
+City [city_id=274, city=Kolpino]Adress [adressid=300, adressname=661 Chisinau Lane]
+
+City [city_id=278, city=Korolev]Adress [adressid=398, adressname=954 Lapu-Lapu Way]
+
+City [city_id=285, city=Kurgan]Adress [adressid=381, adressname=1618 Olomouc Manor]
+
+City [city_id=286, city=Kursk]Adress [adressid=316, adressname=746 Joliet Lane]
+
+City [city_id=308, city=Lipetsk]Adress [adressid=48, adressname=1998 Halifax Drive]
+
+City [city_id=310, city=Ljubertsy]Adress [adressid=164, adressname=1623 Baha Blanca Manor]
+
+City [city_id=320, city=Maikop]Adress [adressid=351, adressname=1157 Nyeri Loop]
+
+City [city_id=343, city=Moscow]Adress [adressid=50, adressname=46 Pjatigorsk Lane]
+
+City [city_id=352, city=Nabereznyje Telny]Adress [adressid=452, adressname=207 Cuernavaca Loop]
+
+City [city_id=367, city=Niznekamsk]Adress [adressid=52, adressname=909 Garland Manor]
+
+City [city_id=369, city=Novoterkassk]Adress [adressid=195, adressname=1077 San Felipe de Puerto Plata Place]
+
+City [city_id=408, city=Pjatigorsk]
+City [city_id=466, city=Serpuhov]
+City [city_id=484, city=Smolensk]Adress [adressid=131, adressname=801 Hagonoy Drive]
+
+City [city_id=510, city=Syktyvkar]Adress [adressid=433, adressname=1823 Hoshiarpur Lane]
+
+City [city_id=531, city=Teboksary]Adress [adressid=355, adressname=469 Nakhon Sawan Street]
+
+City [city_id=558, city=Usolje-Sibirskoje]Adress [adressid=467, adressname=1621 Tongliao Avenue]
+
+City [city_id=597, city=Zeleznogorsk]Adress [adressid=356, adressname=1378 Beira Loop]
+
+
+nombre pais:Saint Vincent and the GrenadinesCity [city_id=269, city=Kingstown]Adress [adressid=331, adressname=1016 Iwakuni Street]
+
+
+nombre pais:Saudi ArabiaCity [city_id=2, city=Abha]Adress [adressid=105, adressname=733 Mandaluyong Place]
+
+City [city_id=13, city=al-Hawiya]Adress [adressid=74, adressname=1124 Buenaventura Drive]
+
+City [city_id=16, city=al-Qatif]Adress [adressid=422, adressname=289 Santo Andr Manor]
+
+City [city_id=237, city=Jedda]Adress [adressid=53, adressname=725 Isesaki Place]
+
+City [city_id=515, city=Tabuk]Adress [adressid=317, adressname=780 Kimberley Way]
+
+
+nombre pais:SenegalCity [city_id=600, city=Ziguinchor]Adress [adressid=461, adressname=1889 Valparai Way]
+
+
+nombre pais:SlovakiaCity [city_id=90, city=Bratislava]Adress [adressid=362, adressname=482 Kowloon and New Kowloon Manor]
+
+
+nombre pais:South AfricaCity [city_id=85, city=Boksburg]Adress [adressid=129, adressname=569 Baicheng Lane]
+
+City [city_id=87, city=Botshabelo]Adress [adressid=136, adressname=898 Belm Manor]
+
+City [city_id=112, city=Chatsworth]
+City [city_id=244, city=Johannesburg]Adress [adressid=476, adressname=270 Tambaram Parkway]
+
+City [city_id=267, city=Kimberley]Adress [adressid=23, adressname=1417 Lancaster Avenue]
+
+City [city_id=273, city=Klerksdorp]Adress [adressid=113, adressname=682 Junan Way]
+
+City [city_id=364, city=Newcastle]Adress [adressid=437, adressname=1766 Almirante Brown Street]
+
+City [city_id=392, city=Paarl]Adress [adressid=343, adressname=1443 Mardan Street]
+
+City [city_id=437, city=Rustenburg]Adress [adressid=412, adressname=1639 Saarbrcken Drive]
+
+City [city_id=491, city=Soshanguve]Adress [adressid=149, adressname=999 Sanaa Loop]
+
+City [city_id=497, city=Springs]Adress [adressid=87, adressname=929 Tallahassee Loop]
+
+
+nombre pais:South KoreaCity [city_id=113, city=Cheju]Adress [adressid=92, adressname=1942 Ciparay Parkway]
+
+City [city_id=268, city=Kimchon]Adress [adressid=103, adressname=588 Vila Velha Manor]
+
+City [city_id=357, city=Naju]Adress [adressid=241, adressname=647 A Corua La Corua Street]
+
+City [city_id=539, city=Tonghae]
+City [city_id=553, city=Uijongbu]Adress [adressid=249, adressname=300 Junan Street]
+
+
+nombre pais:SpainCity [city_id=1, city=A Corua La Corua]Adress [adressid=56, adressname=939 Probolinggo Loop]
+
+City [city_id=146, city=Donostia-San Sebastin]Adress [adressid=298, adressname=44 Najafabad Way]
+
+City [city_id=181, city=Gijn]Adress [adressid=399, adressname=331 Bydgoszcz Parkway]
+
+City [city_id=388, city=Ourense Orense]Adress [adressid=474, adressname=1469 Plock Lane]
+
+City [city_id=459, city=Santiago de Compostela]
+
+nombre pais:Sri LankaCity [city_id=230, city=Jaffna]Adress [adressid=413, adressname=692 Amroha Drive]
+
+
+nombre pais:SudanCity [city_id=15, city=al-Qadarif]Adress [adressid=400, adressname=1152 Citrus Heights Manor]
+
+City [city_id=379, city=Omdurman]Adress [adressid=54, adressname=115 Hidalgo Parkway]
+
+
+nombre pais:SwedenCity [city_id=321, city=Malm]Adress [adressid=70, adressname=1150 Kimchon Manor]
+
+
+nombre pais:SwitzerlandCity [city_id=56, city=Basel]Adress [adressid=65, adressname=915 Ponce Place]
+
+City [city_id=72, city=Bern]Adress [adressid=159, adressname=185 Novi Sad Place]
+
+City [city_id=296, city=Lausanne]
+
+nombre pais:TaiwanCity [city_id=108, city=Changhwa]Adress [adressid=79, adressname=1551 Rampur Lane]
+
+City [city_id=114, city=Chiayi]Adress [adressid=77, adressname=1947 Poos de Caldas Boulevard]
+
+City [city_id=116, city=Chungho]
+City [city_id=168, city=Fengshan]
+City [city_id=209, city=Hsichuh]Adress [adressid=353, adressname=381 Kabul Way]
+
+City [city_id=316, city=Lungtan]Adress [adressid=34, adressname=1668 Anpolis Street]
+
+City [city_id=361, city=Nantou]Adress [adressid=9, adressname=53 Idfu Parkway]
+
+City [city_id=526, city=Tanshui]
+City [city_id=542, city=Touliu]Adress [adressid=143, adressname=1029 Dzerzinsk Manor]
+
+City [city_id=546, city=Tsaotun]
+
+nombre pais:TanzaniaCity [city_id=347, city=Mwanza]
+City [city_id=513, city=Tabora]Adress [adressid=194, adressname=605 Rio Claro Parkway]
+

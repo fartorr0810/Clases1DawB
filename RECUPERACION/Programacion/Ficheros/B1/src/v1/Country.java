@@ -6,7 +6,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.LinkedList;
 
-public class Country {
+public class Country  {
 	private int countryid;
 	private String countryname;
 	private  LinkedList<City> ciudades;
@@ -51,11 +51,12 @@ public class Country {
 	}
 	//Crear metodo que anada ciudades junto a su respetivo id.
 	public String toStringCiudades() {
-		String mensaje="";
+		StringBuilder sbb=new StringBuilder("nombre pais:"+this.countryname);
 		for (City ciudad : ciudades) {
-			mensaje+=ciudades.toString()+"\n";
+			sbb.append(ciudad.toString()+"\n");
 		}
-		return mensaje; 
+		return sbb.toString(); 
 	}
+
 
 }

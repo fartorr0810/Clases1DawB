@@ -3,7 +3,9 @@ package v1;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -19,7 +21,7 @@ public class MuchosPaises {
 		super();
 		paises=new LinkedList<Country>();		
 	}
-	
+
 	public void cargarPaises()  {
 		String linea;
 		String aux[];
@@ -93,19 +95,37 @@ public class MuchosPaises {
 				}
 			}
 			linea = buffer.readLine();
-			System.out.println(linea);
 		}
 		buffer.close();
 		lectura.close();
-		}
-	public String toStringPaises() {
-		String mensaje="";
-		for (Country country : paises) {
-			mensaje+=country.toString()+"\n";
-		}
-		return mensaje;
 	}
-
-	
-
+	public String toStringPaises() {
+		StringBuilder sb=new StringBuilder();
+		for (Country country : paises) {
+			sb.append(country.toStringCiudades()+"\n");
+		}
+		return sb.toString();
+	}
+	public String sacarDatos() {
+		StringBuilder sb=new StringBuilder();
+		for (Country country : paises) {
+			sb.append(country.toStringCiudades());	
+		}
+		return sb.toString();
+	}
+	public boolean EscribirFichero() throws IOException {
+		boolean result=false;
+		//Escribir fichero
+		FileWriter flujoEscritura=new FileWriter("./ficheros/archivonuevo.txt");
+		PrintWriter filtroEscritura=new PrintWriter(flujoEscritura);
+		boolean encontrado=false;
+		Iterator<Country> sig = paises.iterator();
+		while (sig.hasNext()) {
+			Country c = sig.next();
+			filtroEscritura.println(c.toStringCiudades());
+			result=true;
+			}
+		return result;
+	}
 }
+
