@@ -1,49 +1,32 @@
 package v1;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+
 public class Adress {
-	//
-	private int adressid;
-	private String adressname;
-	
-	public Adress(int adressid, String adressname) {
+	private String adressid;
+	private String adress;
+public Adress(String adressid, String adress) {
 		super();
 		this.adressid = adressid;
-		this.adressname = adressname;
+		this.adress = adress;
 	}
 
-	public int getAdressid() {
-		return adressid;
+public void cargarDatos(String f) {
+	try (BufferedReader filtroLectura = new BufferedReader(new FileReader(".\\ficheros\\body\\address2.txt"))){
+		String linea = filtroLectura.readLine();
+		
+		while(linea != null) {
+			String values[] = linea.split(",");
+			
+			if(values.length>=4) {
+			Address d = new Adress(Integer.parseInt(values[0]), values[1], Integer.parseInt(values[4]));
+			this.direcciones.add(d);
+			}
+			linea = filtroLectura.readLine();
+		}
+	} catch (IOException e) {
+		e.printStackTrace();
+	} 
 	}
-
-	public String getAdressname() {
-		return adressname;
-	}
-
-	@Override
-	public String toString() {
-		return "Adress [adressid=" + adressid + ", adressname=" + adressname + "]";
-	}
-
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + adressid;
-		return result;
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Adress other = (Adress) obj;
-		if (adressid != other.adressid)
-			return false;
-		return true;
-	}
-	
 }
