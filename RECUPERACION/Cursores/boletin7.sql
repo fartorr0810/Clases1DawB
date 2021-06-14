@@ -18,3 +18,23 @@ SELECT * FROM AUDITORIA_EMPLEADOS ae ;
 
 DELETE FROM EMPLEADOS e 
 WHERE NOMEM='OTILIA';
+
+
+--7.2. Crea un trigger que, cada vez que se modi(quen datos de un empleado, registre una entrada
+--en la tabla AUDITORIA_EMPLEADOS con la fecha del suceso, valor antiguo y valor nuevo de cada campo,
+--así como el tipo de operación realizada (en este caso MODIFICACIÓN).
+CREATE OR REPLACE tigre2boletin2 AFTER UPDATE ON empleados FOR EACH  ROW 
+BEGIN 
+	IF updating ('') THEN 
+	--Esto es demasiado largo para hacerlo xdd sorry.		
+END tigre2boletin2;
+
+
+/* 7.3. Crea un trigger para que registre en la tabla AUDITORIA_EMPLEADOS las subidas 
+de salarios superiores al 5%.  */
+TRIGGER tigre3boletin2 AFTER UPDATE ON empleados FOR EACH ROW 
+BEGIN 
+	IF :NEW.salar>:OLD.salar*1.05 THEN 
+		INSERT INTO AUDITORIA_EMPLEADOS VALUES ('Han modificado el sueldo el '||user);
+	END IF;
+END tigre3boletin2;

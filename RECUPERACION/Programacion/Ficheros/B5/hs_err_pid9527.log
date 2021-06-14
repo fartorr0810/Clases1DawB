@@ -1,0 +1,21 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007fc8c2b810ad, pid=9527, tid=9542
+#
+# JRE version: OpenJDK Runtime Environment (14.0.2+12) (build 14.0.2+12-Ubuntu-120.04)
+# Java VM: OpenJDK 64-Bit Server VM (14.0.2+12-Ubuntu-120.04, mixed mode, sharing, tiered, compressed oops, g1 gc, linux-amd64)
+# Problematic frame:
+# C  [libjimage.so+0x30ad]
+#
+# Core dump will be written. Default location: Core dumps may be processed with "/usr/share/apport/apport %p %s %c %d %P %E" (or dumping to /home/estudiante/Desktop/Fran/Clases1DAW/RECUPERACION/Programacion/Ficheros/B5/core.9527)
+#
+# If you would like to submit a bug report, please visit:
+#   Unknown
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:39577 -javaagent:/home/estudiante/Desktop/java-2020-06/eclipse/configuration/org.eclipse.osgi/215/0/.cp/lib/javaagent-shaded.jar -Dfile.encoding=UTF-8 --module-path=/home/estudiante/Desktop/Fran/Clases1DAW/RECUPERACION/Programacion/Ficheros/B5/bin:/home/estudiante/Desktop/Fran/Clases1DAW/RECUPERACION/Programacion/Ficheros/B5/lib/gson-2.2.2.jar -Djdk.module.main=B5 B5/ejercicio.Main
+
+Host: 
