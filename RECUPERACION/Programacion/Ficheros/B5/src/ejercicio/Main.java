@@ -11,9 +11,10 @@ public class Main {
 		//s.cargarCasetas();
 		//System.out.println(s.toStringCasetas());
 		
-	//	System.out.println(s.MostrarCasetasDeUnaCalle(""));
-		System.out.println(s.MostrarNumCasetasCalle());
-		System.out.println(s.borrarCaseta("PASCUAL MARQUEZ", 27));
+		System.out.println(s.MostrarCasetasDeUnaCalle("PASCUAL MARQUEZ"));	
+		System.out.println(s.borrarCaseta("ANTONIO BIENVENIDA", 94));
+		System.out.println(s.MostrarCasetasDeUnaCalle("PASCUAL MARQUEZ"));
+
 		//s.crearArchivoJson("./ficheros/casetasferia2021.csv");
 
 	}

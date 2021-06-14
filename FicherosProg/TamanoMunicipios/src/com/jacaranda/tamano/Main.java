@@ -11,12 +11,13 @@ public class Main {
 	
 	public static void main(String[] args) throws IOException, ComunidadDescripcionException {
 	
-		gui();	
+		gui();
+		System.out.println("asd");
 	}	
 	
 	
 	
-	public static TamanoMunicipioComunidad lista = new TamanoMunicipioComunidad(".\\ContenedorFicheros\\tamanoMunicipioComunidad.json");
+	public static TamanoMunicipioComunidad lista = new TamanoMunicipioComunidad("./ContenedorFicheros/tamanoMunicipioComunidad.json");
 	
 	
 	

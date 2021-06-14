@@ -12,12 +12,6 @@ import java.util.LinkedList;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-
-
-
-
-
-
 public class CargarDatos {
 	private LinkedList<Calle> listacalles;
 	
@@ -25,7 +19,6 @@ public class CargarDatos {
 		listacalles=new LinkedList<Calle>();
 		cargarCalles();
 		cargarCasetas();
-		//ASI LO IMPRIMIMOS EN JSON
 		Gson gson = new GsonBuilder().setPrettyPrinting().create();
 		String resultado =gson.toJson(listacalles);	
 		FileWriter fw = new FileWriter("./ficheros/nuevo.json");
@@ -77,7 +70,7 @@ public class CargarDatos {
 					Calle t1 = sig.next();
 					if (t1.getIdcalle()==Integer.parseInt(aux[7])&& t1!=null) {
 						Caseta caseta=new Caseta(aux[0],Integer.parseInt(aux[2]),
-								Integer.parseInt(aux[3]),(aux[4]),aux[5],Integer.parseInt(aux[7]));
+								Integer.parseInt(aux[3]),(aux[4]),aux[5],Integer.parseInt(aux[6]));
 						t1.addCaseta(caseta);
 						encontrado=true;
 					}

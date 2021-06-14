@@ -49,12 +49,25 @@ public class Calle {
 	}
 	public void Delete(int numero) {
 		boolean encontrado=false;
+		boolean encontrado2=false;
+		int modulo=0;
+		int posicion=0;
 		Iterator<Caseta> sig = casetas.iterator();
+		Caseta t1;
 		while (sig.hasNext( ) && !encontrado) {
-			Caseta t1 = sig.next();
+				t1 = sig.next();
 			if (t1.getNumero()==numero) {
-				encontrado=true;
-				this.casetas.remove(t1);				
+				System.out.println(casetas.remove(t1));
+				modulo=t1.getModulos();				
+				posicion=t1.getNumero();
+				casetas.remove(t1);				
+			}
+		}
+		Iterator<Caseta> sig2 = casetas.iterator();
+		while (sig2.hasNext()) {
+			Caseta t2 = sig2.next();
+			if (t2.getNumero()>posicion) {
+				t2.setNumero(t2.getNumero()-modulo);
 			}
 		}
 	}

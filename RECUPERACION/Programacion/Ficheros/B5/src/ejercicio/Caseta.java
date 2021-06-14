@@ -42,6 +42,12 @@ public class Caseta {
 		return id;
 	}
 
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+
+
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
